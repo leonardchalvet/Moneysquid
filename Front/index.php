@@ -1,3 +1,7 @@
+<?php 
+session_start(); 
+require_once 'check-connexion.php';
+?>
 <html>
 	<head>
 

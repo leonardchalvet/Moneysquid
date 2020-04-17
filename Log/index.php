@@ -17,7 +17,7 @@
 
 		<main>
 
-			<div class="container-login">
+			<form class="container-login" method="post" action="connexion.php">
 				<div class="wrapper">
 					<div class="logo">
 						<img src="img/logo.svg" alt="">
@@ -26,11 +26,11 @@
 					<div class="container-input">
 						<div class="input">
 							<div class="name">Username</div>
-							<input type="text" placeholder="Username">
+							<input type="text" placeholder="Username" name="username">
 						</div>
 						<div class="input">
 							<div class="name">Mot de passe</div>
-							<input type="password" placeholder="Mot de passe">
+							<input type="password" placeholder="Mot de passe" name="password">
 						</div>
 					</div>
 					<div class="container-btn">
@@ -42,7 +42,7 @@
 						</button>
 					</div>
 				</div>
-			</div>
+			</form>
 			
 		</main>
 
