@@ -24,7 +24,6 @@ body, html, *
 body, html {
 	width: 100%;
 	height: 100%;
-	background-color: red;
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -114,45 +113,63 @@ main
 	/*----------  H1  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h1_textsize_desktop: 56px;
+		/*----------  MOBILE  ----------*/
+		$h1_textsize_mobile: 26px;
 
 
 	/*----------  H2  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h2_textsize_desktop: 44px;
+		/*----------  MOBILE  ----------*/
+		$h2_textsize_mobile: 22px;
 
 
 	/*----------  H3  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h3_textsize_desktop: 32px;
+		/*----------  MOBILE  ----------*/
+		$h3_textsize_mobile: 20px;
 
 
 	/*----------  H4  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h4_textsize_desktop: 24px;
+		/*----------  MOBILE  ----------*/
+		$h4_textsize_mobile: 16px;
 
 
 	/*----------  H5  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h5_textsize_desktop: 20px;
+		/*----------  MOBILE  ----------*/
+		$h5_textsize_mobile: 14px;
 
 
 	/*----------  PARAGRAPH BIG  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$paragraphBig_textsize_desktop: 20px;
+		/*----------  MOBILE  ----------*/
+		$paragraphBig_textsize_mobile: 14px;
 
 
 	/*----------  PARAGRAPH MEDIUM  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$paragraphMedium_textsize_desktop: 16px;
+		/*----------  MOBILE  ----------*/
+		$paragraphMedium_textsize_mobile: 14px;
 
 
 	/*----------  PARAGRAPH SMALL  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$paragraphSmall_textsize_desktop: 13px;
+		/*----------  MOBILE  ----------*/
+		$paragraphSmall_textsize_mobile: 12px;
 
 	/*----------  PARAGRAPH TINY  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$paragraphTiny_textsize_desktop: 11px;
+		/*----------  MOBILE  ----------*/
+		$paragraphTiny_textsize_mobile: 12px;
 
 
 	/*----------  LINK  ----------*/
@@ -162,7 +179,7 @@ main
 		/*----------  NORMAL  ----------*/
 		$linkNormal_textsize_desktop: 16px;
 
-		/*----------  Small  ----------*/
+		/*----------  SMALL  ----------*/
 		$linkSmall_textsize_desktop: 13px;
 
 /*=====  End of TEXT SIZE  ======*/
@@ -219,18 +236,32 @@ main
 		@mixin styleH1{
 			@include styleHeading_Common;
 
-		  	font-size: $h1_textsize_desktop;
-		  	$lineHeight: $h1_textsize_desktop * 1.3;
-			line-height: $lineHeight;	
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h1_textsize_desktop;
+		  		$lineHeight: $h1_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h1_textsize_mobile;
+		  		$lineHeight: $h1_textsize_mobile * 1.2;
+				line-height: $lineHeight;
+			}	
 		}
 
 		/*----------  H2  ----------*/
 		@mixin styleH2{
 			@include styleHeading_Common;
 
-			font-size: $h2_textsize_desktop;
-			$lineHeight: $h2_textsize_desktop * 1.3;
-			line-height: $lineHeight;
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h2_textsize_desktop;
+				$lineHeight: $h2_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h2_textsize_mobile;
+		  		$lineHeight: $h2_textsize_mobile * 1.2;
+				line-height: $lineHeight;
+			}
 
 		}
 
@@ -238,58 +269,114 @@ main
 		@mixin styleH3{
 			@include styleHeading_Common;
 
-			font-size: $h3_textsize_desktop;
-			$lineHeight: $h3_textsize_desktop * 1.3;
-			line-height: $lineHeight;
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h3_textsize_desktop;
+				$lineHeight: $h3_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h3_textsize_mobile;
+		  		$lineHeight: $h3_textsize_mobile * 1.2;
+				line-height: $lineHeight;
+			}
 		}
 
 		/*----------  H4  ----------*/
 		@mixin styleH4{
 			@include styleHeading_Common;
-
-			$lineHeight: $h4_textsize_desktop * 1.3;
-			line-height: $lineHeight;
+			
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h4_textsize_desktop;
+				$lineHeight: $h4_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h4_textsize_mobile;
+		  		$lineHeight: $h4_textsize_mobile * 1.3;
+				line-height: $lineHeight;
+			}
 		}
 
 		/*----------  H5  ----------*/
 		@mixin styleH5{
 			@include styleHeading_Common;
 
-			$lineHeight: $h5_textsize_desktop * 1.3;
-			line-height: $lineHeight;
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $h5_textsize_desktop;
+				$lineHeight: $h5_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $h5_textsize_mobile;
+		  		$lineHeight: $h5_textsize_mobile * 1.5;
+				line-height: $lineHeight;
+			}
 		}
 
 
 		/*----------  PARAGRAPH BIG  ----------*/
 		@mixin styleParagraphBig($font){
 		 	font-family: $font;
-			font-size: $paragraphBig_textsize_desktop;
-			$lineHeight: $paragraphBig_textsize_desktop * 1.3;
-			line-height: $lineHeight;
+
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $paragraphBig_textsize_desktop;
+				$lineHeight: $paragraphBig_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $paragraphBig_textsize_mobile;
+				$lineHeight: $paragraphBig_textsize_mobile * 1.5;
+				line-height: $lineHeight;
+			}
 		}
 
 		/*----------  PARAGRAPH MEDIUM  ----------*/
 		@mixin styleParagraphMedium($font){
 		 	font-family: $font;
-			font-size: $paragraphMedium_textsize_desktop;
-			$lineHeight: $paragraphMedium_textsize_desktop * 1.3;
-			line-height: $lineHeight;
+			
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $paragraphMedium_textsize_desktop;
+				$lineHeight: $paragraphMedium_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $paragraphMedium_textsize_desktop;
+				$lineHeight: $paragraphMedium_textsize_desktop * 1.5;
+				line-height: $lineHeight;
+			}
+
 		}
 
 		/*----------  PARAGRAPH SMALL  ----------*/
 		@mixin styleParagraphSmall($font){
 		 	font-family: $font;
-			font-size: $paragraphSmall_textsize_desktop;
-			$lineHeight: $paragraphSmall_textsize_desktop * 1.3;
-			line-height: $lineHeight;
+			
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $paragraphSmall_textsize_desktop;
+				$lineHeight: $paragraphSmall_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $paragraphSmall_textsize_desktop;
+				$lineHeight: $paragraphSmall_textsize_desktop * 1.2;
+				line-height: $lineHeight;
+			}
 		}
 
 		/*----------  PARAGRAPH TINY  ----------*/
 		@mixin styleParagraphTiny($font){
 		 	font-family: $font;
-			font-size: $paragraphTiny_textsize_desktop;
-			$lineHeight: $paragraphTiny_textsize_desktop * 1.3;
-			line-height: $lineHeight;
+			
+			@media screen and (min-width: $breakPoint_mobile){
+				font-size: $paragraphTiny_textsize_desktop;
+				$lineHeight: $paragraphTiny_textsize_desktop * 1.3;
+				line-height: $lineHeight;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				font-size: $paragraphTiny_textsize_desktop;
+				$lineHeight: $paragraphTiny_textsize_desktop * 1.2;
+				line-height: $lineHeight;
+			}
 		}
 
 
