@@ -12,7 +12,7 @@ if( $username != null
 
 	$bool = false;
 	foreach ($allUsers as $user){
-	    if($user = $username) $bool = true;
+	    if($user == $username) $bool = true;
 	}
 
 	if ( $bool && password_verify($password, $realPassword) ) {
