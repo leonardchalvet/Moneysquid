@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/check-connexion.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/check-connexion.php",
+		"oF": 0
+		},
 	"/common-footer.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -24,6 +32,118 @@
 		"oA": 0,
 		"oAP": "/common-header.php",
 		"oF": 0
+		},
+	"/fonts/Muli-ExtraBold-Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/Muli-ExtraBold-Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/Muli-ExtraBold.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/Muli-ExtraBold.ttf",
+		"oF": 0
+		},
+	"/fonts/Muli-Regular-Italic.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/Muli-Regular-Italic.ttf",
+		"oF": 0
+		},
+	"/fonts/Muli-Regular.ttf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/fonts/Muli-Regular.ttf",
+		"oF": 0
+		},
+	"/img/common/icn-arrow-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/icn-arrow-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010945798143,
+		"prP": 0
+		},
+	"/img/common/icn-arrow-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/icn-arrow-2.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010945798143,
+		"prP": 0
+		},
+	"/img/common/icn-phone.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/icn-phone.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010945798143,
+		"prP": 0
+		},
+	"/img/common/logo-moneysquid-black.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common/logo-moneysquid-black.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010945798143,
+		"prP": 0
+		},
+	"/img/common/logo-moneysquid-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common/logo-moneysquid-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/header/illu-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/header/illu-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/header/illu-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/header/illu-2.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/header/illu-link-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/header/illu-link-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
 		},
 	"/img/img-test/background-1.jpg": {
 		"ft": 16384,
@@ -95,6 +215,17 @@
 		"mi": 1,
 		"oA": 1,
 		"oAP": "/script/minify/common-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/js/header.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/script/minify/header-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0

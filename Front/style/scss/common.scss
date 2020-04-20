@@ -1,6 +1,18 @@
 @font-face {
-	font-family:National-Bold;
-	src:url(../../fonts/font-gn/National-Bold.otf);
+	font-family:Muli-Regular;
+	src:url(../../fonts/Muli-Regular.ttf);
+}
+@font-face {
+	font-family:Muli-Regular-Italic;
+	src:url(../../fonts/Muli-Regular-Italic.ttf);
+}
+@font-face {
+	font-family:Muli-ExtraBold;
+	src:url(../../fonts/Muli-ExtraBold.ttf);
+}
+@font-face {
+	font-family:Muli-ExtraBold-Italic;
+	src:url(../../fonts/Muli-ExtraBold-Italic.ttf);
 }
 body, html, *
 {
@@ -12,6 +24,7 @@ body, html, *
 body, html {
 	width: 100%;
 	height: 100%;
+	background-color: red;
 }
 * {
 	-webkit-box-sizing: border-box;
@@ -21,6 +34,9 @@ h1, h2, h3, h4, h5, h6, i
 {
 	font-weight: normal;
 	font-style: normal;
+}
+a{
+	color: inherit;
 }
 body.block
 {
@@ -52,13 +68,29 @@ main
 ==============================*/
 
 	/*----------  MAIN COLORS  ----------*/
-	$colorMain_1: #1C2D4F;
-	$colorMain_2: #9495A0;
-	$colorMain_3: #937BF3;
-	$colorMain_4: #E3667A;
-	$colorMain_5: #35C850;
-	$colorMain_6: #F8CC6A;
+	$colorMain_1: #65ED49; /* GREEN */
+	$colorMain_2: #152D5D; /* BLUE */
+	$colorMain_3: #FF8139; /* ORANGE */
 
+	/*----------  BLUE NUANCES  ----------*/
+	$colorBlueNuances_1: #081B42; /* Zodiac Blue - DARK */
+	$colorBlueNuances_2: #1C3B78; /* Zodiac Blue - LIGHT */
+	$colorBlueNuances_gradient: linear-gradient(96.48deg, #142B5A 3.8%, #1C3B78 92.9%); /* Zodiac Blue - DARK */
+
+	/*----------  UI COLOR  ----------*/
+	$colorUi_Text_1: #00181B; /* BLACK */
+	$colorUi_Text_2: #666A6A; /* GRAY */
+	$colorUi_Text_3: #FFFFFF; /* WHITE */
+
+	$colorUi_Validation: #24AD79; /* GREEN */
+	$colorUi_Error: #FB5756; /* ERROR */
+
+	$colorUi_GreyNuance_1: #E1E1E1; /* GREY DARK */
+	$colorUi_GreyNuance_2: #F5F5F5; /* GREY LIGHT */
+
+	/*----------  HOVER  ----------*/
+	$colorHover_1: #73FF56; /* GREEN */
+	$colorHover_2: #EF722B; /* ORANGE */
 
 /*=====  End of COLORS  ======*/
 
@@ -67,8 +99,10 @@ main
 =            FONTS            =
 =============================*/
 
-	$font_1: Font;
-	$font_2: Font;
+	$font_1_Regular: Muli-Regular;
+	$font_1_Regular_Italic: Muli-Regular-Italic;
+	$font_1_Bold: Muli-ExtraBold;
+	$font_1_Bold_Italic: Muli-ExtraBold-Italic;
 
 /*=====  End of FONTS  ======*/
 
@@ -79,55 +113,57 @@ main
 
 	/*----------  H1  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$h1_textsize_desktop: 54px;
-		$h1_lineheight_desktop: 64px;
+		$h1_textsize_desktop: 56px;
 
 
 	/*----------  H2  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$h2_textsize_desktop: 32px;
-		$h2_lineheight_desktop: 58px;
+		$h2_textsize_desktop: 44px;
 
 
 	/*----------  H3  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$h3_textsize_desktop: 28px;
-		$h3_lineheight_desktop: 40px;
+		$h3_textsize_desktop: 32px;
 
 
 	/*----------  H4  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$h4_textsize_desktop: 26px;
-		$h4_lineheight_desktop: 33px;
+		$h4_textsize_desktop: 24px;
 
 
 	/*----------  H5  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$h5_textsize_desktop: 18px;
-		$h5_lineheight_desktop: 22px;
+		$h5_textsize_desktop: 20px;
 
 
 	/*----------  PARAGRAPH BIG  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$paragraphBig_textsize_desktop: 18px;
-		$paragraphBig_lineheight_desktop: 28px;
+		$paragraphBig_textsize_desktop: 20px;
 
 
 	/*----------  PARAGRAPH MEDIUM  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$paragraphMedium_textsize_desktop: 16px;
-		$paragraphMedium_lineheight_desktop: 24px;
 
 
 	/*----------  PARAGRAPH SMALL  ----------*/
 		/*----------  DESKTOP  ----------*/
-		$paragraphSmall_textsize_desktop: 14px;
-		$paragraphSmall_lineheight_desktop: 24px;
+		$paragraphSmall_textsize_desktop: 13px;
+
+	/*----------  PARAGRAPH TINY  ----------*/
+		/*----------  DESKTOP  ----------*/
+		$paragraphTiny_textsize_desktop: 11px;
 
 
 	/*----------  LINK  ----------*/
-		$link_textsize_desktop: 14px;
-		$link_lineheight_desktop: 16px;
+		/*----------  BIG  ----------*/
+		$linkBig_textsize_desktop: 20px;
+
+		/*----------  NORMAL  ----------*/
+		$linkNormal_textsize_desktop: 16px;
+
+		/*----------  Small  ----------*/
+		$linkSmall_textsize_desktop: 13px;
 
 /*=====  End of TEXT SIZE  ======*/
 
@@ -140,6 +176,7 @@ main
 	$grid_desktop_2: 1100px;
 	$grid_desktop_3: 1000px;
 	$grid_desktop_4: 900px;
+	$grid_desktop_5: 800px;
 
 	$grid_tablet: 100%;
 	$grid_mobile: 100%;
@@ -173,141 +210,261 @@ main
 
 	/*----------  HEADING  ----------*/
 
+		/*---------- COMMON ----------*/
+		@mixin styleHeading_Common{
+			font-family: $font_1_Bold;
+		}
+
 		/*----------  H1  ----------*/
 		@mixin styleH1{
-			font-family: $font_1;
-		  	color: $colorMain_1;
+			@include styleHeading_Common;
 
-			@media screen and (min-width: $breakPoint_tablet){
-				font-size: $h1_textsize_desktop;
-				line-height: $h1_lineheight_desktop;
-			}
-			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){}
-			@media screen and (max-width: $breakPoint_mobile){}	
+		  	font-size: $h1_textsize_desktop;
+		  	$lineHeight: $h1_textsize_desktop * 1.3;
+			line-height: $lineHeight;	
 		}
 
 		/*----------  H2  ----------*/
 		@mixin styleH2{
-			font-family: $font_1;
-		  	color: $colorMain_1;
+			@include styleHeading_Common;
+
 			font-size: $h2_textsize_desktop;
-			line-height: $h2_lineheight_desktop;
+			$lineHeight: $h2_textsize_desktop * 1.3;
+			line-height: $lineHeight;
+
 		}
 
 		/*----------  H3  ----------*/
 		@mixin styleH3{
-			font-family: $font_1;
-		  	color: $colorMain_1;
+			@include styleHeading_Common;
+
 			font-size: $h3_textsize_desktop;
-			line-height: $h3_lineheight_desktop;
+			$lineHeight: $h3_textsize_desktop * 1.3;
+			line-height: $lineHeight;
 		}
 
 		/*----------  H4  ----------*/
 		@mixin styleH4{
-			font-family: $font_1;
-		  	color: $colorMain_1;
-			font-size: $h4_textsize_desktop;
-			line-height: $h4_lineheight_desktop;
+			@include styleHeading_Common;
+
+			$lineHeight: $h4_textsize_desktop * 1.3;
+			line-height: $lineHeight;
 		}
 
 		/*----------  H5  ----------*/
 		@mixin styleH5{
-			font-family: $font_1;
-		  	color: $colorMain_1;
-			font-size: $h5_textsize_desktop;
-			line-height: $h5_lineheight_desktop;
+			@include styleHeading_Common;
+
+			$lineHeight: $h5_textsize_desktop * 1.3;
+			line-height: $lineHeight;
 		}
 
 
 		/*----------  PARAGRAPH BIG  ----------*/
-		@mixin styleParagraphBig{
-			font-family: $font_1;
-		  	color: $colorMain_1;
+		@mixin styleParagraphBig($font){
+		 	font-family: $font;
 			font-size: $paragraphBig_textsize_desktop;
-			line-height: $paragraphBig_lineheight_desktop;
+			$lineHeight: $paragraphBig_textsize_desktop * 1.3;
+			line-height: $lineHeight;
 		}
 
 		/*----------  PARAGRAPH MEDIUM  ----------*/
-		@mixin styleParagraphMedium{
-			font-family: $font_1;
-		  	color: $colorMain_1;
+		@mixin styleParagraphMedium($font){
+		 	font-family: $font;
 			font-size: $paragraphMedium_textsize_desktop;
-			line-height: $paragraphMedium_lineheight_desktop;
+			$lineHeight: $paragraphMedium_textsize_desktop * 1.3;
+			line-height: $lineHeight;
 		}
 
 		/*----------  PARAGRAPH SMALL  ----------*/
-		@mixin styleParagraphSmall{
-			font-family: $font_1;
-		  	color: $colorMain_2;
+		@mixin styleParagraphSmall($font){
+		 	font-family: $font;
 			font-size: $paragraphSmall_textsize_desktop;
-			line-height: $paragraphSmall_lineheight_desktop;
+			$lineHeight: $paragraphSmall_textsize_desktop * 1.3;
+			line-height: $lineHeight;
+		}
+
+		/*----------  PARAGRAPH TINY  ----------*/
+		@mixin styleParagraphTiny($font){
+		 	font-family: $font;
+			font-size: $paragraphTiny_textsize_desktop;
+			$lineHeight: $paragraphTiny_textsize_desktop * 1.3;
+			line-height: $lineHeight;
 		}
 
 
-		/*----------  BUTTON  ----------*/
-		@mixin button{
-		  	padding: 11px 15px 11px 15px;
-		  	border-radius: 4px;
-		  	background-color: $colorMain_4;
+
+	/*----------  GRID  ----------*/
+
+		/*----------  COMMON  ----------*/
+		@mixin styleGrid-common{
+			margin-right: auto;
+			margin-left: auto;
+			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+				width: $grid_tablet;
+				padding-right: 50px;
+				padding-left: 50px;
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				width: $grid_mobile;
+				padding-right: 25px;
+				padding-left: 25px;
+			}
+		}
+
+		/*----------  SIZE 1  ----------*/
+		@mixin styleGrid1{
+			@include styleGrid-common;
+			@media screen and (min-width: $breakPoint_tablet){
+				width: $grid_desktop_1;
+			}
+		}
+
+		/*----------  SIZE 2  ----------*/
+		@mixin styleGrid2{
+			@include styleGrid-common;
+			@media screen and (min-width: $breakPoint_tablet){
+				width: $grid_desktop_2;
+			}
+		}
+
+		/*----------  SIZE 3  ----------*/
+		@mixin styleGrid3{
+			@include styleGrid-common;
+			@media screen and (min-width: $breakPoint_tablet){
+				width: $grid_desktop_3;
+			}
+		}
+
+		/*----------  SIZE 4  ----------*/
+		@mixin styleGrid4{
+			@include styleGrid-common;
+			@media screen and (min-width: $breakPoint_tablet){
+				width: $grid_desktop_4;
+			}
+		}
+
+		/*----------  SIZE 5  ----------*/
+		@mixin styleGrid5{
+			@include styleGrid-common;
+			@media screen and (min-width: $breakPoint_tablet){
+				width: $grid_desktop_5;
+			}
+		}
+
+
+	/*----------  BUTTONS  ----------*/
+	@mixin styleButton_1($size, $call, $tagline){
+		cursor: pointer;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		background-color: $colorMain_1;
+		transition: all 0.25s ease;
+		@if $size == big {
+			padding: 24px;
+			border-radius: 16px;
 			.btn-text{
-				font-family: $font_1;
-				font-size: $button_textsize_desktop;
-				line-height: $button_lineheight_desktop;
+				@include styleParagraphBig($font_1_Bold);
+			}
+			.btn-arrow{
+				height: 12px;
+				margin-left: 13px;
+				fill: transparent;
+				stroke: $colorUi_Text_1;
+			}
+		} @else if $size == small {
+			padding: 17px 24px 17px 24px;
+			border-radius: 12px;
+			.btn-text{
+				@include styleParagraphSmall($font_1_Bold);
+			}
+			.btn-arrow{
+				height: 8px;
+				margin-left: 12px;
+				fill: transparent;
+				stroke: $colorUi_Text_1;
 			}
 		}
 
-
-		/*----------  GRID  ----------*/
-
-			/*----------  COMMON  ----------*/
-			@mixin styleGrid-common{
-				margin-right: auto;
-				margin-left: auto;
-				@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
-					width: $grid_tablet;
-					padding-right: 50px;
-					padding-left: 50px;
-				}
-				@media screen and (max-width: $breakPoint_mobile){
-					width: $grid_mobile;
-					padding-right: 25px;
-					padding-left: 25px;
-				}
+		@if $size == true{
+			.btn-phone{
+				width: 16px;
+				margin-right: 8px;
 			}
-
-			/*----------  SIZE 1  ----------*/
-			@mixin styleGrid1{
-				@include styleGrid-common;
-				@media screen and (min-width: $breakPoint_tablet){
-					width: $grid_desktop_1;
-				}
+		}
+		@if $tagline == true{
+			.btn-tagline{
+				position: absolute;
+				top: calc(100% + 16px);
+				white-space: nowrap;
+				left: 50%;
+				transform: translateX(-50%);
+				@include styleParagraphMedium($font_1_Bold_Italic);
 			}
+		}
 
-			/*----------  SIZE 2  ----------*/
-			@mixin styleGrid2{
-				@include styleGrid-common;
-				@media screen and (min-width: $breakPoint_tablet){
-					width: $grid_desktop_2;
-				}
+		&:hover{
+			background-color: $colorHover_1;
+		}
+	}
+
+	@mixin styleButton_2{
+		cursor: pointer;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		padding: 11px 26px 11px 26px;
+		border-radius: 12px;
+		background-color: $colorMain_3;
+		transition: all 0.25s ease;
+		.btn-text{
+			@include styleParagraphSmall($font_1_Bold);
+			color: #FFF;
+		}
+		.btn-arrow{
+			fill: #FFF;
+			height: 8px;
+			margin-left: 12px;
+		}
+		&:hover{
+			background-color: $colorHover_2;
+		}
+	}
+
+	@mixin styleButton_3{
+		cursor: pointer;
+		text-decoration: none;
+		display: inline-flex;
+		align-items: center;
+		position: relative;
+		padding: 11px 26px 11px 26px;
+		border-radius: 12px;
+		border: 1px solid $colorUi_Text_1;
+		transition: all 0.25s ease;
+		.btn-text{
+			@include styleParagraphSmall($font_1_Bold);
+			transition: all 0.25s ease;
+		}
+		.btn-arrow{
+			height: 8px;
+			margin-left: 12px;
+			fill: transparent;
+			stroke: $colorUi_Text_1;
+			transition: all 0.25s ease;
+		}
+		&:hover{
+			background-color: $colorUi_Text_1;
+			.btn-text{
+				color: #FFF;
 			}
-
-			/*----------  SIZE 3  ----------*/
-			@mixin styleGrid3{
-				@include styleGrid-common;
-				@media screen and (min-width: $breakPoint_tablet){
-					width: $grid_desktop_3;
-				}
+			.btn-arrow{
+				stroke: #FFF;
 			}
-
-			/*----------  SIZE 4  ----------*/
-			@mixin styleGrid4{
-				@include styleGrid-common;
-				@media screen and (min-width: $breakPoint_tablet){
-					width: $grid_desktop_4;
-				}
-			}
-
-
+		}
+	}
 
 /* ----------------------------------------------------- */
 /* ********************* END MIXIN ********************* */
