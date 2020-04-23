@@ -76,6 +76,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/common-section_autremetiers/icn-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_autremetiers/icn-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common-section_compare/illu-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -104,6 +114,46 @@
 		"oAP": "/img/common-section_humans/img-path.svg",
 		"oF": 0,
 		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_makedifferent/icn-check.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_makedifferent/icn-check.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010945798143,
+		"prP": 0
+		},
+	"/img/common-section_makedifferent/icn-cross.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_makedifferent/icn-cross.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010945798143,
+		"prP": 0
+		},
+	"/img/common-section_makedifferent/path-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_makedifferent/path-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_makedifferent/path-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_makedifferent/path-2.svg",
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -155,6 +205,46 @@
 		"oF": 1,
 		"opt": 1,
 		"plM": 3993782706175,
+		"prP": 0
+		},
+	"/img/common-section_quotes/logo-lefigaro.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common-section_quotes/logo-lefigaro.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_quotes/logo-leparisien.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common-section_quotes/logo-leparisien.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_quotes/logo-lexpress.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common-section_quotes/logo-lexpress.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_sousmetier/illu-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_sousmetier/illu-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_trustpilot/icn-star.svg": {

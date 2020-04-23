@@ -2,7 +2,7 @@
 $(window).on('load', function() {
 
 
-	function common_navCarousel(sectioName){
+	function common_navCarousel1(sectioName){
 
 		var section = sectioName;
 
@@ -50,9 +50,103 @@ $(window).on('load', function() {
 		})
 
 	}
-	common_navCarousel('.common-section_actu');
-	common_navCarousel('.common-section_trustpilot');
+	common_navCarousel1('.common-section_actu');
+	common_navCarousel1('.common-section_trustpilot');
+
+
+	function common_navCarousel2(sectionName){
+		var section = sectionName;
+
+		var containerEl = section + ' .container-el';
+		var el =  containerEl + ' .el';
+		var nav = section + ' .container-nav .nav';
+
+		var num_el = $(el).length;
+
+		var step_el = 3;
+
+		var count = 3;
+
+		$(el + ':nth-child(-n+' + step_el + ')').addClass('style-active displayBlock');
+
+		$(nav).click(function(){
+			
+			if ($(this).is(':nth-child(1)') && count > 0) {
+				count = count - step_el;
+			} else if ($(this).is(':nth-child(2)') && count < num_el) {
+				count = count + step_el;
+			}
+
+			var first_el = count - step_el + 1;
+			var last_el = count;
+
+
+			if (count >= num_el) {
+				$(nav + ':nth-child(2)').addClass('style-disable');
+			} else if (count <= (step_el + 1)) {
+				$(nav + ':nth-child(1)').addClass('style-disable');
+			} else {
+				$(nav).removeClass('style-disable');
+			}
+
+			$(el).removeClass('style-active displayBlock');
+			$(el + ':nth-child(n' + first_el + '):nth-child(-n+' + last_el + ')').addClass('displayBlock');
+			setTimeout(function(){
+				$(el + ':nth-child(n' + first_el + '):nth-child(-n+' + last_el + ')').addClass('style-active');
+			}, 50);
+			
+
+		})
+
+	};
+
+	common_navCarousel2('.common-section_quotes');
 
 	
+
+	if (window.matchMedia("(min-width: 1250px)").matches) {
+		var $myDiv = $('.common-section_sousmetiers');
+
+		if ( $myDiv.length){
+		    function initHeight() {
+				let a = ($(window).width() - 1200);
+				$('.common-section_sousmetiers').height($('.common-section_sousmetiers .container-slider').width() - a);
+			};
+
+			initHeight();
+
+			$window.scroll(function() {
+
+				let a = $('.common-section_sousmetiers').offset();
+				let b = ($window.height() / 100) * 25; 
+				let c = $('.common-section_sousmetiers').height();
+
+
+				let scrollTop = $window.scrollTop() - a.top + b;
+
+				$('.common-section_sousmetiers .container-slider').css({
+				  '-webkit-transform' : 'translateX(-' + scrollTop + 'px' + ')',
+				  '-moz-transform'    : 'translateX(-' + scrollTop + 'px' + ')',
+				  '-ms-transform'     : 'translateX(-' + scrollTop + 'px' + ')',
+				  '-o-transform'      : 'translateX(-' + scrollTop + 'px' + ')',
+				  'transform'         : 'translateX(-' + scrollTop + 'px' + ')'
+				});
+
+				d = $('.common-section_sousmetiers').next().offset();
+				e = d.top - a.top - ($window.height() * 1.25);
+
+				if (scrollTop >= e) {
+					if (!$('.common-section_sousmetiers').hasClass('active')) {
+						$('.common-section_sousmetiers').addClass('active');
+					}
+				} else {
+					if ($('.common-section_sousmetiers').hasClass('active')) {
+						$('.common-section_sousmetiers').removeClass('active');
+					}
+				}
+			    
+			});
+		}
+	};
 
 })

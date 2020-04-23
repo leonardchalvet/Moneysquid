@@ -2,6 +2,57 @@
 session_start(); 
 require_once 'check-connexion.php';
 ?>
+<?php 
+session_start(); 
+require_once 'check-connexion.php';
+/*=================================
+=            TRUSTPILOT           =
+==================================*/
+function dateDiff($date1, $date2){
+	$diff = abs($date1 - $date2);
+    $array = array();
+    $tmp = $diff;
+    $array['second'] = $tmp % 60;
+    $tmp = floor( ($tmp - $array['second']) / 60 );
+    $tmp = floor( ($tmp - $array['minute']) / 60 );
+    $array['hour'] = $tmp % 24;
+    $tmp = floor( ($tmp - $array['hour'])  / 24 );
+    $array['day'] = $tmp;
+    $tmp = floor( $array['day']  / 30.5 );
+    $array['month'] = $tmp;
+    $tmp = floor( $array['day']  / 365.25 );
+    $array['year'] = $tmp;
+    $retour = null;
+    if($array['year'] >= 1) {
+    	$retour = $array['year']. ' année(s)';
+    }
+    else if($array['month'] >= 1) {
+    	$retour = $array['month']. ' mois';
+    }
+    else if($array['day'] >= 1) {
+    	$retour = $array['day']. ' jour(s)';
+    }
+    else {
+    	$retour = $array['hour']. ' heure(s)';;
+    }
+    return $retour;
+}
+function getJSON($url) {
+	$ch = curl_init($url);
+	curl_setopt($ch, CURLOPT_POSTFIELDS);
+	curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
+	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+	$result = json_decode(curl_exec($ch));
+	curl_close($ch);
+	return $result;
+}
+$apiKey = '8N8IA85igAsDtjSKVWuN3XGzSGyxe5SX';
+$numberOfReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f2700006400051a7265?apikey=' .$apiKey)->numberOfReviews->fiveStars;
+$allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f2700006400051a7265/reviews?apikey=' .$apiKey);
+/*=====================================
+=            END TRUSTPILOT           =
+======================================*/
+?>
 <html>
 	<head>
 
@@ -714,263 +765,35 @@ require_once 'check-connexion.php';
 								</div>
 							</div>
 							<p>
-								Sur la base de <a href="">353 avis</a>
+								Sur la base de <a href=""><?php echo($numberOfReviews); ?> avis</a>
 							</p>
 							<a href="" class="logo">
 								<img src="img/common-section_trustpilot/logo-strustpilot.svg" alt="">
 							</a>
 						</div>
-						<div class="el">
-							<div class="head">
-								<div class="container-stars">
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
+						<?php foreach($allReviews->reviews as $review) { 
+							if($review->stars == 5) { ?>
+								<div class="el">
+									<div class="head">
+										<div class="container-stars">
+											<?php for($i = 0 ; $i < $review->stars ; $i++) { ?>
+												<div class="star">
+													<img src="img/common-section_trustpilot/icn-star.svg" alt="">
+												</div>
+											<?php } ?>
+										</div>
+										<div class="time"><?php echo('Il y a ' .dateDiff(time(), strtotime($review->createdAt))); ?></div>
 									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-								</div>
-								<div class="time">5 hours ago</div>
-							</div>
-							<div class="text">
-								<div class="title">Cool</div>
-								<p>
-									Ex commodo enim tempor nostrud laboris enim amet qui sint. Aute do aute cillum occaecat ad irure magna et enim id enim consequat magna minim. 
-								</p>
-								<div class="name">
-									Zack Wilson
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="head">
-								<div class="container-stars">
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
+									<div class="text">
+										<div class="title"><?php echo($review->title); ?></div>
+										<p><?php echo($review->text); ?></p>
+										<div class="name">
+											<?php echo($review->consumer->displayName); ?>
+										</div>
 									</div>
 								</div>
-								<div class="time">5 hours ago</div>
-							</div>
-							<div class="text">
-								<div class="title">Cool</div>
-								<p>
-									Ex commodo enim tempor nostrud laboris enim amet qui sint. Aute do aute cillum occaecat ad irure magna et enim id enim consequat magna minim. 
-								</p>
-								<div class="name">
-									Zack Wilson
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="head">
-								<div class="container-stars">
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-								</div>
-								<div class="time">5 hours ago</div>
-							</div>
-							<div class="text">
-								<div class="title">Cool</div>
-								<p>
-									Ex commodo enim tempor nostrud laboris enim amet qui sint. Aute do aute cillum occaecat ad irure magna et enim id enim consequat magna minim. 
-								</p>
-								<div class="name">
-									Zack Wilson
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="head">
-								<div class="container-stars">
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-								</div>
-								<div class="time">5 hours ago</div>
-							</div>
-							<div class="text">
-								<div class="title">Cool</div>
-								<p>
-									Ex commodo enim tempor nostrud laboris enim amet qui sint. Aute do aute cillum occaecat ad irure magna et enim id enim consequat magna minim. 
-								</p>
-								<div class="name">
-									Zack Wilson
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="head">
-								<div class="container-stars">
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-								</div>
-								<div class="time">5 hours ago</div>
-							</div>
-							<div class="text">
-								<div class="title">Cool</div>
-								<p>
-									Ex commodo enim tempor nostrud laboris enim amet qui sint. Aute do aute cillum occaecat ad irure magna et enim id enim consequat magna minim. 
-								</p>
-								<div class="name">
-									Zack Wilson
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="head">
-								<div class="container-stars">
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-								</div>
-								<div class="time">5 hours ago</div>
-							</div>
-							<div class="text">
-								<div class="title">Cool</div>
-								<p>
-									Ex commodo enim tempor nostrud laboris enim amet qui sint. Aute do aute cillum occaecat ad irure magna et enim id enim consequat magna minim. 
-								</p>
-								<div class="name">
-									Zack Wilson
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="head">
-								<div class="container-stars">
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-								</div>
-								<div class="time">5 hours ago</div>
-							</div>
-							<div class="text">
-								<div class="title">Cool</div>
-								<p>
-									Ex commodo enim tempor nostrud laboris enim amet qui sint. Aute do aute cillum occaecat ad irure magna et enim id enim consequat magna minim. 
-								</p>
-								<div class="name">
-									Zack Wilson
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="head">
-								<div class="container-stars">
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-									<div class="star">
-										<img src="img/common-section_trustpilot/icn-star.svg" alt="">
-									</div>
-								</div>
-								<div class="time">5 hours ago</div>
-							</div>
-							<div class="text">
-								<div class="title">Cool</div>
-								<p>
-									Ex commodo enim tempor nostrud laboris enim amet qui sint. Aute do aute cillum occaecat ad irure magna et enim id enim consequat magna minim. 
-								</p>
-								<div class="name">
-									Zack Wilson
-								</div>
-							</div>
-						</div>
-
+						<?php } } ?>
 					</div>
-
 					<div class="container-nav">
 						<div class="nav">
 							<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
@@ -982,7 +805,6 @@ require_once 'check-connexion.php';
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
 						</div>
-
 						<a href="" class="btn">
 							<span class="btn-text">Voir tous les avis clients</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
@@ -1047,6 +869,1336 @@ require_once 'check-connexion.php';
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
 						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="common-section_makedifferent">
+				<div class="wrapper">
+					<h2>Ce qui nous différencie </h2>
+					<div class="container">
+						<div class="container-comp">
+							<div class="col">
+								<h3>Ce qui se passe ailleurs</h3>
+								<div class="container-el">
+									<div class="el">
+										<div class="icn">
+											<img src="img/common-section_makedifferent/icn-cross.svg" alt="">
+										</div>
+										<p>
+											<em>Les sites de comparaison</em>
+											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
+										</p>
+									</div>
+									<div class="el">
+										<div class="icn">
+											<img src="img/common-section_makedifferent/icn-cross.svg" alt="">
+										</div>
+										<p>
+											<em>Les sites de comparaison</em>
+											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
+										</p>
+									</div>
+									<div class="el">
+										<div class="icn">
+											<img src="img/common-section_makedifferent/icn-cross.svg" alt="">
+										</div>
+										<p>
+											<em>Les sites de comparaison</em>
+											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col">
+								<img class="logo" src="img/common/logo-moneysquid-white.svg" alt="">
+								<div class="container-el">
+									<div class="el">
+										<div class="icn">
+											<img src="img/common-section_makedifferent/icn-check.svg" alt="">
+										</div>
+										<p>
+											<em>Les sites de comparaison</em>
+											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
+										</p>
+									</div>
+									<div class="el">
+										<div class="icn">
+											<img src="img/common-section_makedifferent/icn-check.svg" alt="">
+										</div>
+										<p>
+											<em>Les sites de comparaison</em>
+											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
+										</p>
+									</div>
+									<div class="el">
+										<div class="icn">
+											<img src="img/common-section_makedifferent/icn-check.svg" alt="">
+										</div>
+										<p>
+											<em>Les sites de comparaison</em>
+											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img class="path-1" src="img/common-section_makedifferent/path-1.svg" alt="">
+						<img class="path-2" src="img/common-section_makedifferent/path-2.svg" alt="">
+					</div>
+				</div>
+			</section>
+
+			<section class="common-section_quotes">
+				<div class="wrapper">
+					<h2>
+						Ils parlent de nous
+					</h2>
+					<div class="container-el">
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+						<a class="el">
+							<span class="content">
+								
+								<div class="logo">
+									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
+								</div>
+								<div class="text">
+									<h3>Nom Article</h3>
+									<q>
+										Can you imagine what we will be downloading in another twenty years? I mean who would have
+									</q>
+								</div>
+								<div class="link">
+									<span class="link-text">
+										Lire la suite
+									</span>
+									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+
+							</span>
+						</a>
+					</div>
+					<div class="container-nav">
+						<div class="nav">
+							<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+							</svg>
+						</div>
+						<div class="nav">
+							<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+							</svg>
+						</div>
+
+						<a href="" class="btn">
+							<span class="btn-text">Voir tous les avis clients</span>
+							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
+
+			<section class="common-section_sousmetiers">
+				<div class="container">
+					<div class="wrapper">
+						<h2>Nos sous métiers</h2>
+						<div class="container-slider">
+							<div class="container-el">
+								<div class="el">
+									<div class="illu">
+										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+									</div>
+									<div class="text">
+										<h3>Prêt immobilier</h3>
+										<p>
+											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
+											<br>
+											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
+											<br>
+											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+										</p>
+										<a href="" class="btn">
+											<span class="btn-text">
+												Comparer gratuitement les crédits immobilier
+											</span>
+											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="el">
+									<div class="illu">
+										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+									</div>
+									<div class="text">
+										<h3>Prêt immobilier</h3>
+										<p>
+											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
+											<br>
+											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
+											<br>
+											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+										</p>
+										<a href="" class="btn">
+											<span class="btn-text">
+												Comparer gratuitement les crédits immobilier
+											</span>
+											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="el">
+									<div class="illu">
+										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+									</div>
+									<div class="text">
+										<h3>Prêt immobilier</h3>
+										<p>
+											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
+											<br>
+											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
+											<br>
+											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+										</p>
+										<a href="" class="btn">
+											<span class="btn-text">
+												Comparer gratuitement les crédits immobilier
+											</span>
+											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="el">
+									<div class="illu">
+										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+									</div>
+									<div class="text">
+										<h3>Prêt immobilier</h3>
+										<p>
+											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
+											<br>
+											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
+											<br>
+											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+										</p>
+										<a href="" class="btn">
+											<span class="btn-text">
+												Comparer gratuitement les crédits immobilier
+											</span>
+											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="el">
+									<div class="illu">
+										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+									</div>
+									<div class="text">
+										<h3>Prêt immobilier</h3>
+										<p>
+											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
+											<br>
+											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
+											<br>
+											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+										</p>
+										<a href="" class="btn">
+											<span class="btn-text">
+												Comparer gratuitement les crédits immobilier
+											</span>
+											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+								<div class="el">
+									<div class="illu">
+										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+									</div>
+									<div class="text">
+										<h3>Prêt immobilier</h3>
+										<p>
+											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
+											<br>
+											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
+											<br>
+											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+										</p>
+										<a href="" class="btn">
+											<span class="btn-text">
+												Comparer gratuitement les crédits immobilier
+											</span>
+											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="common-section_autremetiers">
+				<div class="wrapper">
+					<h2>Nos autres métiers</h2>
+					<div class="container-section">
+						<div class="section">
+							<div class="icn">
+								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
+							</div>
+							<div class="text">
+								<h3>Crédit</h3>
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<div class="icn">
+								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
+							</div>
+							<div class="text">
+								<h3>Crédit</h3>
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<div class="icn">
+								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
+							</div>
+							<div class="text">
+								<h3>Crédit</h3>
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<div class="icn">
+								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
+							</div>
+							<div class="text">
+								<h3>Crédit</h3>
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="section">
+							<div class="icn">
+								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
+							</div>
+							<div class="text">
+								<h3>Crédit</h3>
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="common-section_newsletter">
+				<div class="wrapper">
+					<h2>
+						Inscrivez vous à la Newsletter hebdomadaire
+					</h2>
+					<div class="container">
+						<p>
+							Inscrivez-vous gratuitement à notre Newsletter et recevez une fois par semaine nos conseils, astuces et offres flash. 
+						</p>
+						<div class="container-input">
+							<input type="text" placeholder="Votre email">
+							<a href="" class="btn">
+								<span class="btn-text">
+									Je m'inscris
+								</span>
+								<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="container-cg">
+							<input type="checkbox">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. 
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
