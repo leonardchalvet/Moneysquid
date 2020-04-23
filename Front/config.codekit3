@@ -65,6 +65,149 @@
 		"oAP": "/fonts/Muli-Regular.ttf",
 		"oF": 0
 		},
+	"/img/common-section_actu/img-1.png": {
+		"ft": 32768,
+		"iS": 241848,
+		"oA": 0,
+		"oAP": "/img/common-section_actu/img-1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/common-section_compare/illu-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_compare/illu-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_humans/img-1.png": {
+		"ft": 32768,
+		"iS": 2252303,
+		"oA": 0,
+		"oAP": "/img/common-section_humans/img-1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/common-section_humans/img-path.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common-section_humans/img-path.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_partenaires/logo-BNP.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_partenaires/logo-BNP.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 3993782706175,
+		"prP": 0
+		},
+	"/img/common-section_partenaires/logo-CaisseEpargne.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_partenaires/logo-CaisseEpargne.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 3993782706175,
+		"prP": 0
+		},
+	"/img/common-section_partenaires/logo-CIC.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_partenaires/logo-CIC.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 3993782706175,
+		"prP": 0
+		},
+	"/img/common-section_partenaires/logo-CreditAgricole.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_partenaires/logo-CreditAgricole.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 3993782706175,
+		"prP": 0
+		},
+	"/img/common-section_partenaires/logo-LCL.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_partenaires/logo-LCL.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 3993782706175,
+		"prP": 0
+		},
+	"/img/common-section_trustpilot/icn-star.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_trustpilot/icn-star.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_trustpilot/logo-strustpilot.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_trustpilot/logo-strustpilot.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_why/icn-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_why/icn-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_why/img-path.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 1,
+		"oAP": "/img/common-section_why/img-path.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010945798143,
+		"prP": 0
+		},
+	"/img/common-section_why/img.png": {
+		"ft": 32768,
+		"iS": 243573,
+		"oA": 0,
+		"oAP": "/img/common-section_why/img.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/common/icn-arrow-1.svg": {
 		"ft": 2097152,
 		"miP": 0,

@@ -5,8 +5,25 @@
 =            PAGE HOME           =
 ================================*/
 
-body{
+
+.section-cover{
+	padding: 105px 0px 105px 0px;
 	background: $colorBlueNuances_gradient;
+	position: relative;
+	.wrapper{
+		@include styleGrid3;
+	}
+	h2{
+		@include styleH1;
+		color: #FFF;
+		text-align: center;
+	}
+	p{
+		@include styleH4;
+		color: rgba(255, 255, 255, 0.7);
+		text-align: center;
+		margin-top: 11px;
+	}
 }
 
 
