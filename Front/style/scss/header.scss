@@ -4,6 +4,7 @@
 	top: 0px;
 	left: 0px;
 	z-index: 20;
+	background: $colorBlueNuances_gradient;
 	.head{
 		position: relative;
 		z-index: 1;
@@ -234,6 +235,7 @@
 							}
 						}
 						h3{
+							flex: 1;
 							@include styleH5;
 						}
 					}
@@ -264,7 +266,6 @@
 					width: 250px;
 				}
 				.btn{
-					
 					@include styleButton_3;
 				}
 			}
@@ -274,6 +275,10 @@
 			visibility: visible;
 			transform: translateY(0px);
 		}
+	}
+
+	&.style-open{
+		z-index: 22;
 	}
 
 	&.style-white{
@@ -320,11 +325,26 @@
 						.btn-arrow{
 							stroke: $colorUi_Text_3;
 						}
+
+						&:hover{
+							background-color: #FFF;
+							.btn-text{
+								color: $colorMain_2;
+							}
+							.btn-arrow{
+								stroke: $colorMain_2;
+							}
+						}
+						
 					}
 				}
 			}
 
 		}
+	}
+
+	&.style-scroll{
+
 	}
 }
 .common-header_mobile{
