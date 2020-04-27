@@ -14,7 +14,7 @@
 		position: absolute;
 		left: 0px;
 		top: 0px;
-		height: 150px;
+		height: 130px;
 		width: 100%;
 		background-color: $colorMain_2;
 		transition: all 0.25s ease;
@@ -47,7 +47,7 @@
 }
 
 .section-cover{
-	padding: 105px 0px 105px 0px;
+	padding: 115px 0px 115px 0px;
 	background: $colorBlueNuances_gradient;
 	position: relative;
 	.wrapper{
@@ -116,16 +116,16 @@
 			position: absolute;
 			left: 0px;
 			width: 100%;
-			top: calc(100% + 20px);
+			top: calc(100% + 16px);
 			text-align: center;
 			opacity: 0;
-			@include styleH4;
+			@include styleH5;
 			font-family: $font_1_Bold_Italic;
 			color: #FFF;
 			transition: all 0.25s ease;
 		}
 		.container-dropdown{
-			display: none;
+			visibility: hidden;
 			overflow: auto;
 			position: absolute;
 			top: 100%;
@@ -136,6 +136,10 @@
 			box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
 			border-radius: 0px 0px 16px 16px;
 			background: #FFFFFF;
+			-webkit-overflow-scrolling: touch;
+			opacity: 0;
+			transform: translateY(-30px);
+			transition: all 250ms cubic-bezier(0.000, 0.840, 0.770, 0.995);
 			ul{
 				padding: 0px 0px 20px 0px;
 				list-style: none;
@@ -170,7 +174,10 @@
 				border-radius: 16px 16px 0px 0px;
 			}
 			.container-dropdown{
-				display: block;
+				transition: all 500ms cubic-bezier(0.000, 0.840, 0.770, 0.995);
+				visibility: visible;
+				opacity: 1;
+				transform: translateY(0px);
 			}
 
 		}
@@ -190,6 +197,59 @@
 			.tagline{
 				opacity: 1;
 				visibility: visible;
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: $breakPoint_tablet){
+	.section-cover{
+		padding-bottom: 50px;
+		.container-comp{
+			margin-top: 20px;
+			position: relative;
+			transform: none;
+			left: initial;
+			bottom: initial;
+			z-index: 1;
+			width: 100%;
+			.container-input{
+				height: initial;
+				border-radius: initial;
+				background-color: initial;
+				box-shadow: none;
+				display: block;
+				padding-right: 0px;
+				.input{
+					height: 60px;
+					background-color: #FFF;
+					border-radius: 8px;
+					margin-right: 0px;
+					padding-right: 25px;
+					input{
+						
+					}
+				}
+				
+				.btn{
+					position: absolute;
+					
+					left: 0px;
+					top: calc(100% + 10px);
+					width: 100%;
+					justify-content: center;
+				}
+			}
+			.container-dropdown{
+				max-height: 300px;
+			}
+			&.style-open{
+				.container-input{
+					.input{
+						border-radius: 8px 8px 0px 0px;
+					}
+				}
 			}
 		}
 	}

@@ -48,4 +48,4 @@ function headerDesktop_nav(){
 	})
 }
 
-headerDesktop_nav()
+headerDesktop_nav();

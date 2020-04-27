@@ -3,6 +3,16 @@
 
 $window = $(window);
 
+/*===================================
+=            BREAK POINT            =
+===================================*/
+
+	$breakPoint_tablet = 1250;
+	$breakPoint_mobile = 700;
+
+
+/*=====  End of BREAK POINT  ======*/
+
 
 function animScroll() {
 	var windowHeight = $window.height() / 1.2;
@@ -18,3 +28,17 @@ $window.scroll(function() {
     animScroll();
 });
 animScroll();
+
+
+/* BTN SCROLL */
+$window.scroll(function() {
+	if ( $window.scrollTop() >= 1 ) {
+        $('#common-btn_top').addClass('style-show');
+    } else {
+    	$('#common-btn_top').removeClass('style-show');
+    };
+});
+
+$("#common-btn_top").click(function(){
+	$(window).scrollTop(0); 
+})

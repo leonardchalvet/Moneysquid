@@ -1,10 +1,6 @@
 <?php 
 session_start(); 
 require_once 'check-connexion.php';
-?>
-<?php 
-session_start(); 
-require_once 'check-connexion.php';
 /*=================================
 =            TRUSTPILOT           =
 ==================================*/
@@ -329,7 +325,6 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							</div>
 						</div>
 					</div>
-
 			</section>
 
 			<section class="common-section_compare">
@@ -341,7 +336,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							</div>
 							<div class="text">
 								<h3>
-									Crédit immobilier
+									Crédit <br>immobilier
 								</h3>
 								<p class="text-1">
 									Comparez les banques et obtenez le meilleur taux
@@ -365,7 +360,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							</div>
 							<div class="text">
 								<h3>
-									Crédit immobilier
+									Crédit <br>immobilier
 								</h3>
 								<p class="text-1">
 									Comparez les banques et obtenez le meilleur taux
@@ -389,7 +384,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							</div>
 							<div class="text">
 								<h3>
-									Crédit immobilier
+									Regroupement <br>de credit
 								</h3>
 								<p class="text-1">
 									Comparez les banques et obtenez le meilleur taux
@@ -413,7 +408,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							</div>
 							<div class="text">
 								<h3>
-									Crédit immobilier
+									Crédit<br>immobilier
 								</h3>
 								<p class="text-1">
 									Comparez les banques et obtenez le meilleur taux
@@ -1066,7 +1061,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 					</div>
 					<div class="container-text">
 						<h2>
-							100 % digital,
+							100 % digital,<br>
 							100 % humain
 						</h2>
 						<p>
@@ -1657,9 +1652,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 			</section>
 
 			<section class="common-section_sousmetiers">
+				<h2>Nos sous métiers</h2>
 				<div class="container">
 					<div class="wrapper">
-						<h2>Nos sous métiers</h2>
+						
 						<div class="container-slider">
 							<div class="container-el">
 								<div class="el">
@@ -1669,9 +1665,11 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									<div class="text">
 										<h3>Prêt immobilier</h3>
 										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
+											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br>
 											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.
+											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
+											<br>
+											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
 										</p>
 										<a href="" class="btn">
 											<span class="btn-text">
@@ -1789,6 +1787,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									</div>
 								</div>
 							</div>
+						</div>
+						<div class="container-line">
+							<div class="line"></div>
 						</div>
 					</div>
 				</div>

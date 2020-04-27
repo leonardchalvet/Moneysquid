@@ -1573,3 +1573,9 @@
 		</div>
 	</div>
 </header>
+
+<div id="common-btn_top">
+	<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15">
+		<use xlink:href="img/common/icn-arrow-3.svg#content"></use>
+	</svg>
+</div>

@@ -4,7 +4,7 @@
 	top: 0px;
 	left: 0px;
 	z-index: 20;
-	background: $colorBlueNuances_gradient;
+	
 	.head{
 		position: relative;
 		z-index: 1;
@@ -131,25 +131,34 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: center;
+		background-color: $colorUi_Text_3;
+		&:before{
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			background-color: $colorUi_GreyNuance_2;
+			height: 100%;
+
+			width: calc(100% + ((100vw - #{$grid_desktop_1})/2));
+			width: calc((#{$grid_desktop_1} - 345px) + ((100vw - #{$grid_desktop_1})/2));
+			content:'';
+		}
 		.el{
-			background-color: $colorUi_Text_3;
 			position: absolute;
 			top: 0px;
 			left: 0px;
 			visibility: hidden;
 			opacity: 0;
 			transition: all 250ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
-			filter: blur(1px);
 			width: 100%;
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: center;
+
 			&.show{
-				transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 				transition-delay: 0.25s;
-				transform: translateY(0px);
+				position: relative;
 				visibility: visible;
-				filter: blur(0px);
 				opacity: 1;
 			}
 			.wrapper{
@@ -211,15 +220,6 @@
 				flex-flow: row wrap;
 				align-items: flex-start;
 				justify-content: space-between;
-				&:before{
-					position: absolute;
-					top: 0px;
-					left: 0px;
-					background-color: $colorUi_GreyNuance_2;
-					height: 100%;
-					width: calc(100% + ((100vw - #{$grid_desktop_1})/2));
-					content:'';
-				}
 				.list-link{
 					width: 250px;
 					position: relative;
@@ -277,6 +277,13 @@
 		}
 	}
 
+
+	&.style-scroll{
+		.head{
+			background-color: $colorMain_2;
+		}
+		
+	}
 	&.style-open{
 		z-index: 22;
 	}
@@ -343,13 +350,14 @@
 		}
 	}
 
-	&.style-scroll{
-
-	}
 }
 .common-header_mobile{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 20;
 	display: none;
-	position: relative;
 	.head{
 		height: 60px;
 		display: flex;
@@ -585,6 +593,37 @@
 			}
 		}
 
+	}
+}
+#common-btn_top{
+	background-color: $colorUi_Text_1;
+	height: 70px;
+	width: 70px;
+	border-radius: 35px;
+	position: fixed;
+	z-index: 25;
+	right: 32px;
+	bottom: 32px;
+	cursor: pointer;
+	opacity: 0;
+	transition: all 0.5s ease;
+	visibility: hidden;
+	.icn-arrow{
+		fill: transparent;
+		stroke: #FFF;
+		position: absolute;
+		stroke-width: 2px;
+		width: 24px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	&:hover{
+		opacity: 1;
+	}
+	&.style-show{
+		opacity: 0.5;
+		visibility: visible;
 	}
 }
 

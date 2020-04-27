@@ -33,9 +33,9 @@ $(window).on('load', function() {
 		$(nav).click(function(){
 			
 			if ($(this).is(':nth-child(1)') && count > 0) {
-				count--;
+				count = count - 2;
 			} else if ($(this).is(':nth-child(2)') && count < num_el) {
-				count++;
+				count = count + 2;
 			}
 
 			if (count === num_el) {
@@ -57,9 +57,8 @@ $(window).on('load', function() {
 			});
 		})
 
-	}
-	common_navCarousel1('.common-section_actu');
-	common_navCarousel1('.common-section_trustpilot');
+	};
+	
 
 
 	function common_navCarousel2(sectionName){
@@ -108,54 +107,69 @@ $(window).on('load', function() {
 
 	};
 
-	common_navCarousel2('.common-section_quotes');
-
 	
 
-	if (window.matchMedia("(min-width: 1250px)").matches) {
-		var $myDiv = $('.common-section_sousmetiers');
+	function common_horizontalScroll(sectionName){
+		var section = sectionName;
+		var slider = section + ' .container-slider';
+		var sliderWidth = $(slider).width();
+		var progressbar = section + ' .container-line .line';
+			if ( section.length){
+			    function initHeight() {
+					let a = ($(window).width() - 1200);
+					$(section).height(sliderWidth - a);
+				};
 
-		if ( $myDiv.length){
-		    function initHeight() {
-				let a = ($(window).width() - 1200);
-				$('.common-section_sousmetiers').height($('.common-section_sousmetiers .container-slider').width() - a);
-			};
+				initHeight();
 
-			initHeight();
+				$window.scroll(function() {
 
-			$window.scroll(function() {
-
-				let a = $('.common-section_sousmetiers').offset();
-				let b = ($window.height() / 100) * 25; 
-				let c = $('.common-section_sousmetiers').height();
+					let a = $(section).offset();
+					let b = ($window.height() / 100) * 25; 
+					let c = $(section).height();
 
 
-				let scrollTop = $window.scrollTop() - a.top + b;
+					let scrollTop = $window.scrollTop() - a.top + b;
 
-				$('.common-section_sousmetiers .container-slider').css({
-				  '-webkit-transform' : 'translateX(-' + scrollTop + 'px' + ')',
-				  '-moz-transform'    : 'translateX(-' + scrollTop + 'px' + ')',
-				  '-ms-transform'     : 'translateX(-' + scrollTop + 'px' + ')',
-				  '-o-transform'      : 'translateX(-' + scrollTop + 'px' + ')',
-				  'transform'         : 'translateX(-' + scrollTop + 'px' + ')'
+					$(slider).css({
+					  '-webkit-transform' : 'translateX(-' + scrollTop + 'px' + ')',
+					  '-moz-transform'    : 'translateX(-' + scrollTop + 'px' + ')',
+					  '-ms-transform'     : 'translateX(-' + scrollTop + 'px' + ')',
+					  '-o-transform'      : 'translateX(-' + scrollTop + 'px' + ')',
+					  'transform'         : 'translateX(-' + scrollTop + 'px' + ')'
+					});
+
+					let progressbarData = scrollTop * 100 / sliderWidth;
+					
+					$(progressbar).css({
+					  '-webkit-transform' : 'translateX(calc(-100% + ' + progressbarData + '%))',
+					  '-moz-transform'    : 'translateX(calc(-100% + ' + progressbarData + '%))',
+					  '-ms-transform'     : 'translateX(calc(-100% + ' + progressbarData + '%))',
+					  '-o-transform'      : 'translateX(calc(-100% + ' + progressbarData + '%))',
+					  'transform'         : 'translateX(calc(-100% + ' + progressbarData + '%))'
+					});
+
+					console.log(sliderWidth, progressbarData);
+
+					d = $(section).next().offset();
+					e = d.top - a.top - ($window.height() * 1.25);
+
+					if (scrollTop >= e) {
+						if (!$(section).hasClass('active')) {
+							$(section).addClass('active');
+						}
+					} else {
+						if ($(section).hasClass('active')) {
+							$(section).removeClass('active');
+						}
+					}
+				    
 				});
-
-				d = $('.common-section_sousmetiers').next().offset();
-				e = d.top - a.top - ($window.height() * 1.25);
-
-				if (scrollTop >= e) {
-					if (!$('.common-section_sousmetiers').hasClass('active')) {
-						$('.common-section_sousmetiers').addClass('active');
-					}
-				} else {
-					if ($('.common-section_sousmetiers').hasClass('active')) {
-						$('.common-section_sousmetiers').removeClass('active');
-					}
-				}
-			    
-			});
-		}
+			}
 	};
+
+	common_horizontalScroll('.common-section_sousmetiers');
+
 
 
 	function sectionCoverInput_scroll(){
@@ -175,9 +189,19 @@ $(window).on('load', function() {
 				$('.common-header_desktop').removeClass('style-scrollCover');
 			}
 		});
-	}
+	};
 
-	sectionCoverInput_scroll();
+	
+
+
+	if (window.matchMedia('(min-width:' + $breakPoint_tablet + 'px)').matches) {
+		common_navCarousel1('.common-section_actu');
+		common_navCarousel1('.common-section_trustpilot');
+		common_navCarousel2('.common-section_quotes');
+		sectionCoverInput_scroll();
+	} else {
+	  /* the view port is less than 400 pixels wide */
+	}
 	
 
 })
