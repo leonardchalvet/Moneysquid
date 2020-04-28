@@ -375,7 +375,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit<br/>consommation
+										Crédit <br/>consommation
 									</a>
 								</h3>
 								<p class="text-1">
@@ -404,7 +404,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Regroupement<br/>de crédit
+										Regroupement <br/>de crédit
 									</a>
 								</h3>
 								<p class="text-1">
@@ -462,7 +462,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Assurance<br/>emprunteur
+										Assurance <br/>emprunteur
 									</a>
 								</h3>
 								<p class="text-1">
@@ -491,7 +491,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Assurance<br/>Auto
+										Assurance <br/>Auto
 									</a>
 								</h3>
 								<p class="text-1">
@@ -520,7 +520,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit<br/>Professionnel
+										Crédit <br/>Professionnel
 									</a>
 								</h3>
 								<p class="text-1">

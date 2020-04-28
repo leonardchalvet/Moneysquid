@@ -113,14 +113,14 @@ main
 		/*----------  DESKTOP  ----------*/
 		$h1_textsize_desktop: 50px;
 		/*----------  MOBILE  ----------*/
-		$h1_textsize_mobile: 26px;
+		$h1_textsize_mobile: 28px;
 
 
 	/*----------  H2  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h2_textsize_desktop: 40px;
 		/*----------  MOBILE  ----------*/
-		$h2_textsize_mobile: 22px;
+		$h2_textsize_mobile: 24px;
 
 
 	/*----------  H3  ----------*/
@@ -134,35 +134,35 @@ main
 		/*----------  DESKTOP  ----------*/
 		$h4_textsize_desktop: 22px;
 		/*----------  MOBILE  ----------*/
-		$h4_textsize_mobile: 16px;
+		$h4_textsize_mobile: 18px;
 
 
 	/*----------  H5  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$h5_textsize_desktop: 18px;
 		/*----------  MOBILE  ----------*/
-		$h5_textsize_mobile: 14px;
+		$h5_textsize_mobile: 16px;
 
 
 	/*----------  PARAGRAPH BIG  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$paragraphBig_textsize_desktop: 18px;
 		/*----------  MOBILE  ----------*/
-		$paragraphBig_textsize_mobile: 14px;
+		$paragraphBig_textsize_mobile: 18px;
 
 
 	/*----------  PARAGRAPH MEDIUM  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$paragraphMedium_textsize_desktop: 16px;
 		/*----------  MOBILE  ----------*/
-		$paragraphMedium_textsize_mobile: 14px;
+		$paragraphMedium_textsize_mobile: 16px;
 
 
 	/*----------  PARAGRAPH SMALL  ----------*/
 		/*----------  DESKTOP  ----------*/
 		$paragraphSmall_textsize_desktop: 14px;
 		/*----------  MOBILE  ----------*/
-		$paragraphSmall_textsize_mobile: 12px;
+		$paragraphSmall_textsize_mobile: 14px;
 
 
 	/*----------  PARAGRAPH TINY  ----------*/
@@ -479,6 +479,9 @@ main
 				fill: transparent;
 				stroke: $colorUi_Text_1;
 				transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+				@media screen and (max-width: $breakPoint_tablet){
+					height: 20px;
+				}
 			}
 		}
 
@@ -601,6 +604,7 @@ main
 			height: 8px;
 			fill: transparent;
 			stroke: $colorUi_Text_1;
+			transition: all 0.25s ease;
 		}
 
 		&:hover{
@@ -610,10 +614,13 @@ main
 					transform: scale(1);
 				}
 			}
+			.link-arrow{
+				transform: translateX(7px);
+			}
 		}
 	}
 
-	/*----------  LINKS  ----------*/
+	/*----------  NAV  ----------*/
 	@mixin styleNav_1($arrowDirection){
 		height: 50px;
 		width: 50px;
@@ -647,6 +654,30 @@ main
 				.nav-arrow{
 					stroke: #FFF;
 				}
+			}
+		}
+	}
+
+	/*----------  LINE SEP  ----------*/ 
+	@mixin styleLineSep{
+		
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 50%;
+			bottom: 0px;
+			transform: translateX(-50%);
+			height: 1px;
+			background-color: $colorUi_GreyNuance_1;
+			@media screen and (max-width: $breakPoint_tablet){
+				width: 100%;
+			}
+			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+				width: calc(100% - 100px);
+			}
+			@media screen and (max-width: $breakPoint_mobile){
+				width: calc(100% - 50px);
 			}
 		}
 	}
@@ -837,7 +868,8 @@ main
 		flex-flow: row wrap;
 		align-items: flex-start;
 		justify-content: space-between;
-		border-bottom: 1px solid $colorUi_GreyNuance_1;
+		@include styleLineSep;
+		padding-bottom: 15px;
 	}
 	.container-img{
 		margin-top: -60px;
@@ -932,14 +964,16 @@ main
 			text-align: center;
 			padding: 0px 25px 0px 25px;
 			.container-el{
+				margin-top: 30px;
 				justify-content: space-between;
 				.el{
-					width: 120px;
+					width: calc(100% / 3);
 					flex-direction: column;;
 					.icn{
 						margin-right: initial;
 					}
 					h5{
+						width: 120px;
 						margin-top: 15px;
 					}
 				}
@@ -947,10 +981,15 @@ main
 		}
 	}
 }
-@media screen and (max-width: 350px){
+@media screen and (max-width: $breakPoint_mobile){
 	.common-section_why{
 		.container-text{
 			padding: 0px;
+			.container-el{
+				.el{
+					width: calc(100% / 2);
+				}
+			}
 		}
 	}
 }
@@ -973,7 +1012,15 @@ main
 		position: relative;
 		@include styleGrid1;
 		padding-bottom: 75px;
-		border-bottom: 1px solid $colorUi_GreyNuance_1;
+		&:after{
+			content: '';
+			position: absolute;
+			left: 0px;
+			bottom: 0px;
+			width: 100%;
+			height: 1px;
+			background-color: $colorUi_GreyNuance_1;
+		}
 	}
 	h2{
 		text-align: center;
@@ -1002,32 +1049,35 @@ main
 			.content{
 				position: relative;
 				cursor: pointer;
-				border-radius: 18px;
 				overflow: hidden;
 				display: block;
 				text-decoration: none;
 				transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
-				&:hover{
-					transform: scale(1.05);
-					.cover{
-						img{
-							transform: scale(1);
+				@media screen and (min-width: $breakPoint_tablet){
+					&:hover{
+						transform: scale(1.05);
+						.cover{
+							img{
+								transform: scale(1);
+							}
 						}
-					}
-					.container-text{
-						.link{
-							opacity: 1;
-							.link-text{
-								&:after{
-									opacity: 1;
-									transform: scale(1);
+						.container-text{
+							.link{
+								opacity: 1;
+								.link-text{
+									&:after{
+										opacity: 1;
+										transform: scale(1);
+									}
 								}
 							}
 						}
 					}
 				}
+				
 			}
 			.cover{
+				border-radius: 18px 18px 0px 0px;
 				height: 300px;
 				overflow: hidden;
 				img{
@@ -1039,6 +1089,7 @@ main
 				}
 			}
 			.container-text{
+				border-radius: 0px 0px 18px 18px;
 				height: 210px;
 				background-color: #FFF;
 				padding: 40px;
@@ -1100,19 +1151,22 @@ main
 }
 @media screen and (max-width: $breakPoint_tablet){
 	.common-section_actu{
-		margin-top: 40px;
-		padding-top: 40px;
-		padding-bottom: 32px;
+		margin-top: 30px;
+		padding-top: 30px;
+		padding-bottom: 30px;
 		&:before{
 			content: initial;
 		}
 		.wrapper{
-			border: none;
+			&:after{
+				content: initial;
+			}
 			padding: 0px;
 		}
 		.container-el{
 			@include styleGrid1;
 			padding-bottom: 40px;
+			margin-top: 30px;
 			overflow: auto;
 			-webkit-overflow-scrolling: touch;
 			.el{
@@ -1123,6 +1177,7 @@ main
 					height: 200px;
 				}
 				.container-text{
+					height: 182px;
 					background-color: transparent;
 					padding: 28px;
 					border: 1px solid $colorUi_GreyNuance_2;
@@ -1134,7 +1189,14 @@ main
 		}
 
 		.container-nav{
-			display: none;
+			margin-top: 30px;
+			.nav{
+				display: none;
+			}
+			.btn{
+				position: initial;
+				transform: initial;
+			}
 		}
 	}
 }
@@ -1313,15 +1375,18 @@ main
 
 @media screen and (max-width: $breakPoint_tablet){
 	.common-section_trustpilot{
-		margin-top: 40px;
-		padding-top: 40px;
-		padding-bottom: 32px;
+		margin-top: 30px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 		&:before{
 			content: initial;
 		}
 		.wrapper{
 			border: none;
 			padding: 0px;
+		}
+		h2{
+			@include styleGrid1;
 		}
 		.container-el{
 			@include styleGrid1;
@@ -1369,7 +1434,14 @@ main
 		}
 
 		.container-nav{
-			display: none;
+			margin-top: 30px;
+			.nav{
+				display: none;
+			}
+			.btn{
+				position: initial;
+				transform: initial;
+			}
 		}
 	}
 }
@@ -1436,17 +1508,20 @@ main
 	.common-secton_humans{
 		.wrapper{
 			align-items: flex-end;
+			justify-content: center;
 		}
 		.container-img{
-			width: 50%;
+			margin-top: 30px;
+			width: 70%;
+			order: 2;
 			.path{
 				width: 60%;
 			}
 		}
 		.container-text{
+			order: 1;
 			position: relative;
-			width: 50%;
-			top: -60px;
+			width: 100%;
 		}
 	}
 }
@@ -1475,7 +1550,7 @@ main
 	.wrapper{
 		padding-bottom: 75px;
 		@include styleGrid1;
-		border-bottom: 1px solid $colorUi_GreyNuance_1;
+		@include styleLineSep;
 	}
 	h2{
 		@include styleH2;
@@ -1501,6 +1576,19 @@ main
 		justify-content: center;
 		.btn{
 			@include styleButton_3;
+		}
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-section_partenaires{
+		.container-el{
+			.el{
+				width: calc(100% / 5);
+				text-align: center;
+				img{
+					width: 80%;
+				}
+			}
 		}
 	}
 }
@@ -2144,6 +2232,22 @@ main
 	}
 }
 
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-section_autremetiers{
+		.container-section{
+			.section{
+				.text{
+					ul{
+						justify-content: space-between;
+						li{
+							width: calc(100% / 3.8);
+						}
+					}
+				}
+			}
+		}
+	}
+}
 @media screen and (max-width: $breakPoint_mobile){
 	.common-section_autremetiers{
 		padding-bottom: 0px;
@@ -2252,10 +2356,12 @@ main
 			height: 60px;
 			border-radius: 12px;
 			background-color: #FFF;
-			padding-right: 5px;
+			padding-right: 3px;
 			display: flex;
 			flex-flow: row wrap;
 			align-items: center;
+			border: 1px solid transparent;
+			transition: all 0.25s ease;
 			input{
 				outline: none;
 				padding-left: 20px;
@@ -2269,6 +2375,9 @@ main
 			}
 			.btn{
 				@include styleButton_2;
+			}
+			&.style-focus{
+				border-color: $colorMain_3;
 			}
 
 		}
