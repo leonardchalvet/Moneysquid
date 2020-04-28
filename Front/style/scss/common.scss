@@ -698,6 +698,10 @@ main
 				width: 300px;
 				h3{
 					@include styleH3;
+					a {
+						cursor: default;
+						text-decoration: none;
+					}
 				}
 				.text-1{
 					margin-top: 8px;
@@ -947,6 +951,10 @@ main
 	h2{
 		text-align: center;
 		@include styleH2;
+		a {
+			cursor: default;
+			text-decoration: none;
+		}
 	}
 	.container-el{
 		margin-top: 75px;
@@ -1010,6 +1018,10 @@ main
 				h4{
 					@include styleH4;
 					margin-bottom: 15px;
+					a {
+						cursor: default;
+						text-decoration: none;
+					}
 				}
 				p{
 					@include styleParagraphMedium($font_1_Regular);
@@ -1592,6 +1604,10 @@ main
 	h2{
 		@include styleH2;
 		text-align: center;
+		a {
+			cursor: default;
+			text-decoration: none;
+		}
 	}
 	.container-el{
 		margin-top: 130px;
@@ -1642,6 +1658,10 @@ main
 						transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 						@include styleH5;
 						margin-bottom: 32px;
+						a {
+							cursor: default;
+							text-decoration: none;
+						}
 					}
 					q{
 						display: block;
@@ -1882,6 +1902,10 @@ main
 					width: 390px;
 					h3{
 						@include styleH3;
+						a {
+							cursor: default;
+							text-decoration: none;
+						}
 					}
 					p{
 						margin-top: 30px;
