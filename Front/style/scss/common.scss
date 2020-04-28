@@ -1091,7 +1091,7 @@ main
 		}
 	}
 }
-@media screen and (max-width: $breakPoint_mobile){
+@media screen and (max-width: $breakPoint_tablet){
 	.common-section_actu{
 		margin-top: 40px;
 		padding-top: 40px;
@@ -1304,7 +1304,7 @@ main
 	}
 }
 
-@media screen and (max-width: $breakPoint_mobile){
+@media screen and (max-width: $breakPoint_tablet){
 	.common-section_trustpilot{
 		margin-top: 40px;
 		padding-top: 40px;
@@ -1422,6 +1422,24 @@ main
 			.path{
 				stroke-dashoffset: 0;
 			}
+		}
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-secton_humans{
+		.wrapper{
+			align-items: flex-end;
+		}
+		.container-img{
+			width: 50%;
+			.path{
+				width: 60%;
+			}
+		}
+		.container-text{
+			position: relative;
+			width: 50%;
+			top: -60px;
 		}
 	}
 }
@@ -1865,7 +1883,7 @@ main
 		}
 	}
 }
-@media screen and (max-width: $breakPoint_mobile){
+@media screen and (max-width: $breakPoint_tablet){
 	.common-section_quotes{
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -1999,7 +2017,7 @@ main
 		}
 	}
 }
-@media screen and (max-width: $breakPoint_mobile){
+@media screen and (max-width: $breakPoint_tablet){
 	.common-section_sousmetiers{
 		margin-top: 60px;
 		.wrapper{
@@ -2017,7 +2035,6 @@ main
 			.container-el{
 				.el{
 					display: block;
-					width: 220px;
 					&:not(:last-child){
 						margin-right: 60px;
 					}
@@ -2037,7 +2054,28 @@ main
 			display: none;
 		}
 	}
-
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-section_sousmetiers{
+		.container-slider{
+			.container-el{
+				.el{
+					width: 300px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+	.common-section_sousmetiers{
+		.container-slider{
+			.container-el{
+				.el{
+					width: 220px;
+				}
+			}
+		}
+	}
 }
 
 /*----------  SECTION AUTRESMETIERS  ----------*/
@@ -2240,6 +2278,19 @@ main
 				@include styleParagraphTiny($font_1_Regular);
 				color: $colorUi_GreyNuance_2;
 			}
+		}
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-section_newsletter{
+		h2{
+			width: 500px;
+			margin: auto;
+		}
+		.container{
+			width: 500px;
+			margin: auto;
+			margin-top: 40px;
 		}
 	}
 }
