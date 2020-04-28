@@ -452,6 +452,11 @@ main
 		@if $size == big {
 			padding: 24px;
 			border-radius: 16px;
+			@media screen and (max-width: $breakPoint_tablet){
+				padding: 16px;
+				border-radius: 8px;
+			}
+			
 			.btn-text{
 				@include styleParagraphBig($font_1_Bold);
 			}
@@ -500,6 +505,8 @@ main
 				transform: translateX(7px);
 			}
 		}
+
+
 	}
 
 	@mixin styleButton_2{

@@ -634,4 +634,19 @@
 	.common-header_mobile{
 		display: block;
 	}
+
+	#common-btn_top{
+		height: 50px;
+		width: 50px;
+		right: 20px;
+		border: 20px;
+		.icn-arrow{
+			width: 16px;
+		}
+	}
+}
+
+.common-header_desktop,
+.common-header_mobile{
+	display: none !important;
 }
