@@ -58,7 +58,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 
 		<meta http-equiv="content-type" content="text/html; charset=utf8" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
 
 		<link rel="stylesheet" type="text/css" href="style/css/home.css">
 
@@ -344,6 +347,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<p class="text-2">
 									A partir de 0,90%*
 								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 								<a href="" class="btn">
 									<span class="btn-text">
 										Je compare
@@ -368,6 +374,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<p class="text-2">
 									A partir de 0,90%*
 								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 								<a href="" class="btn">
 									<span class="btn-text">
 										Je compare
@@ -392,6 +401,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<p class="text-2">
 									A partir de 0,90%*
 								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 								<a href="" class="btn">
 									<span class="btn-text">
 										Je compare
@@ -416,6 +428,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<p class="text-2">
 									A partir de 0,90%*
 								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 								<a href="" class="btn">
 									<span class="btn-text">
 										Je compare
@@ -441,6 +456,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<p class="text-2">
 									A partir de 0,90%*
 								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 								<a href="" class="btn">
 									<span class="btn-text">
 										Je compare
@@ -465,6 +483,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<p class="text-2">
 									A partir de 0,90%*
 								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 								<a href="" class="btn">
 									<span class="btn-text">
 										Je compare
@@ -489,6 +510,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<p class="text-2">
 									A partir de 0,90%*
 								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 								<a href="" class="btn">
 									<span class="btn-text">
 										Je compare
@@ -1804,7 +1828,13 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
 							</div>
 							<div class="text">
-								<h3>Crédit</h3>
+								<div class="title">
+									<h3>Crédit</h3>
+									<div class="container-status">
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
 								<ul>
 									<li>
 										<a href="">
@@ -1924,7 +1954,13 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
 							</div>
 							<div class="text">
-								<h3>Crédit</h3>
+								<div class="title">
+									<h3>Crédit</h3>
+									<div class="container-status">
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
 								<ul>
 									<li>
 										<a href="">
@@ -2044,7 +2080,13 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
 							</div>
 							<div class="text">
-								<h3>Crédit</h3>
+								<div class="title">
+									<h3>Crédit</h3>
+									<div class="container-status">
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
 								<ul>
 									<li>
 										<a href="">
@@ -2164,7 +2206,13 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
 							</div>
 							<div class="text">
-								<h3>Crédit</h3>
+								<div class="title">
+									<h3>Crédit</h3>
+									<div class="container-status">
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
 								<ul>
 									<li>
 										<a href="">
@@ -2284,7 +2332,13 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
 							</div>
 							<div class="text">
-								<h3>Crédit</h3>
+								<div class="title">
+									<h3>Crédit</h3>
+									<div class="container-status">
+										<div class="line"></div>
+										<div class="line"></div>
+									</div>
+								</div>
 								<ul>
 									<li>
 										<a href="">
