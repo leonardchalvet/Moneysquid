@@ -57,6 +57,9 @@
 		@include styleH1;
 		color: #FFF;
 		text-align: center;
+		em{
+			font-family: $font_1_Bold_Italic;
+		}
 	}
 	.text{
 		@include styleH4;
@@ -98,6 +101,11 @@
 					&::placeholder{
 						@include styleH5;
 						color: $colorUi_Text_1;
+					}
+					&:focus{
+						&::placeholder{
+							color: $colorUi_Text_2;
+						}
 					}
 				}
 				.icn-arrow{
@@ -181,7 +189,7 @@
 			}
 
 		}
-
+		/*
 		&.style-sticky{
 			position: fixed;
 			top: 16px;
@@ -198,7 +206,7 @@
 				opacity: 1;
 				visibility: visible;
 			}
-		}
+		}*/
 	}
 }
 
@@ -226,10 +234,15 @@
 					background-color: #FFF;
 					border-radius: 8px;
 					margin-right: 0px;
-					padding-right: 25px;
+					padding-right: 20px;
 					input{
-						
+						padding-left: 16px;
+						font-size: 14px;
+						&::placeholder{
+							font-size: 14px;
+						}
 					}
+
 				}
 				
 				.btn{

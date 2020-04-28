@@ -775,11 +775,10 @@ main
 
 			@media screen and (min-width: $breakPoint_tablet){
 				&:nth-last-child(-n+3){
-					width: 200px;
-					flex-direction: column;
+					width: calc(100% / 3);
 					justify-content: center;
 					&:before{
-						width: calc(100% + 80px);
+						width: 100%;
 					}
 					.icn{
 						padding: 0px;
@@ -840,7 +839,8 @@ main
 						display: none;
 					}
 					.text-2{
-						@include styleParagraphSmall($font_1_Regular);
+						margin-top: 0px;
+						@include styleParagraphMedium($font_1_Regular);
 						color: $colorUi_Text_2;
 					}
 					.arrow{
@@ -1172,17 +1172,23 @@ main
 			.el{
 				flex: 0 0 auto;
 				width: 255px;
-				height: 382px;
+				height: initial;
 				.cover{
 					height: 200px;
 				}
 				.container-text{
-					height: 182px;
+					height: 220px;
 					background-color: transparent;
 					padding: 28px;
 					border: 1px solid $colorUi_GreyNuance_2;
 					p{
 						-webkit-line-clamp: 4;
+					}
+					.link{
+						margin-left: auto;
+						margin-top: 15px;
+						position: initial;
+						opacity: 1;
 					}
 				}
 			}
@@ -1393,6 +1399,7 @@ main
 			padding-bottom: 40px;
 			overflow: auto;
 			-webkit-overflow-scrolling: touch;
+			align-items: center;
 			.el{
 				flex: 0 0 auto;
 				&:first-child{
@@ -1407,8 +1414,16 @@ main
 							}
 						}
 					}
+					p{
+						display: block;
+						margin-right: auto;
+						margin-left: auto;
+						width: 140px;
+					}
 					.logo{
-						width: 100%;
+						margin-right: auto;
+						margin-left: auto;
+						width: 80%;
 						img{
 							width: 100%;
 						}
@@ -1986,11 +2001,11 @@ main
 			padding: 0px;
 		}
 		.container-el{
-			padding-bottom: 30px;
+			padding-bottom: 0px;
 			overflow: auto;
 			-webkit-overflow-scrolling: touch;
 			@include styleGrid1;
-			margin-top: 40px;
+			margin-top: 48px;
 			align-items: flex-start;
 			display: inline-flex;
 			flex-wrap: nowrap;
@@ -2021,7 +2036,7 @@ main
 			}
 		}
 		.container-nav{
-			margin-top: 30px;
+			margin-top: 48px;
 			.nav{
 				display: none;
 			}
@@ -2166,7 +2181,15 @@ main
 		.container-slider{
 			.container-el{
 				.el{
-					width: 220px;
+					width: 230px;
+					.text{
+						p{
+							@include styleParagraphSmall($font_1_Regular);
+						}
+					}
+					&:not(:last-child){
+						margin-right: 45px;
+					}
 				}
 			}
 		}
@@ -2234,6 +2257,7 @@ main
 
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
 	.common-section_autremetiers{
+
 		.container-section{
 			.section{
 				.text{
@@ -2251,6 +2275,7 @@ main
 @media screen and (max-width: $breakPoint_mobile){
 	.common-section_autremetiers{
 		padding-bottom: 0px;
+		margin-top: 60px;
 		.wrapper{
 			padding: 0px;
 		}
@@ -2348,7 +2373,7 @@ main
 		width: 490px;
 		>p{
 			@include styleParagraphMedium($font_1_Regular);
-			color: #FFF;
+			color: rgba(255, 255, 255, 0.7);
 		}
 		.container-input{
 			margin-top: 16px;
@@ -2392,7 +2417,7 @@ main
 			p{
 				flex: 1;
 				@include styleParagraphTiny($font_1_Regular);
-				color: $colorUi_GreyNuance_2;
+				color: rgba(255, 255, 255, 0.7);
 			}
 		}
 	}

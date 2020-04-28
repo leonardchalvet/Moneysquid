@@ -83,7 +83,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 				
 					<div class="wrapper">
 						<h2>
-							Comparez les meilleurs taux immobiliers, crédits et assurances
+							Comparez les <em>meilleurs taux</em> immobiliers, crédits et assurances
 						</h2>
 						<p class="text">
 							Simple, facile, sans stress !
