@@ -9,6 +9,22 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/config.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/config.php",
+		"oF": 0
+		},
+	"/connexion.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/connexion.php",
+		"oF": 0
+		},
 	"/fonts/Muli-ExtraBold.ttf": {
 		"cB": 0,
 		"ft": 8192,
