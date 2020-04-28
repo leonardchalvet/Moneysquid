@@ -1,9 +1,11 @@
 <?php 
 session_start(); 
 require_once 'check-connexion.php';
+
 /*=================================
 =            TRUSTPILOT           =
 ==================================*/
+
 function dateDiff($date1, $date2){
 	$diff = abs($date1 - $date2);
     $array = array();
@@ -33,6 +35,7 @@ function dateDiff($date1, $date2){
     }
     return $retour;
 }
+
 function getJSON($url) {
 	$ch = curl_init($url);
 	curl_setopt($ch, CURLOPT_POSTFIELDS);
@@ -42,12 +45,15 @@ function getJSON($url) {
 	curl_close($ch);
 	return $result;
 }
+
 $apiKey = '8N8IA85igAsDtjSKVWuN3XGzSGyxe5SX';
 $numberOfReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f2700006400051a7265?apikey=' .$apiKey)->numberOfReviews->fiveStars;
 $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f2700006400051a7265/reviews?apikey=' .$apiKey);
+
 /*=====================================
 =            END TRUSTPILOT           =
 ======================================*/
+
 ?>
 <html>
 	<head>
@@ -339,7 +345,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							</div>
 							<div class="text">
 								<h3>
-									Crédit <br>immobilier
+									<a class="title" href="#">
+										Crédit <br>immobilier
+									</a>
 								</h3>
 								<p class="text-1">
 									Comparez les banques et obtenez le meilleur taux
@@ -350,77 +358,83 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
-								<a href="" class="btn">
+								<div class="btn toHref" data-href="#">
 									<span class="btn-text">
 										Je compare
 									</span>
 									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 									</svg>
-								</a>
+								</div>
 							</div>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-1.svg" alt="">
+								<img src="img/common-section_compare/illu-2.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
-									Crédit <br>immobilier
+									<a class="title" href="#">
+										Crédit<br/>consommation
+									</a>
 								</h3>
 								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
+									Obtenez le meilleur taux
 								</p>
 								<p class="text-2">
-									A partir de 0,90%*
+									A partir de 0,40%*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
-								<a href="" class="btn">
+								<div class="btn toHref" data-href="#">
 									<span class="btn-text">
 										Je compare
 									</span>
 									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 									</svg>
-								</a>
+								</div>
 							</div>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-1.svg" alt="">
+								<img src="img/common-section_compare/illu-3.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
-									Regroupement <br>de credit
+									<a class="title" href="#">
+										Regroupement<br/>de crédit
+									</a>
 								</h3>
 								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
+									Sur vos mensualités
 								</p>
 								<p class="text-2">
-									A partir de 0,90%*
+									Jusqu’à-80%*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
-								<a href="" class="btn">
+								<div class="btn toHref" data-href="#">
 									<span class="btn-text">
 										Je compare
 									</span>
 									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 									</svg>
-								</a>
+								</div>
 							</div>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-1.svg" alt="">
+								<img src="img/common-section_compare/illu-4.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
-									Crédit<br>immobilier
+									<a class="title" href="#">
+										Crédit <br>immobilier
+									</a>
 								</h3>
 								<p class="text-1">
 									Comparez les banques et obtenez le meilleur taux
@@ -431,96 +445,101 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
-								<a href="" class="btn">
+								<div class="btn toHref" data-href="#">
 									<span class="btn-text">
 										Je compare
 									</span>
 									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 									</svg>
-								</a>
-							</div>
-						</div>
-
-						<div class="el">
-							<div class="icn">
-								<img src="img/common-section_compare/illu-1.svg" alt="">
-							</div>
-							<div class="text">
-								<h3>
-									Crédit immobilier
-								</h3>
-								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
-								</p>
-								<p class="text-2">
-									A partir de 0,90%*
-								</p>
-								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-								</svg>
-								<a href="" class="btn">
-									<span class="btn-text">
-										Je compare
-									</span>
-									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</a>
+								</div>
 							</div>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-1.svg" alt="">
+								<img src="img/common-section_compare/illu-5.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
-									Crédit immobilier
+									<a class="title" href="#">
+										Assurance<br/>emprunteur
+									</a>
 								</h3>
 								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
+									Quelque soit votre profil
 								</p>
 								<p class="text-2">
-									A partir de 0,90%*
+									Économisez jusqu’à 33%*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
-								<a href="" class="btn">
+								<div class="btn toHref" data-href="#">
 									<span class="btn-text">
 										Je compare
 									</span>
 									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 									</svg>
-								</a>
+								</div>
 							</div>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-1.svg" alt="">
+								<img src="img/common-section_compare/illu-6.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
-									Crédit immobilier
+									<a class="title" href="#">
+										Assurance<br/>Auto
+									</a>
 								</h3>
 								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
+									Économisez
 								</p>
 								<p class="text-2">
-									A partir de 0,90%*
+									Jusqu’à 235€*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
-								<a href="" class="btn">
+								<div class="btn toHref" data-href="#">
 									<span class="btn-text">
 										Je compare
 									</span>
 									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 									</svg>
-								</a>
+								</div>
+							</div>
+						</div>
+						<div class="el">
+							<div class="icn">
+								<img src="img/common-section_compare/illu-7.svg" alt="">
+							</div>
+							<div class="text">
+								<h3>
+									<a class="title" href="#">
+										Crédit<br/>Professionnel
+									</a>
+								</h3>
+								<p class="text-1">
+									Obtenez le meilleur taux
+								</p>
+								<p class="text-2">
+									À partir de 0,40%*
+								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+								<div class="btn toHref" data-href="#">
+									<span class="btn-text">
+										Je compare
+									</span>
+									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -604,17 +623,17 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 			<section class="common-section_actu">
 				<div class="wrapper">
 					<h2>
-						Les actualités
+						<a href="#">Les actualités</a>
 					</h2>
 					<div class="container-el">
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -628,16 +647,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -651,16 +670,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -674,16 +693,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -697,16 +716,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -720,16 +739,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -743,16 +762,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -766,16 +785,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -789,16 +808,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -812,16 +831,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -835,16 +854,16 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
+							</div>
 						</div>
 						<div class="el">
-							<a class="content" href="">
+							<div class="content toHref" data-href="#">
 								<div class="cover">
 									<img src="img/common-section_actu/img-1.png" alt="">
 								</div>
 								<div class="container-text">
 									<h4>
-										Les Francais
+										<a href="#">Les Francais</a>
 									</h4>
 									<p>
 										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
@@ -858,122 +877,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										</svg>
 									</div>
 								</div>
-							</a>
-						</div>
-						<div class="el">
-							<a class="content" href="">
-								<div class="cover">
-									<img src="img/common-section_actu/img-1.png" alt="">
-								</div>
-								<div class="container-text">
-									<h4>
-										Les Francais
-									</h4>
-									<p>
-										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
-									</p>
-									<div class="link">
-										<span class="link-text">
-											Lire la suite
-										</span>
-										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-										</svg>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="el">
-							<a class="content" href="">
-								<div class="cover">
-									<img src="img/common-section_actu/img-1.png" alt="">
-								</div>
-								<div class="container-text">
-									<h4>
-										Les Francais
-									</h4>
-									<p>
-										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
-									</p>
-									<div class="link">
-										<span class="link-text">
-											Lire la suite
-										</span>
-										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-										</svg>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="el">
-							<a class="content" href="">
-								<div class="cover">
-									<img src="img/common-section_actu/img-1.png" alt="">
-								</div>
-								<div class="container-text">
-									<h4>
-										Les Francais
-									</h4>
-									<p>
-										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
-									</p>
-									<div class="link">
-										<span class="link-text">
-											Lire la suite
-										</span>
-										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-										</svg>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="el">
-							<a class="content" href="">
-								<div class="cover">
-									<img src="img/common-section_actu/img-1.png" alt="">
-								</div>
-								<div class="container-text">
-									<h4>
-										Les Francais
-									</h4>
-									<p>
-										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
-									</p>
-									<div class="link">
-										<span class="link-text">
-											Lire la suite
-										</span>
-										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-										</svg>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="el">
-							<a class="content" href="">
-								<div class="cover">
-									<img src="img/common-section_actu/img-1.png" alt="">
-								</div>
-								<div class="container-text">
-									<h4>
-										Les Francais
-									</h4>
-									<p>
-										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
-									</p>
-									<div class="link">
-										<span class="link-text">
-											Lire la suite
-										</span>
-										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-										</svg>
-									</div>
-								</div>
-							</a>
+							</div>
 						</div>
 					</div>
 
@@ -989,12 +893,12 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							</svg>
 						</div>
 
-						<a href="" class="btn">
+						<div class="btn toHref" data-href="">
 							<span class="btn-text">Voir tous les avis clients</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
-						</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1212,17 +1116,17 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 			<section class="common-section_quotes">
 				<div class="wrapper">
 					<h2>
-						Ils parlent de nous
+						<a href="#">Ils parlent de nous</a>
 					</h2>
 					<div class="container-el">
-						<a class="el">
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1237,15 +1141,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1260,15 +1164,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1283,15 +1187,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1306,15 +1210,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1329,15 +1233,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1352,15 +1256,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1375,15 +1279,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1398,15 +1302,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1421,15 +1325,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1444,15 +1348,15 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
+						</div>
+						<div class="el toHref" data-href="#">
 							<span class="content">
 								
 								<div class="logo">
 									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
 								</div>
 								<div class="text">
-									<h3>Nom Article</h3>
+									<h3><a href="#">Nom Article</a></h3>
 									<q>
 										Can you imagine what we will be downloading in another twenty years? I mean who would have
 									</q>
@@ -1467,191 +1371,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</div>
 
 							</span>
-						</a>
-						<a class="el">
-							<span class="content">
-								
-								<div class="logo">
-									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Nom Article</h3>
-									<q>
-										Can you imagine what we will be downloading in another twenty years? I mean who would have
-									</q>
-								</div>
-								<div class="link">
-									<span class="link-text">
-										Lire la suite
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-
-							</span>
-						</a>
-						<a class="el">
-							<span class="content">
-								
-								<div class="logo">
-									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Nom Article</h3>
-									<q>
-										Can you imagine what we will be downloading in another twenty years? I mean who would have
-									</q>
-								</div>
-								<div class="link">
-									<span class="link-text">
-										Lire la suite
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-
-							</span>
-						</a>
-						<a class="el">
-							<span class="content">
-								
-								<div class="logo">
-									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Nom Article</h3>
-									<q>
-										Can you imagine what we will be downloading in another twenty years? I mean who would have
-									</q>
-								</div>
-								<div class="link">
-									<span class="link-text">
-										Lire la suite
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-
-							</span>
-						</a>
-						<a class="el">
-							<span class="content">
-								
-								<div class="logo">
-									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Nom Article</h3>
-									<q>
-										Can you imagine what we will be downloading in another twenty years? I mean who would have
-									</q>
-								</div>
-								<div class="link">
-									<span class="link-text">
-										Lire la suite
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-
-							</span>
-						</a>
-						<a class="el">
-							<span class="content">
-								
-								<div class="logo">
-									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Nom Article</h3>
-									<q>
-										Can you imagine what we will be downloading in another twenty years? I mean who would have
-									</q>
-								</div>
-								<div class="link">
-									<span class="link-text">
-										Lire la suite
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-
-							</span>
-						</a>
-						<a class="el">
-							<span class="content">
-								
-								<div class="logo">
-									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Nom Article</h3>
-									<q>
-										Can you imagine what we will be downloading in another twenty years? I mean who would have
-									</q>
-								</div>
-								<div class="link">
-									<span class="link-text">
-										Lire la suite
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-
-							</span>
-						</a>
-						<a class="el">
-							<span class="content">
-								
-								<div class="logo">
-									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Nom Article</h3>
-									<q>
-										Can you imagine what we will be downloading in another twenty years? I mean who would have
-									</q>
-								</div>
-								<div class="link">
-									<span class="link-text">
-										Lire la suite
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-
-							</span>
-						</a>
-						<a class="el">
-							<span class="content">
-								
-								<div class="logo">
-									<img src="img/common-section_quotes/logo-lefigaro.svg" alt="">
-								</div>
-								<div class="text">
-									<h3>Nom Article</h3>
-									<q>
-										Can you imagine what we will be downloading in another twenty years? I mean who would have
-									</q>
-								</div>
-								<div class="link">
-									<span class="link-text">
-										Lire la suite
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-
-							</span>
-						</a>
+						</div>
 					</div>
 					<div class="container-nav">
 						<div class="nav">
@@ -1665,12 +1385,12 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							</svg>
 						</div>
 
-						<a href="" class="btn">
+						<div data-href="#" class="btn toHref">
 							<span class="btn-text">Voir tous les avis clients</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
-						</a>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1687,7 +1407,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
 									</div>
 									<div class="text">
-										<h3>Prêt immobilier</h3>
+										<h3><a href="#">Prêt immobilier</a></h3>
 										<p>
 											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br>
 											<br>
@@ -1695,121 +1415,17 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											<br>
 											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
 										</p>
-										<a href="" class="btn">
+										<div class="btn toHref" data-href="#">
 											<span class="btn-text">
 												Comparer gratuitement les crédits immobilier
 											</span>
 											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 											</svg>
-										</a>
+										</div>
 									</div>
 								</div>
-								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
-									</div>
-									<div class="text">
-										<h3>Prêt immobilier</h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.
-										</p>
-										<a href="" class="btn">
-											<span class="btn-text">
-												Comparer gratuitement les crédits immobilier
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
-										</a>
-									</div>
-								</div>
-								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
-									</div>
-									<div class="text">
-										<h3>Prêt immobilier</h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.
-										</p>
-										<a href="" class="btn">
-											<span class="btn-text">
-												Comparer gratuitement les crédits immobilier
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
-										</a>
-									</div>
-								</div>
-								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
-									</div>
-									<div class="text">
-										<h3>Prêt immobilier</h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.
-										</p>
-										<a href="" class="btn">
-											<span class="btn-text">
-												Comparer gratuitement les crédits immobilier
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
-										</a>
-									</div>
-								</div>
-								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
-									</div>
-									<div class="text">
-										<h3>Prêt immobilier</h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.
-										</p>
-										<a href="" class="btn">
-											<span class="btn-text">
-												Comparer gratuitement les crédits immobilier
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
-										</a>
-									</div>
-								</div>
-								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
-									</div>
-									<div class="text">
-										<h3>Prêt immobilier</h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br> 
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.
-										</p>
-										<a href="" class="btn">
-											<span class="btn-text">
-												Comparer gratuitement les crédits immobilier
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
-										</a>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 						<div class="container-line">

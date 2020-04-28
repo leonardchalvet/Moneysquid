@@ -168,7 +168,7 @@ $(window).on('load', function() {
 			}
 	};
 
-	common_horizontalScroll('.common-section_sousmetiers');
+	
 
 
 
@@ -198,10 +198,23 @@ $(window).on('load', function() {
 		common_navCarousel1('.common-section_actu');
 		common_navCarousel1('.common-section_trustpilot');
 		common_navCarousel2('.common-section_quotes');
+		common_horizontalScroll('.common-section_sousmetiers');
 		sectionCoverInput_scroll();
 	} else {
 	  /* the view port is less than 400 pixels wide */
 	}
+
+	$('.common-section_autremetiers .container-section .section').click(function(){
+
+		if ($(this).hasClass('style-open')) {
+			$('.common-section_autremetiers .container-section .section').removeClass('style-open');
+		} else {
+			$('.common-section_autremetiers .container-section .section').removeClass('style-open');
+			$(this).addClass('style-open');
+		}
+	})
 	
 
 })
+
+

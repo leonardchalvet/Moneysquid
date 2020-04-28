@@ -42,3 +42,10 @@ $window.scroll(function() {
 $("#common-btn_top").click(function(){
 	$(window).scrollTop(0); 
 })
+
+/* DETECT BTN TOHREF */
+$(window).on('load', function() {
+    $('.toHref').click(function(){
+        window.location = $(this).attr('data-href');
+    })
+});
