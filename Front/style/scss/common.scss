@@ -2006,6 +2006,7 @@ main
 			padding: 0px;
 		}
 		.container-slider{
+			margin-top: 30px;
 			@include styleGrid1;
 			overflow: auto;
 			-webkit-overflow-scrolling: touch;
@@ -2016,7 +2017,10 @@ main
 			.container-el{
 				.el{
 					display: block;
-					width: 270px;
+					width: 220px;
+					&:not(:last-child){
+						margin-right: 60px;
+					}
 					.illu{
 						img{
 							width: 100%;
