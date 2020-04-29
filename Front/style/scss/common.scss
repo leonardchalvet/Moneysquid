@@ -673,7 +673,7 @@ main
 			transform: translateX(-50%);
 			height: 1px;
 			background-color: $colorUi_GreyNuance_1;
-			@media screen and (max-width: $breakPoint_tablet){
+			@media screen and (min-width: $breakPoint_tablet){
 				width: 100%;
 			}
 			@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){

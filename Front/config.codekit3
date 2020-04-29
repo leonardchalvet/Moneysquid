@@ -217,26 +217,6 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
-	"/img/common-section_makedifferent/Section/Icon/Small/Check.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/common-section_makedifferent/Section/Icon/Small/Check.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 4010962575359,
-		"prP": 0
-		},
-	"/img/common-section_makedifferent/Section/Icon/Small/Cross.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/common-section_makedifferent/Section/Icon/Small/Cross.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 4010962575359,
-		"prP": 0
-		},
 	"/img/common-section_partenaires/logo-BNP.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -435,6 +415,66 @@
 		"oAP": "/img/common/logo-moneysquid-white.svg",
 		"oF": 0,
 		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/footer/icn-Facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/footer/icn-Facebook.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/footer/icn-Instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/footer/icn-Instagram.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/footer/icn-Linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/footer/icn-Linkedin.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/footer/icn-star.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/footer/icn-star.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/footer/icn-Twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/footer/icn-Twitter.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/footer/logo-strustpilot.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/footer/logo-strustpilot.svg",
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
