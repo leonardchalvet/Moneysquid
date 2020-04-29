@@ -81,7 +81,7 @@
 			}
 
 			@media screen and (min-width: $breakPoint_tablet){
-				&:nth-last-child(-n+3){
+				&:not(:nth-child(-n+4)){
 					width: calc(100% / 3);
 					justify-content: center;
 					&:before{

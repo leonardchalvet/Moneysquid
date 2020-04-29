@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "32001",
 "files": {
+	"/2a1-metier-credit.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/2a1-metier-credit.php",
+		"oF": 0
+		},
 	"/check-connexion.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -615,6 +623,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/js/js-common-page_metiers.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/js-common-page_metiers-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/minify/common-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -653,6 +672,24 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/style/css/home.css.map",
+		"oF": 0
+		},
+	"/style/css/style-common-page_metiers.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-common-page_metiers-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/style-common-page_metiers.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-common-page_metiers.css.map",
 		"oF": 0
 		},
 	"/style/scss/common.scss": {
@@ -704,6 +741,19 @@
 		"oA": 0,
 		"oAP": "/style/css/home.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/style-common-page_metiers.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/style/css/style-common-page_metiers.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
