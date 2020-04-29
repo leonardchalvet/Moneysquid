@@ -1,0 +1,147 @@
+/*----------  SECTION SOUSMETIERS  ----------*/
+.common-section_sousmetiers{
+	position: relative;
+	margin-top: 115px;
+	transition: background-color 0.5s ease;
+	
+	h2{
+		@include styleGrid1;
+		@include styleH2;
+		text-align: center;
+	}
+	.container{
+		position: sticky;
+		top: 150px;
+		width: 100%;
+		overflow: hidden;
+	}
+	.wrapper{
+		@include styleGrid1;
+	}
+
+	.container-slider{
+		margin-top: 60px;
+		display: inline-flex;
+		flex-wrap: nowrap;
+		align-items: flex-end;
+
+		.container-el{
+			display: inline-flex;
+			flex-wrap: nowrap;
+			.el{
+				width: 900px;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: flex-start;
+				justify-content: space-between;
+				&:not(:last-child){
+					margin-right: 165px;
+				}
+
+				.illu{
+					img{
+						width: 400px;
+					}
+				}
+				.text{
+					width: 390px;
+					h3{
+						@include styleH3;
+						a {
+							cursor: default;
+							text-decoration: none;
+						}
+					}
+					p{
+						margin-top: 30px;
+						@include styleParagraphMedium($font_1_Regular);
+						color: $colorUi_Text_2;					}
+					.btn{
+						@include styleButton_1(small, false, false);
+						margin-top: 45px;
+					}
+				}
+				
+			}
+		}
+	}
+	.container-line{
+		margin-top: 60px;
+		overflow: hidden;
+		width: 100%;
+		height: 2px;
+		background-color: $colorUi_GreyNuance_1;
+		.line{
+			height: 100%;
+			background-color: $colorUi_Text_1;
+		}
+	}
+}
+@media screen and (max-width: $breakPoint_tablet){
+	.common-section_sousmetiers{
+		margin-top: 60px;
+		.wrapper{
+			padding: 0px;
+		}
+		.container-slider{
+			margin-top: 30px;
+			@include styleGrid1;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+			align-items: flex-start;
+			display: inline-flex;
+			flex-wrap: nowrap;
+			padding-bottom: 30px;
+			.container-el{
+				.el{
+					display: block;
+					&:not(:last-child){
+						margin-right: 60px;
+					}
+					.illu{
+						img{
+							width: 100%;
+						}
+					}
+					.text{
+						margin-top: 40px;
+						width: 100%;
+					}
+				}
+			}
+		}
+		.container-line{
+			display: none;
+		}
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-section_sousmetiers{
+		.container-slider{
+			.container-el{
+				.el{
+					width: 300px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+	.common-section_sousmetiers{
+		.container-slider{
+			.container-el{
+				.el{
+					width: 230px;
+					.text{
+						p{
+							@include styleParagraphSmall($font_1_Regular);
+						}
+					}
+					&:not(:last-child){
+						margin-right: 45px;
+					}
+				}
+			}
+		}
+	}
+}

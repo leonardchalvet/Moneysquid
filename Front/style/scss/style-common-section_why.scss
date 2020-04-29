@@ -1,0 +1,135 @@
+/*----------  SECTION WHY  ----------*/
+.common-section_why{
+	margin-top: 185px;
+	position: relative;
+	.wrapper{
+		@include styleGrid1;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: flex-start;
+		justify-content: space-between;
+		@include styleLineSep;
+		padding-bottom: 15px;
+	}
+	.container-img{
+		margin-top: -60px;
+		width: 525px;
+		position: relative;
+		img{
+			position: relative;
+			width: 404px;
+			z-index: 1;
+			opacity: 0;
+			transition: all 0.5s ease;
+		}	
+		.path{
+			position: absolute;
+			left: 0px;
+			top: 30px;
+			width: 430px;
+			fill: transparent;
+			stroke: $colorUi_GreyNuance_1;
+
+			stroke-dasharray: 1780;
+			stroke-dashoffset: 1780;
+			
+			transition: all 2s ease;
+		}
+	}
+	.container-text{
+		width: 525px;
+		h2{
+			@include styleH2;
+			em{
+				font-family: $font_1_Bold_Italic;	
+			}
+		}
+		.container-el{
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			margin-top: 70px;
+			.el{
+				width: 45%;
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				margin-bottom: 50px;
+				.icn{
+					margin-right: 40px;
+					img{
+						width: 40px;
+					}
+				}
+				h5{
+					flex: 1;
+					@include styleH5;
+				}
+			}
+		}
+	}
+
+	&.style-reach{
+		.container-img{
+			img{
+				opacity: 1;
+			}
+			.path{
+				stroke-dashoffset: 0;
+			}
+		}
+	}
+}
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-section_why{
+		.container-img{
+			flex: 1;
+			img{
+				width: 100%;
+			}
+			.path{
+				width: 80%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1024px){
+	.common-section_why{
+		margin-top: 60px;
+		.container-img{
+			display: none;
+		}
+		.container-text{
+			width: 100%;
+			text-align: center;
+			padding: 0px 25px 0px 25px;
+			.container-el{
+				margin-top: 30px;
+				justify-content: space-between;
+				.el{
+					width: calc(100% / 3);
+					flex-direction: column;;
+					.icn{
+						margin-right: initial;
+					}
+					h5{
+						width: 120px;
+						margin-top: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+	.common-section_why{
+		.container-text{
+			padding: 0px;
+			.container-el{
+				.el{
+					width: calc(100% / 2);
+				}
+			}
+		}
+	}
+}
