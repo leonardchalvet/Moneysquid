@@ -1,51 +1,50 @@
-// @codekit-prepend 'jQuery.3.3.1.js'
 // @codekit-prepend 'header.js'
-
-$window = $(window);
 
 /*===================================
 =            BREAK POINT            =
 ===================================*/
 
-	$breakPoint_tablet = 1250;
-	$breakPoint_mobile = 700;
+	breakPoint_tablet = 1250;
+	breakPoint_mobile = 700;
 
 
 /*=====  End of BREAK POINT  ======*/
 
 
 function animScroll() {
-	var windowHeight = $window.height() / 1.2;
-    $('section').each(function() {
-        if ($window.scrollTop() >= $(this).offset().top - windowHeight + (windowHeight/4)) {
-        	if (!$(this).hasClass('style-reach')) {
-                $(this).addClass('style-reach');
+	let windowHeight = window.innerHeight / 1.2;
+    [].forEach.call(document.getElementsByTagName('section'), function(el) {
+        if (window.scrollY >= el.offsetTop - windowHeight + (windowHeight/4)) {
+        	if (!el.classList.contains('style-reach')) {
+                el.classList.add('style-reach');
             }
         }
     });
 };
-$window.scroll(function() {
+window.addEventListener('scroll', function() {
     animScroll();
 });
 animScroll();
 
 
 /* BTN SCROLL */
-$window.scroll(function() {
-	if ( $window.scrollTop() >= 1 ) {
-        $('#common-btn_top').addClass('style-show');
+window.addEventListener('scroll', function() {
+	if ( window.scrollY >= 1 ) {
+        document.querySelector('#common-btn_top').classList.add('style-show');
     } else {
-    	$('#common-btn_top').removeClass('style-show');
+    	document.querySelector('#common-btn_top').classList.remove('style-show');
     };
 });
 
-$("#common-btn_top").click(function(){
-	$(window).scrollTop(0); 
-})
+document.querySelector("#common-btn_top").addEventListener('click', function() {
+	window.scrollTo(0, 0); 
+});
 
 /* DETECT BTN TOHREF */
-$(window).on('load', function() {
-    $('.toHref').click(function(){
-        window.location = $(this).attr('data-href');
-    })
+window.addEventListener('load', function() {
+    [].forEach.call(document.getElementsByClassName('toHref'), function(toHref) {
+        toHref.addEventListener('click', function(el) {
+            window.location = this.getAttribute('data-href');
+        });
+    });
 });

@@ -1,200 +1,228 @@
 // @codekit-prepend 'common.js'
-$(window).on('load', function() {
+
+window.addEventListener('load', function() {
 
 
-	$('.section-cover .container-comp .container-input input').focusin(function(){
-		$('.section-cover .container-comp').addClass('style-open');
+	document.querySelector('.section-cover .container-comp .container-input input').addEventListener('focusin', function() {
+		document.querySelector('.section-cover .container-comp').classList.add('style-open');
 	})
-	$('.section-cover .container-comp .container-input input').focusout(function(){
-		$('.section-cover .container-comp').removeClass('style-open');
+	document.querySelector('.section-cover .container-comp .container-input input').addEventListener('focusout', function() {
+		document.querySelector('.section-cover .container-comp').classList.remove('style-open');
 	})
 
 
-	function common_navCarousel1(sectioName){
 
-		var section = sectioName;
+	function common_navCarousel1(sectionAll){
 
-		var containerEl = section + ' .container-el';
-		var el = section + ' .container-el .el';
+		[].forEach.call(document.querySelectorAll(sectionAll), function(section) {
 
-		var width_containerEl = $(containerEl).width();
-		var width_el = $(el+':nth-child(2)').width();
+			section = '.' + section.className.split(" ")[0];
 
-		var margin_el = parseInt($(el+':nth-child(2)').css('marginRight'));
+			let containerEl = section + ' .container-el';
+			let el = section + ' .container-el .el';
 
-		var num_el = $(el).length - 3;
-		
-		var nav = section + ' .container-nav .nav';
+			let width_containerEl = document.querySelector(containerEl).clientWidth;
+			let width_el = document.querySelector(el+':nth-child(2)').clientWidth;
 
-		var count = 0;
+			let margin_el = document.querySelector(el+':nth-child(2)').style.marginRight;
+			margin_el = margin_el ? parseInt(margin_el) : 0;
 
-		var slideData;
-
-		$(nav).click(function(){
-			
-			if ($(this).is(':nth-child(1)') && count > 0) {
-				count = count - 2;
-			} else if ($(this).is(':nth-child(2)') && count < num_el) {
-				count = count + 2;
-			}
-
-			if (count === num_el) {
-				$(nav + ':nth-child(2)').addClass('style-disable');
-			} else if (count === 0) {
-				$(nav + ':nth-child(1)').addClass('style-disable');
-			} else {
-				$(nav).removeClass('style-disable');
-			}
-
-			slideData = count * (width_el + margin_el);
-
-			$(containerEl).css({
-				'-webkit-transform' : 'translateX(-' + slideData + 'px' + ') translateZ(0)',
-				'-moz-transform'    : 'translateX(-' + slideData + 'px' + ') translateZ(0)',
-				'-ms-transform'     : 'translateX(-' + slideData + 'px' + ') translateZ(0)',
-				'-o-transform'      : 'translateX(-' + slideData + 'px' + ') translateZ(0)',
-				'transform'         : 'translateX(-' + slideData + 'px' + ') translateZ(0)'
+			let num_el = 0;
+			[].forEach.call(document.querySelectorAll(el), function(el) {
+				num_el++;
 			});
-		})
+			num_el -= 3;
+			
+			let nav = section + ' .container-nav .nav';
 
+			let count = 0;
+
+			let slideData;
+
+			[].forEach.call(document.querySelectorAll(nav), function(n) {
+				n.addEventListener('click', function() {
+					
+					let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
+					if ( indexNav == 1 && count > 0 ) {
+						count = count - 2;
+					} else if ( indexNav == 2 && count < num_el ) {
+						count = count + 2;
+					}
+
+					if (count === num_el) {
+						document.querySelector(nav + ':nth-child(2)').classList.add('style-disable');
+					} else if (count === 0) {
+						document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+					} else {
+						[].forEach.call(document.querySelectorAll(nav), function(remove) {
+							remove.classList.remove('style-disable');
+						});
+					}
+
+					slideData = count * (width_el + margin_el);
+
+					document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+					document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+					document.querySelector(containerEl).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+					document.querySelector(containerEl).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+					document.querySelector(containerEl).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+				});
+			});
+		});
 	};
 	
 
+	function common_navCarousel2(sectionAll){
 
-	function common_navCarousel2(sectionName){
-		var section = sectionName;
+		[].forEach.call(document.querySelectorAll(sectionAll), function(section) {
 
-		var containerEl = section + ' .container-el';
-		var el =  containerEl + ' .el';
-		var nav = section + ' .container-nav .nav';
+			section = '.' + section.className.split(" ")[0];
 
-		var num_el = $(el).length;
+			let containerEl = section + ' .container-el';
+			let el =  containerEl + ' .el';
+			let nav = section + ' .container-nav .nav';
 
-		var step_el = 3;
+			let num_el = 0;
+			[].forEach.call(document.querySelectorAll(el), function() {
+				num_el++;
+			});
 
-		var count = 3;
+			let step_el = 3;
 
-		$(el + ':nth-child(-n+' + step_el + ')').addClass('style-active displayBlock');
+			let count = 3;
 
-		$(nav).click(function(){
-			
-			if ($(this).is(':nth-child(1)') && count > 0) {
-				count = count - step_el;
-			} else if ($(this).is(':nth-child(2)') && count < num_el) {
-				count = count + step_el;
+			for(let i=1 ; i <= step_el ; i++) {
+				document.querySelector(el + ':nth-child(' + i + ')').classList.add('style-active');
+				document.querySelector(el + ':nth-child(' + i + ')').classList.add('displayBlock');
 			}
 
-			var first_el = count - step_el + 1;
-			var last_el = count;
+			[].forEach.call(document.querySelectorAll(nav), function(n) {
+				n.addEventListener('click', function() {
 
+					let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
+					if ( indexNav == 1 && count > 0 ) {
+						count = count - step_el;
+					} else if ( indexNav == 2 && count < num_el ) {
+						count = count + step_el;
+					}
 
-			if (count >= num_el) {
-				$(nav + ':nth-child(2)').addClass('style-disable');
-			} else if (count <= (step_el + 1)) {
-				$(nav + ':nth-child(1)').addClass('style-disable');
-			} else {
-				$(nav).removeClass('style-disable');
-			}
+					let first_el = count - step_el + 1;
+					let last_el = count;
 
-			$(el).removeClass('style-active displayBlock');
-			$(el + ':nth-child(n' + first_el + '):nth-child(-n+' + last_el + ')').addClass('displayBlock');
-			setTimeout(function(){
-				$(el + ':nth-child(n' + first_el + '):nth-child(-n+' + last_el + ')').addClass('style-active');
-			}, 50);
-			
+					if (count >= num_el) {
+						document.querySelector(nav + ':nth-child(2)').classList.add('style-disable');
+					} else if (count <= (step_el + 1) ) {
+						document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+					} else {
+						[].forEach.call(document.querySelectorAll(nav), function(remove) {
+							remove.classList.remove('style-disable');
+						});
+					}
 
-		})
+					[].forEach.call(document.querySelectorAll(el), function(element) {
+						element.classList.remove('displayBlock');
+						element.classList.remove('style-active');
+					});
+					[].forEach.call(document.querySelectorAll(el), function(element, i) {
+						if( (i+1) >= first_el && (i+1) <= last_el) {
+							element.classList.add('displayBlock');
+						}
+					});
+					setTimeout(function(){
+						[].forEach.call(document.querySelectorAll(el), function(element, i) {
+							if( (i+1) >= first_el && (i+1) <= last_el) {
+								element.classList.add('style-active');
+							}
+						});
+					}, 50);
 
+				});
+			});
+		});
 	};
 
-	
 
-	function common_horizontalScroll(sectionName){
-		var section = sectionName;
-		var slider = section + ' .container-slider';
-		var sliderWidth = $(slider).width();
-		var progressbar = section + ' .container-line .line';
-			if ( section.length){
+	function common_horizontalScroll(sectionAll){
+		
+		[].forEach.call(document.querySelectorAll(sectionAll), function(section) {
+			section = '.' + section.className.split(" ")[0];
+			let slider = section + ' .container-slider';
+			let sliderWidth = document.querySelector(slider).clientWidth;
+			let progressbar = section + ' .container-line .line';
+
+			if(typeof(section) != 'undefined' && section != null){
+				
 			    function initHeight() {
-					let a = ($(window).width() - 1200);
-					$(section).height(sliderWidth - a);
+					let a = window.innerWidth - 1200;
+					document.querySelector(section).style.height = sliderWidth - a + 'px';
 				};
 
 				initHeight();
+				
+				window.addEventListener('scroll', function() {
 
-				$window.scroll(function() {
+					let a = document.querySelector(section).offsetTop;
+					let b = (window.innerWidth / 100) * 25; 
+					let c = document.querySelector(section).clientWidth;
 
-					let a = $(section).offset();
-					let b = ($window.height() / 100) * 25; 
-					let c = $(section).height();
+					let scrollTop = window.scrollY - a + b;
 
+					document.querySelector(slider).style.webkitTransform = 'translateX(-' + scrollTop + 'px' + ')';
+					document.querySelector(slider).style.MozTransform = 'translateX(-' + scrollTop + 'px' + ')';
+					document.querySelector(slider).style.msTransform = 'translateX(-' + scrollTop + 'px' + ')';
+					document.querySelector(slider).style.OTransform = 'translateX(-' + scrollTop + 'px' + ')';
+					document.querySelector(slider).style.transform = 'translateX(-' + scrollTop + 'px' + ')';
 
-					let scrollTop = $window.scrollTop() - a.top + b;
+					let lastHeightEl = document.querySelector(section + ' .container-el .el:last-child').clientHeight;
+					let progressbarData = scrollTop * 100 / (sliderWidth - lastHeightEl);
 
-					$(slider).css({
-					  '-webkit-transform' : 'translateX(-' + scrollTop + 'px' + ')',
-					  '-moz-transform'    : 'translateX(-' + scrollTop + 'px' + ')',
-					  '-ms-transform'     : 'translateX(-' + scrollTop + 'px' + ')',
-					  '-o-transform'      : 'translateX(-' + scrollTop + 'px' + ')',
-					  'transform'         : 'translateX(-' + scrollTop + 'px' + ')'
-					});
+					document.querySelector(progressbar).style.webkitTransform = 'translateX(calc(-100% + ' + progressbarData + '%))';
+					document.querySelector(progressbar).style.MozTransform = 'translateX(calc(-100% + ' + progressbarData + '%))';
+					document.querySelector(progressbar).style.msTransform = 'translateX(calc(-100% + ' + progressbarData + '%))';
+					document.querySelector(progressbar).style.OTransform = 'translateX(calc(-100% + ' + progressbarData + '%))';
+					document.querySelector(progressbar).style.transform = 'translateX(calc(-100% + ' + progressbarData + '%))';
 
-					let progressbarData = scrollTop * 100 / sliderWidth;
+					d = document.querySelector(section).nextElementSibling.offsetTop;
+					e = d - a - (window.innerHeight * 1.25);
 					
-					$(progressbar).css({
-					  '-webkit-transform' : 'translateX(calc(-100% + ' + progressbarData + '%))',
-					  '-moz-transform'    : 'translateX(calc(-100% + ' + progressbarData + '%))',
-					  '-ms-transform'     : 'translateX(calc(-100% + ' + progressbarData + '%))',
-					  '-o-transform'      : 'translateX(calc(-100% + ' + progressbarData + '%))',
-					  'transform'         : 'translateX(calc(-100% + ' + progressbarData + '%))'
-					});
-
-					console.log(sliderWidth, progressbarData);
-
-					d = $(section).next().offset();
-					e = d.top - a.top - ($window.height() * 1.25);
-
 					if (scrollTop >= e) {
-						if (!$(section).hasClass('active')) {
-							$(section).addClass('active');
+						if (!document.querySelector(section).classList.contains('active')) {
+							document.querySelector(section).classList.add('active');
 						}
 					} else {
-						if ($(section).hasClass('active')) {
-							$(section).removeClass('active');
+						if (document.querySelector(section).classList.contains('active')) {
+							document.querySelector(section).classList.remove('active');
 						}
 					}
 				    
 				});
 			}
+		});
 	};
 
-	
-
-
-
 	function sectionCoverInput_scroll(){
-		var el = '.section-cover .container-comp';
-		var elPosition = $(el).offset();
-		$window.scroll(function() {
-			
+		let el = document.querySelector('.section-cover .container-comp');
+		let elPositionTop = el.offsetTop;
 
-			if ($window.scrollTop() > (elPosition.top - 16)) {
-				if (!$(el).hasClass('style-sticky')) {
-					$(el).addClass('style-sticky');
-					$('.common-header_desktop').addClass('style-scrollCover');
+		window.addEventListener('scroll', function() {
+
+			if (window.scrollY > (elPositionTop - 16)) {
+				if (!el.classList.contains('style-sticky')) {
+					el.classList.add('style-sticky');
+					document.querySelector('.common-header_desktop').classList.add('style-scrollCover');
 				};
 				
 			} else {
-				$(el).removeClass('style-sticky');
-				$('.common-header_desktop').removeClass('style-scrollCover');
+				el.classList.remove('style-sticky');
+				document.querySelector('.common-header_desktop').classList.remove('style-scrollCover');
 			}
+
 		});
 	};
 
 	
 
-
-	if (window.matchMedia('(min-width:' + $breakPoint_tablet + 'px)').matches) {
+	if (window.matchMedia('(min-width:' + breakPoint_tablet + 'px)').matches) {
 		common_navCarousel1('.common-section_actu');
 		common_navCarousel1('.common-section_trustpilot');
 		common_navCarousel2('.common-section_quotes');
@@ -204,17 +232,23 @@ $(window).on('load', function() {
 	  /* the view port is less than 400 pixels wide */
 	}
 
-	$('.common-section_autremetiers .container-section .section').click(function(){
+	[].forEach.call(document.querySelectorAll('.common-section_autremetiers .container-section .section'), function(section) {
+		section.addEventListener('click', function() {
+			if (this.classList.contains('style-open')) {
+				[].forEach.call(document.querySelectorAll('.common-section_autremetiers .container-section .section'), function(s) {
+					s.classList.remove('style-open');
+				});
+			} else {
+				[].forEach.call(document.querySelectorAll('.common-section_autremetiers .container-section .section'), function(s) {
+					s.classList.remove('style-open');
+				});
+				this.classList.add('style-open');
+			}
 
-		if ($(this).hasClass('style-open')) {
-			$('.common-section_autremetiers .container-section .section').removeClass('style-open');
-		} else {
-			$('.common-section_autremetiers .container-section .section').removeClass('style-open');
-			$(this).addClass('style-open');
-		}
-	})
+		});
+	});
 	
 
-})
+});
 
 
