@@ -77,7 +77,263 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 		<main>
 
 			<section class="section-cover">
+
+					<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
+					<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				
+					<div class="wrapper">
+						<h2>
+							Crédit
+						</h2>
+						<p class="text">
+							Nous comparons les meilleures offres pour vous
+						</p>
+
+						<div class="container-comp">
+							<div class="container-input">
+								<div class="input">
+									<input type="text" placeholder="Que souhaitez-vous comparer ?">
+									<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
+										<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
+									</svg>
+								</div>
+								<a href="" class="btn">
+									<span class="btn-text">
+										Je compare
+									</span>
+									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</a>
+								
+							</div>
+							<p class="tagline">
+								Rapide, gratuit, sans engagement !
+							</p>
+							<div class="container-dropdown">
+								<ul>
+									<li>
+										Crédit
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										Crédit
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										Crédit
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										Crédit
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Rachat de credit fonctionnaire
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 			</section>
 
 			<section class="common-section_compare">

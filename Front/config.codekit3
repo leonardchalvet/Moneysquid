@@ -164,6 +164,26 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/common-section_cover:metiers/path-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_cover:metiers/path-1.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_cover:metiers/path-2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_cover:metiers/path-2.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common-section_humans/img-1.png": {
 		"ft": 32768,
 		"iS": 2252303,
@@ -652,6 +672,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/script/minify/index-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/minify/js-common-page_metiers-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/js-common-page_metiers-min-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
