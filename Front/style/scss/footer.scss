@@ -61,12 +61,16 @@ footer{
 					color: #FFF;
 					margin-bottom: 23px;
 				}
-				a{
+				>a{
 					text-decoration: none;
 					@include styleParagraphMedium($font_1_Regular);
 					color: $colorUi_GreyNuance_1;
+					transition: all 0.25s ease;
 					&:not(:last-child){
 						margin-bottom: 18px;
+					}
+					&:hover{
+						opacity: 0.5;
 					}
 				}
 				.container-el{
@@ -76,8 +80,12 @@ footer{
 						text-decoration: none;
 						display: block;
 						margin-right: 30px;
+						transition: all 0.25s ease;
 						img{
 							width: 16px;
+						}
+						&:hover{
+							opacity: 0.5;
 						}
 					}
 				}
@@ -149,8 +157,12 @@ footer{
 				text-decoration: none;
 				@include styleParagraphSmall($font_1_Regular);
 				color: $colorUi_GreyNuance_1;
+				transition: all 0.25s ease;
 				&:not(:last-child){
 					margin-right: 54px;
+				}
+				&:hover{
+					opacity: 0.5;
 				}
 			}
 		}

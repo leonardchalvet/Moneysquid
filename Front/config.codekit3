@@ -609,7 +609,7 @@
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/script/minify/jQuery.3.3.1-min.js",
 		"oF": 0,
 		"sC": 0,
