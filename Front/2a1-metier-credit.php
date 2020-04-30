@@ -78,6 +78,23 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 
 			<section class="section-cover">
 
+					<div class="container-path">
+						<ul>
+							<li>
+								<a href="">Accueil</a>
+								<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
+									<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
+								</svg>
+							</li>
+							<li>
+								<a href="">Credit</a>
+								<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
+									<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
+								</svg>
+							</li>
+						</ul>
+					</div>
+
 					<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
 					<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				

@@ -13,7 +13,6 @@
 		display: flex;
 		flex-flow: row wrap;
 		align-items: center;
-		justify-content: center;
 		background-color: $colorUi_Text_3;	
 		transition: all 0.25s ease;
 
@@ -32,7 +31,9 @@
 			}
 		}
 		.wrapper{
+			padding-left: 260px;
 			
+			/*
 			@media screen and (min-width: 1650px){
 				width: 1200px;
 			}
@@ -45,7 +46,8 @@
 			@media screen and (min-width: 1200px) and (max-width: 1350px){
 				width: 700px;
 			}
-			margin: auto;
+			*/
+			
 
 			ul{
 				display: flex;
@@ -648,5 +650,5 @@
 
 .common-header_desktop,
 .common-header_mobile{
-	display: none !important;
+	
 }
