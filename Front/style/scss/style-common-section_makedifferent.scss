@@ -47,7 +47,9 @@
 						p{
 							flex: 1;
 							@include styleParagraphMedium($font_1_Regular);
+							color: $colorUi_Text_2;
 							em{
+								font-style: normal;
 								font-family: $font_1_Bold;
 							}
 						}

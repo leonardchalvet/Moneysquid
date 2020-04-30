@@ -2,10 +2,10 @@
 
 window.addEventListener('load', function() {
 
-	document.querySelector('.section-cover .container-comp .container-input input').addEventListener('focusin', function() {
+	document.querySelector('.section-cover .container-comp .container-input .input input').addEventListener('focusin', function() {
 		document.querySelector('.section-cover .container-comp').classList.add('style-open');
 	})
-	document.querySelector('.section-cover .container-comp .container-input input').addEventListener('focusout', function() {
+	document.querySelector('.section-cover .container-comp .container-input .input input').addEventListener('focusout', function() {
 		document.querySelector('.section-cover .container-comp').classList.remove('style-open');
 	})
 

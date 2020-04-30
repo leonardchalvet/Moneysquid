@@ -85,12 +85,16 @@
 			padding-right: 10px;
 			transition: height 0.25s ease;
 			.input{
+				height: 100%;
 				flex: 1;
-				display: flex;
-				flex-flow: row wrap;
-				align-items: center;
 				margin-right: 25px;
+				position: relative;
 				input{
+					position: relative;
+					z-index: 1;
+					height: 100%;
+					width: 100%;
+					background-color: transparent;
 					outline: none;
 					padding-left: 30px;
 					border: none;
@@ -108,7 +112,10 @@
 					}
 				}
 				.icn-arrow{
-					margin-left: 8px;
+					position: absolute;
+					right: 0px;
+					top: 50%;
+					transform: translateY(-50%);
 					width: 10px;
 					fill: $colorUi_Text_1;
 				}

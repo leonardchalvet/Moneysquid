@@ -97,9 +97,6 @@
 					Mentions Légales
 				</a>
 				<a href="" class="el">
-					Copyright
-				</a>
-				<a href="" class="el">
 					Condition générale d’utilisation
 				</a>
 			</div>

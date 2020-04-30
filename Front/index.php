@@ -430,36 +430,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit <br>immobilier
-									</a>
-								</h3>
-								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
-								</p>
-								<p class="text-2">
-									A partir de 0,90%*
-								</p>
-								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-								</svg>
-								<div class="btn toHref" data-href="#">
-									<span class="btn-text">
-										Je compare
-									</span>
-									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="icn">
-								<img src="img/common-section_compare/illu-5.svg" alt="">
-							</div>
-							<div class="text">
-								<h3>
-									<a class="title" href="#">
-										Assurance <br/>emprunteur
+										Assurance <br>emprunteur
 									</a>
 								</h3>
 								<p class="text-1">
@@ -483,7 +454,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-6.svg" alt="">
+								<img src="img/common-section_compare/illu-5.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
@@ -496,6 +467,35 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</p>
 								<p class="text-2">
 									Jusqu’à 235€*
+								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+								<div class="btn toHref" data-href="#">
+									<span class="btn-text">
+										Je compare
+									</span>
+									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="el">
+							<div class="icn">
+								<img src="img/common-section_compare/illu-6.svg" alt="">
+							</div>
+							<div class="text">
+								<h3>
+									<a class="title" href="#">
+										Assurance <br>habitation
+									</a>
+								</h3>
+								<p class="text-1">
+									À partir de 4,60€/mois
+								</p>
+								<p class="text-2">
+									Rendement de 2,80%*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -976,7 +976,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 			<section class="common-section_partenaires">
 				<div class="wrapper">
 					<h2>
-						Nous sollicitons l’ensemble de nos partenaires pour vous trouver le meilleur financement possible 
+						Nous sollicitons l’ensemble de nos partenaires pour vous trouver la meilleure offre possible
 					</h2>
 					<p>
 						Parcourez le marché en un clic. Simple, facile et sans stress trouvez l’offre qui vous convient 
