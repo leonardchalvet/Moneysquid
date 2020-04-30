@@ -981,21 +981,22 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 					<p>
 						Parcourez le marché en un clic. Simple, facile et sans stress trouvez l’offre qui vous convient 
 					</p>
+					<div class="data-img" data-img="img/common-section_partenaires/logo-CIC.svg;img/common-section_partenaires/logo-LCL.svg;img/common-section_partenaires/logo-CreditAgricole.svg;img/common-section_partenaires/logo-BNP.svg;img/common-section_partenaires/logo-CaisseEpargne.svg;img/common-section_partenaires/logo-CIC.svg;img/common-section_partenaires/logo-LCL.svg;img/common-section_partenaires/logo-CreditAgricole.svg;img/common-section_partenaires/logo-BNP.svg;img/common-section_partenaires/logo-CaisseEpargne.svg"></div>
 					<div class="container-el">
 						<div class="el">
-							<img src="img/common-section_partenaires/logo-CIC.svg" alt="">
+							<img src="" alt="logo partenaire">
 						</div>
 						<div class="el">
-							<img src="img/common-section_partenaires/logo-LCL.svg" alt="">
+							<img src="" alt="logo partenaire">
 						</div>
 						<div class="el">
-							<img src="img/common-section_partenaires/logo-CreditAgricole.svg" alt="">
+							<img src="" alt="logo partenaire">
 						</div>
 						<div class="el">
-							<img src="img/common-section_partenaires/logo-BNP.svg" alt="">
+							<img src="" alt="logo partenaire">
 						</div>
 						<div class="el">
-							<img src="img/common-section_partenaires/logo-CaisseEpargne.svg" alt="">
+							<img src="" alt="logo partenaire">
 						</div>
 					</div>
 					<div class="container-btn">
