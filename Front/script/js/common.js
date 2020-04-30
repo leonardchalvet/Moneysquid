@@ -243,6 +243,85 @@ function common_sectionAutremetiers(){
 	});
 }
 
+function common_sectionPartenaires(){
+
+        function getRandomInt(max) {
+          return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        function remplaceImg(img, data) {
+            img.classList.add('hide');
+            setTimeout(function(){
+                img.setAttribute('src', data);
+                setTimeout(function(){
+                    img.classList.remove('hide');
+                }, 250);
+            }, 250);
+        }
+
+        [].forEach.call(document.querySelectorAll('.common-section_partenaires'), function(section) {
+            
+            section = '.' + section.className.split(" ")[0];
+
+            let imgAct = [ 0, 1, 2, 3, 4 ];
+            let dataImg = document.querySelector(section + ' .data-img').getAttribute('data-img').split(';');
+            document.querySelector(section + ' .data-img').remove();
+
+            for(let i=1 ; i <= imgAct.length ; i++) {
+                remplaceImg(document.querySelector(section + ' .el:nth-child(' + i + ') img'), dataImg[imgAct[i-1]] );
+            }
+
+            
+            let choiceEl = 0;
+            let choiceData = 0;
+            let indexPrev = 0;
+            let prevChoice = [ -1, -1 ];
+            setInterval(function(){
+                
+                let bool;
+                choiceData = getRandomInt(dataImg.length);
+                do {
+                    bool = true;
+                    for(let i=0 ; i < imgAct.length ; i++) {
+                        if(imgAct[i] == choiceData) {
+                            bool = false;
+                        }
+                    }
+                    if(!bool) {
+                        choiceData = getRandomInt(dataImg.length);
+                    }
+                } while(!bool);
+
+                bool = true;
+                choiceEl   = getRandomInt(imgAct.length);
+                do {
+                    bool = true;
+                    for(let i=0 ; i < prevChoice.length ; i++) {
+                        if(prevChoice[i] == choiceEl) {
+                            bool = false;
+                        }
+                    }
+                    if(!bool) {
+                        choiceEl = getRandomInt(imgAct.length);
+                    }
+                } while(!bool);
+
+
+                imgAct[choiceEl] = choiceData;
+                prevChoice[indexPrev] = choiceEl;
+
+                indexPrev++;
+                if(indexPrev >= prevChoice.length) {
+                    indexPrev = 0;
+                }
+
+                remplaceImg( document.querySelector(section + ' .el:nth-child(' + (choiceEl+1) + ') img'), dataImg[choiceData] );
+
+            }, 3000);
+
+        });
+    }
+
 /*=====  End of COMMON FUNCTION  ======*/
 
 /*===========================================
