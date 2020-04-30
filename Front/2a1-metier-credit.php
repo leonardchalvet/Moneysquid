@@ -428,19 +428,19 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-4.svg" alt="">
+								<img src="img/common-section_compare/illu-7.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit <br>immobilier
+										Crédit <br>professionnel
 									</a>
 								</h3>
 								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
+									Sur vos mensualités
 								</p>
 								<p class="text-2">
-									A partir de 0,90%*
+									A partir de 0,40%*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -477,47 +477,47 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									<img src="img/common-section_why/icn-1.svg" alt="">
 								</div>
 								<h5>
-									Courtier independant
+									Courtier indépendant
 								</h5>
 							</div>
 							<div class="el">
 								<div class="icn">
-									<img src="img/common-section_why/icn-1.svg" alt="">
+									<img src="img/common-section_why/icn-2.svg" alt="">
 								</div>
 								<h5>
-									Courtier independant
+									Français
 								</h5>
 							</div>
 							<div class="el">
 								<div class="icn">
-									<img src="img/common-section_why/icn-1.svg" alt="">
+									<img src="img/common-section_why/icn-3.svg" alt="">
 								</div>
 								<h5>
-									Courtier independant
+									Gratuit sans engagement
 								</h5>
 							</div>
 							<div class="el">
 								<div class="icn">
-									<img src="img/common-section_why/icn-1.svg" alt="">
+									<img src="img/common-section_why/icn-4.svg" alt="">
 								</div>
 								<h5>
-									Courtier independant
+									Protection des données
 								</h5>
 							</div>
 							<div class="el">
 								<div class="icn">
-									<img src="img/common-section_why/icn-1.svg" alt="">
+									<img src="img/common-section_why/icn-5.svg" alt="">
 								</div>
 								<h5>
-									Courtier independant
+									Expert
 								</h5>
 							</div>
 							<div class="el">
 								<div class="icn">
-									<img src="img/common-section_why/icn-1.svg" alt="">
+									<img src="img/common-section_why/icn-6.svg" alt="">
 								</div>
 								<h5>
-									Courtier independant
+									Récompensé
 								</h5>
 							</div>
 						</div>
@@ -799,7 +799,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 
 						<div class="btn toHref" data-href="">
-							<span class="btn-text">Voir tous les avis clients</span>
+							<span class="btn-text">Voir toutes les actualités</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
@@ -964,8 +964,8 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											<img src="img/common-section_makedifferent/icn-cross.svg" alt="">
 										</div>
 										<p>
-											<em>Les sites de comparaison</em>
-											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
+											<em>Votre banque</em>
+											ne compare pas. Cette dernière vous propose uniquement ses offres. 
 										</p>
 									</div>
 									<div class="el">
@@ -973,9 +973,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											<img src="img/common-section_makedifferent/icn-cross.svg" alt="">
 										</div>
 										<p>
-											<em>Les sites de comparaison</em>
-											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
-										</p>
+											<em>Les courtiers traditionnels</em>
+ 											appliquent des frais de dossier et imposent un rendez-vous physique. Les démarches sont souvent plus fastidieuses										
+ 										</p>
 									</div>
 								</div>
 							</div>
@@ -987,8 +987,9 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											<img src="img/common-section_makedifferent/icn-check.svg" alt="">
 										</div>
 										<p>
-											<em>Les sites de comparaison</em>
-											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
+											<em>Nous explorons + de 350 offres</em>
+ 											pour vous trouver la meilleure proposition du marché. 
+ 											Puis, on s’occupe de tout sans que vous n’ayez à bouger de votre canapé.										
 										</p>
 									</div>
 									<div class="el">
@@ -996,18 +997,18 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											<img src="img/common-section_makedifferent/icn-check.svg" alt="">
 										</div>
 										<p>
-											<em>Les sites de comparaison</em>
-											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
-										</p>
+											<em>Nous sommes indépendants et impartiaux.</em>
+  											Nous avons conçu de nouveaux services que vous ne trouverez nulle part ailleurs.										
+  										</p>
 									</div>
 									<div class="el">
 										<div class="icn">
 											<img src="img/common-section_makedifferent/icn-check.svg" alt="">
 										</div>
 										<p>
-											<em>Les sites de comparaison</em>
-											sont avant tout des collecteurs de données. Ils ne proposent qu'une mise en relation avec un fournisseur.
-										</p>
+											<em>Nous sommes gratuits, rapides et en ligne.</em>
+ 											Par chat, téléphone ou en rendez-vous physique, c’est vous qui choisissez ! 										
+ 										</p>
 									</div>
 								</div>
 							</div>
