@@ -4,6 +4,9 @@ window.addEventListener('load', function() {
 
 	document.querySelector('.section-cover .container-comp .container-input input').addEventListener('focusin', function() {
 		document.querySelector('.section-cover .container-comp').classList.add('style-open');
+		if (window.matchMedia('(max-width:' + breakPoint_tablet + 'px)').matches) {
+			window.scrollTo(0, 150);
+		}
 	})
 	document.querySelector('.section-cover .container-comp .container-input input').addEventListener('focusout', function() {
 		document.querySelector('.section-cover .container-comp').classList.remove('style-open');
