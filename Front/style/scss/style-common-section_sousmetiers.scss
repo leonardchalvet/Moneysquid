@@ -27,42 +27,44 @@
 		align-items: flex-end;
 
 		.container-el{
-			display: inline-flex;
-			flex-wrap: nowrap;
+			white-space: nowrap;
 			.el{
-				width: 900px;
-				display: flex;
-				flex-flow: row wrap;
-				align-items: flex-start;
-				justify-content: space-between;
+				display: inline-block;
 				&:not(:last-child){
 					margin-right: 165px;
 				}
+				.content {
+					width: 900px;
+					display: flex;
+					flex-flow: row wrap;
+					align-items: flex-start;
+					justify-content: space-between;
 
-				.illu{
-					img{
-						width: 400px;
-					}
-				}
-				.text{
-					width: 390px;
-					h3{
-						@include styleH3;
-						a {
-							cursor: default;
-							text-decoration: none;
+					.illu{
+						img{
+							width: 400px;
 						}
 					}
-					p{
-						margin-top: 30px;
-						@include styleParagraphMedium($font_1_Regular);
-						color: $colorUi_Text_2;					}
-					.btn{
-						@include styleButton_1(small, false, false);
-						margin-top: 45px;
+					.text{
+						white-space: initial;
+						width: 390px;
+						h3{
+							@include styleH3;
+							a {
+								cursor: default;
+								text-decoration: none;
+							}
+						}
+						p{
+							margin-top: 30px;
+							@include styleParagraphMedium($font_1_Regular);
+							color: $colorUi_Text_2;					}
+						.btn{
+							@include styleButton_1(small, false, false);
+							margin-top: 45px;
+						}
 					}
 				}
-				
 			}
 		}
 	}
@@ -78,7 +80,18 @@
 		}
 	}
 }
-@media screen and (min-width: 1700px){
+@media screen and (min-width: $breakPoint_bigDesktop){
+	.common-section_sousmetiers {
+		h2 {
+			position: sticky;
+			top: 150px;
+		}
+		.container {
+			top: 225px;
+		}
+	}
+}
+@media screen and (min-width: 1700px) and (max-width: $breakPoint_bigDesktop){
 	.common-section_sousmetiers{
 		.container{
 			top: 150px;
@@ -117,18 +130,23 @@
 			padding-bottom: 30px;
 			.container-el{
 				.el{
-					display: block;
 					&:not(:last-child){
 						margin-right: 60px;
 					}
-					.illu{
-						img{
+					&:last-child{
+						margin-right: 60px;
+					}
+					.content {
+						display: block;
+						.illu{
+							img{
+								width: 100%;
+							}
+						}
+						.text{
+							margin-top: 40px;
 							width: 100%;
 						}
-					}
-					.text{
-						margin-top: 40px;
-						width: 100%;
 					}
 				}
 			}
@@ -143,7 +161,9 @@
 		.container-slider{
 			.container-el{
 				.el{
-					width: 300px;
+					.content {
+						width: 300px;
+					}
 				}
 			}
 		}
@@ -154,14 +174,19 @@
 		.container-slider{
 			.container-el{
 				.el{
-					width: 230px;
-					.text{
-						p{
-							@include styleParagraphSmall($font_1_Regular);
+					.content {
+						width: 230px;
+						.text{
+							p{
+								@include styleParagraphSmall($font_1_Regular);
+							}
+							.btn .btn-arrow{
+								height: 20px;
+							}
 						}
-					}
-					&:not(:last-child){
-						margin-right: 45px;
+						&:not(:last-child){
+							margin-right: 45px;
+						}
 					}
 				}
 			}
