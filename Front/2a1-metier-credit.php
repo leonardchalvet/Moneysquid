@@ -38,7 +38,6 @@ function dateDiff($date1, $date2){
 
 function getJSON($url) {
 	$ch = curl_init($url);
-	curl_setopt($ch, CURLOPT_POSTFIELDS);
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type:application/json'));
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	$result = json_decode(curl_exec($ch));
@@ -816,7 +815,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 
 						<div class="btn toHref" data-href="">
-							<span class="btn-text">Voir toutes les actualités</span>
+							<span class="btn-text">Voir toutes nos actualités</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
@@ -1326,98 +1325,97 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						<div class="container-slider">
 							<div class="container-el">
 								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-1.svg" alt="">
-									</div>
-									<div class="text">
-										<h3><a href="#">Prêt immobilier</a></h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br>
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
-											<br>
-											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
-										</p>
-										<div class="btn toHref" data-href="#">
-											<span class="btn-text">
-												Comparer gratuitement les crédits immobilier
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
+							        <div class="content">
+								        <div class="illu">
+											<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+										</div>
+										<div class="text">
+											<h3><a href="#">Prêt immobilier</a></h3>
+											<p>
+												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
+												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
+												Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+											</p>
+											<div class="btn toHref" data-href="#">
+												<span class="btn-text">
+													Comparer gratuitement les crédits immobilier
+												</span>
+												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+												</svg>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-3.svg" alt="">
-									</div>
-									<div class="text">
-										<h3><a href="#">Rachat de crédits</a></h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br>
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
-											<br>
-											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
-										</p>
-										<div class="btn toHref" data-href="#">
-											<span class="btn-text">
-												Comparer gratuitement les rachats de crédits
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
+							        <div class="content">
+								        <div class="illu">
+											<img src="img/common-section_sousmetier/illu-3.svg" alt="">
+										</div>
+										<div class="text">
+											<h3><a href="#">Rachat de crédits</a></h3>
+											<p>
+												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
+												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
+												Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+											</p>
+											<div class="btn toHref" data-href="#">
+												<span class="btn-text">
+													Comparer gratuitement les crédits immobilier
+												</span>
+												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+												</svg>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-2.svg" alt="">
-									</div>
-									<div class="text">
-										<h3><a href="#">Crédit consommation</a></h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br>
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
-											<br>
-											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
-										</p>
-										<div class="btn toHref" data-href="#">
-											<span class="btn-text">
-												Comparer gratuitement les crédits de consommation
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
+							        <div class="content">
+								        <div class="illu">
+											<img src="img/common-section_sousmetier/illu-2.svg" alt="">
+										</div>
+										<div class="text">
+											<h3><a href="#">Crédit consommation</a></h3>
+											<p>
+												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
+												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
+												Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+											</p>
+											<div class="btn toHref" data-href="#">
+												<span class="btn-text">
+													Comparer gratuitement les crédits immobilier
+												</span>
+												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+												</svg>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="el">
-									<div class="illu">
-										<img src="img/common-section_sousmetier/illu-4.svg" alt="">
-									</div>
-									<div class="text">
-										<h3><a href="#">Crédit professionnel</a></h3>
-										<p>
-											Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br>
-											<br>
-											Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br>
-											<br>
-											Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
-										</p>
-										<div class="btn toHref" data-href="#">
-											<span class="btn-text">
-												Comparer gratuitement les crédits professionnel
-											</span>
-											<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-											</svg>
+							        <div class="content">
+								        <div class="illu">
+											<img src="img/common-section_sousmetier/illu-4.svg" alt="">
+										</div>
+										<div class="text">
+											<h3><a href="#">Crédit professionnel</a></h3>
+											<p>
+												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
+												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
+												Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
+											</p>
+											<div class="btn toHref" data-href="#">
+												<span class="btn-text">
+													Comparer gratuitement les crédits immobilier
+												</span>
+												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+												</svg>
+											</div>
 										</div>
 									</div>
 								</div>
-								
 							</div>
 						</div>
 						<div class="container-line">
