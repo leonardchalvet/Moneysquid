@@ -160,10 +160,10 @@
 					border: none;
 					flex: 1;
 					@include styleH5;
-					font-family: $font_1_Regular;
 					&::placeholder{
 						@include styleH5;
 						color: $colorUi_Text_1;
+						opacity: 1;
 					}
 					&:focus{
 						&::placeholder{
@@ -346,12 +346,8 @@
 		.container-path{
 			top: 80px;
 		}
-		.path-1{
-			left: -20px;
-			height: 100px;
-		}
-		.path-2{
-			height: 85px;
+		.path-1, .path-2{
+			display: none;
 		}
 	}
 }
