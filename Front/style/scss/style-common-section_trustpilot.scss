@@ -13,16 +13,13 @@
 	}
 	.container-el{
 		margin-top: 75px;
-		display: flex;
-		align-items: flex-start;
-
-		display: inline-flex;
-		flex-wrap: nowrap;
+		white-space: nowrap;
 
 		transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 
 		.el{
-
+			display: inline-block;
+			vertical-align: middle;
 			&:first-child{
 				width: 285px;
 				margin-right: 125px;
