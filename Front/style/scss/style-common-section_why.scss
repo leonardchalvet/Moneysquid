@@ -9,12 +9,12 @@
 		align-items: flex-start;
 		justify-content: space-between;
 		@include styleLineSep;
-		padding-bottom: 15px;
 	}
 	.container-img{
 		margin-top: -60px;
 		width: 525px;
 		position: relative;
+		text-align: right;
 		img{
 			position: relative;
 			width: 404px;
