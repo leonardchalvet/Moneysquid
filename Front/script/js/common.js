@@ -1,3 +1,4 @@
+// @codekit-prepend 'svg4everybody.js'
 // @codekit-prepend 'header.js'
 
 /*===================================
@@ -20,7 +21,7 @@ window.addEventListener('scroll', function() {
 });
 
 document.querySelector("#common-btn_top").addEventListener('click', function() {
-	window.scrollTo(0, 0); 
+	window.scrollTo(0, 0);
 });
 
 /*=======================================
@@ -265,7 +266,8 @@ function common_sectionPartenaires(){
 
             let imgAct = [ 0, 1, 2, 3, 4 ];
             let dataImg = document.querySelector(section + ' .data-img').getAttribute('data-img').split(';');
-            document.querySelector(section + ' .data-img').remove();
+            let sectionData = document.querySelector(section + ' .data-img');
+            sectionData.parentNode.removeChild(sectionData);
 
             for(let i=1 ; i <= imgAct.length ; i++) {
                 remplaceImg(document.querySelector(section + ' .el:nth-child(' + i + ') img'), dataImg[imgAct[i-1]] );
@@ -328,14 +330,18 @@ function common_sectionPartenaires(){
 =            ONLOAD RUN FUNCTION            =
 ===========================================*/
 window.addEventListener('load', function() {
-	animScroll();;
-	/* DETECT BTN TOHREF */
+	
+    animScroll();;
+	
+    /* DETECT BTN TOHREF */
 	[].forEach.call(document.getElementsByClassName('toHref'), function(toHref) {
         toHref.addEventListener('click', function(el) {
             window.location = this.getAttribute('data-href');
         });
     });
-	
+
+	svg4everybody();
+
 });
 /*=====  End of ONLOAD RUN FUNCTION  ======*/
 
