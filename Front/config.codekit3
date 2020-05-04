@@ -225,6 +225,16 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/common-section_compare/illu-16.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/img/common-section_compare/illu-16.svg",
+		"oF": 1,
+		"opt": 1,
+		"plM": 4010962575359,
+		"prP": 0
+		},
 	"/img/common-section_compare/illu-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -300,16 +310,6 @@
 		"miP": 0,
 		"oA": 0,
 		"oAP": "/img/common-section_compare/illu-9.svg",
-		"oF": 1,
-		"opt": 1,
-		"plM": 4010962575359,
-		"prP": 0
-		},
-	"/img/common-section_compare/PEA.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 0,
-		"oAP": "/img/common-section_compare/PEA.svg",
 		"oF": 1,
 		"opt": 1,
 		"plM": 4010962575359,
