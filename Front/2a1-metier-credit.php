@@ -60,7 +60,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 		<title>2a1 - Métier Crédit</title>
 
 		<meta name="description" content="" />
-
+	
+		<meta name="robots" content="noindex">
+		<meta name="googlebot" content="noindex">
+	
 		<meta http-equiv="content-type" content="text/html; charset=utf8" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
