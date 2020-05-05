@@ -57,7 +57,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 <html>
 	<head>
 
-		<title>2a1 - Métier Crédit</title>
+		<title>2b1 - Métier Assurance</title>
 
 		<meta name="description" content="" />
 
@@ -86,7 +86,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</svg>
 							</li>
 							<li>
-								<a href="">Credit</a>
+								<a href="">Assurance</a>
 								<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
 									<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
 								</svg>
@@ -99,7 +99,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 				
 					<div class="wrapper">
 						<h2>
-							Crédit
+							Assurance
 						</h2>
 						<p class="text">
 							Nous comparons les meilleures offres pour vous
@@ -357,19 +357,19 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 					<div class="container-el">
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-1.svg" alt="">
+								<img src="img/common-section_compare/illu-5.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit <br>immobilier
+										Assurance <br>auto
 									</a>
 								</h3>
 								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
+									Économisez
 								</p>
 								<p class="text-2">
-									A partir de 0,90%*
+									Jusqu’à 235€*								
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -386,19 +386,19 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-2.svg" alt="">
+								<img src="img/common-section_compare/illu-4.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit <br/>consommation
+										Assurance <br/>emprunteur
 									</a>
 								</h3>
 								<p class="text-1">
-									Obtenez le meilleur taux
+									Économisez
 								</p>
 								<p class="text-2">
-									A partir de 0,40%*
+									Jusqu’à 33%*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -415,19 +415,19 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-3.svg" alt="">
+								<img src="img/common-section_compare/illu-8.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Regroupement <br/>de crédit
+										Assurance<br/>moto
 									</a>
 								</h3>
 								<p class="text-1">
-									Sur vos mensualités
+									Économisez jusqu'à
 								</p>
 								<p class="text-2">
-									Jusqu’à-80%*
+									45% sur votre contrat*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -444,19 +444,19 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-7.svg" alt="">
+								<img src="img/common-section_compare/illu-6.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit <br>professionnel
+										Assurance <br>habitation
 									</a>
 								</h3>
 								<p class="text-1">
-									Sur vos mensualités
+									A partir de
 								</p>
 								<p class="text-2">
-									A partir de 0,40%*
+									 4,50€/mois*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1327,10 +1327,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-6.svg" alt="">
 										</div>
 										<div class="text">
-											<h3><a href="#">Prêt immobilier</a></h3>
+											<h3><a href="#">Assurance automobile</a></h3>
 											<p>
 												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
 												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
@@ -1338,7 +1338,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance automobile
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1350,10 +1350,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-3.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-9.svg" alt="">
 										</div>
 										<div class="text">
-											<h3><a href="#">Rachat de crédits</a></h3>
+											<h3><a href="#">Assurance habitation</a></h3>
 											<p>
 												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
 												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
@@ -1361,7 +1361,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les assurance habitation
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1373,10 +1373,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-2.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-11.svg" alt="">
 										</div>
 										<div class="text">
-											<h3><a href="#">Crédit consommation</a></h3>
+											<h3><a href="#">Assurance moto</a></h3>
 											<p>
 												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
 												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
@@ -1384,7 +1384,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les assurances moto
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1396,10 +1396,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-4.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-16.svg" alt="">
 										</div>
 										<div class="text">
-											<h3><a href="#">Crédit professionnel</a></h3>
+											<h3><a href="#">Mutuelle santé</a></h3>
 											<p>
 												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
 												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
@@ -1407,7 +1407,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les mutuelles santé
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>

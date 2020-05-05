@@ -17,6 +17,46 @@
 		"oAP": "/2a1-metier-credit.php",
 		"oF": 0
 		},
+	"/2b1-metier-assurance.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/2b1-metier-assurance.php",
+		"oF": 0
+		},
+	"/2c1-metier-banque.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/2c1-metier-banque.php",
+		"oF": 0
+		},
+	"/2d1-metier-patrimoine.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/2d1-metier-patrimoine.php",
+		"oF": 0
+		},
+	"/2e1-metier-energie.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/2e1-metier-energie.php",
+		"oF": 0
+		},
+	"/2f1-metier-epargne.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/2f1-metier-epargne.php",
+		"oF": 0
+		},
 	"/check-connexion.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1091,6 +1131,17 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "/script/minify/js-common-page_metiers-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
+	"/script/js/svg4everybody.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/script/minify/svg4everybody-min.js",
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
