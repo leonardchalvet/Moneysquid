@@ -63,10 +63,22 @@
 		.container-section{
 			.section{
 				.text{
+					.title {
+						margin-bottom: 40px;
+					}
 					ul{
+						transform: translateX(-100px);
 						justify-content: space-between;
+						width: calc(100% + 100px);
 						li{
 							width: calc(100% / 3.8);
+							a {
+								align-items: flex-end;
+								svg {
+									width: 14px;
+									transform: translateY(-4px);
+								}
+							}
 						}
 					}
 				}

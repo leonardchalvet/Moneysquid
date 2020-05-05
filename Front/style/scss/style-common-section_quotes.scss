@@ -219,6 +219,25 @@
 		}
 	}
 }
+
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-section_quotes{
+		.container-el{
+			.el{
+				margin-right: 75px;
+			}
+		}
+	}
+}
+@media screen and (max-width: $breakPoint_mobile){
+	.common-section_quotes{
+		.container-el{
+			.el{
+				margin-right: 25px;
+			}
+		}
+	}
+}	
 @media screen and (max-width: $breakPoint_tablet){
 	.common-section_quotes{
 		padding-top: 50px;
@@ -239,7 +258,6 @@
 				flex: 0 0 auto;
 				display: block;
 				opacity: 1;
-				margin-right: 25px;
 				width: 200px;
 				.content{
 					height: 200px;

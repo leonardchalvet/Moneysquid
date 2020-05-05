@@ -9,14 +9,6 @@
 	],
 "creatorBuild": "32001",
 "files": {
-	"/2a1-metier-credit.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/2a1-metier-credit.php",
-		"oF": 0
-		},
 	"/2b1-metier-assurance.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1082,14 +1074,6 @@
 		"opt": 1,
 		"q": 100
 		},
-	"/index.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/index.php",
-		"oF": 0
-		},
 	"/script/js/common.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1189,42 +1173,6 @@
 		"sC": 0,
 		"tS": 0
 		},
-	"/style/css/home.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/style/css/home-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/style/css/home.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/css/home.css.map",
-		"oF": 0
-		},
-	"/style/css/style-common-page_metiers.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/style/css/style-common-page_metiers-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/style/css/style-common-page_metiers.css.map": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/style/css/style-common-page_metiers.css.map",
-		"oF": 0
-		},
 	"/style/scss/common.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1290,32 +1238,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"/style/scss/style-common-section_actu.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/style/css/style-common-section_actu.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/style/scss/style-common-section_autresmetiers.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/style/css/style-common-section_autresmetiers.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"/style/scss/style-common-section_compare.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -1325,19 +1247,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_compare.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/style/scss/style-common-section_humans.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/style/css/style-common-section_humans.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -1377,32 +1286,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_partenaires.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/style/scss/style-common-section_quotes.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/style/css/style-common-section_quotes.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"/style/scss/style-common-section_sousmetiers.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "/style/css/style-common-section_sousmetiers.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
