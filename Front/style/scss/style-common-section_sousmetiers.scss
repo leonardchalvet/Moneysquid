@@ -161,6 +161,9 @@
 		.container-slider{
 			.container-el{
 				.el{
+					&:not(:last-child){
+						margin-right: 100px;
+					}
 					.content {
 						width: 300px;
 					}
@@ -174,6 +177,9 @@
 		.container-slider{
 			.container-el{
 				.el{
+					&:not(:last-child){
+						margin-right: 45px;
+					}
 					.content {
 						width: 230px;
 						.text{
@@ -183,9 +189,6 @@
 							.btn .btn-arrow{
 								height: 20px;
 							}
-						}
-						&:not(:last-child){
-							margin-right: 45px;
 						}
 					}
 				}
