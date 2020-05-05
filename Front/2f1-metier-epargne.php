@@ -57,7 +57,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 <html>
 	<head>
 
-		<title>2a1 - Métier Crédit</title>
+		<title>2f1 - Métier Épargne</title>
 
 		<meta name="description" content="" />
 
@@ -86,7 +86,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								</svg>
 							</li>
 							<li>
-								<a href="">Credit</a>
+								<a href="">Épargne</a>
 								<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
 									<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
 								</svg>
@@ -99,7 +99,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 				
 					<div class="wrapper">
 						<h2>
-							Crédit
+							Épargne
 						</h2>
 						<p class="text">
 							Nous comparons les meilleures offres pour vous
@@ -357,19 +357,19 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 					<div class="container-el">
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-1.svg" alt="">
+								<img src="img/common-section_compare/illu-15.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit <br>immobilier
+										Livret d’épargne
 									</a>
 								</h3>
 								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
+									Jusqu’à
 								</p>
 								<p class="text-2">
-									A partir de 0,90%*
+									3,10% d’interêts*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -386,77 +386,19 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/common-section_compare/illu-2.svg" alt="">
+								<img src="img/common-section_compare/illu-16.svg" alt="">
 							</div>
 							<div class="text">
 								<h3>
 									<a class="title" href="#">
-										Crédit <br/>consommation
+										PEA
 									</a>
 								</h3>
 								<p class="text-1">
-									Obtenez le meilleur taux
+									Droit d’entrée
 								</p>
 								<p class="text-2">
-									A partir de 0,40%*
-								</p>
-								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-								</svg>
-								<div class="btn toHref" data-href="#">
-									<span class="btn-text">
-										Je compare
-									</span>
-									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="icn">
-								<img src="img/common-section_compare/illu-3.svg" alt="">
-							</div>
-							<div class="text">
-								<h3>
-									<a class="title" href="#">
-										Regroupement <br/>de crédit
-									</a>
-								</h3>
-								<p class="text-1">
-									Sur vos mensualités
-								</p>
-								<p class="text-2">
-									Jusqu’à-80%*
-								</p>
-								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-								</svg>
-								<div class="btn toHref" data-href="#">
-									<span class="btn-text">
-										Je compare
-									</span>
-									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="icn">
-								<img src="img/common-section_compare/illu-7.svg" alt="">
-							</div>
-							<div class="text">
-								<h3>
-									<a class="title" href="#">
-										Crédit <br>professionnel
-									</a>
-								</h3>
-								<p class="text-1">
-									Sur vos mensualités
-								</p>
-								<p class="text-2">
-									A partir de 0,40%*
+									À partir de 0€*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1327,10 +1269,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-22.svg" alt="">
 										</div>
 										<div class="text">
-											<h3><a href="#">Prêt immobilier</a></h3>
+											<h3><a href="#">Livret A</a></h3>
 											<p>
 												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
 												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
@@ -1338,7 +1280,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les meilleurs taux de Livret A
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1350,10 +1292,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-3.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-21.svg" alt="">
 										</div>
 										<div class="text">
-											<h3><a href="#">Rachat de crédits</a></h3>
+											<h3><a href="#">Bourse</a></h3>
 											<p>
 												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
 												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
@@ -1361,53 +1303,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
-												</span>
-												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-												</svg>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="el">
-							        <div class="content">
-								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-2.svg" alt="">
-										</div>
-										<div class="text">
-											<h3><a href="#">Crédit consommation</a></h3>
-											<p>
-												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
-												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
-												Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
-											</p>
-											<div class="btn toHref" data-href="#">
-												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
-												</span>
-												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-												</svg>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="el">
-							        <div class="content">
-								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-4.svg" alt="">
-										</div>
-										<div class="text">
-											<h3><a href="#">Crédit professionnel</a></h3>
-											<p>
-												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
-												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
-												Nos outils de simulation et comparaison de crédit, vous permettend d’avoir accès aux meilleurs taux de prêts du marché et de faire votre demande de crédit en ligne qui sera relayée à tous nos partenaires organismes de crédit.
-											</p>
-											<div class="btn toHref" data-href="#">
-												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les meilleurs taux en bourse
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
