@@ -43,6 +43,7 @@
 }
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
 	.common-section_partenaires{
+		padding-top: 60px;
 		.container-el{
 			.el{
 				width: calc(100% / 5);

@@ -58,6 +58,7 @@
 }
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
 	.common-secton_humans{
+		padding-top: 60px;
 		.wrapper{
 			align-items: flex-end;
 			justify-content: center;

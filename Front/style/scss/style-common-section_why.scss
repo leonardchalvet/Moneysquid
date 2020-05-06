@@ -82,10 +82,17 @@
 }
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
 	.common-section_why{
+		margin-top: 60px;
+		.wrapper{
+			align-items: flex-end;
+		}
 		.container-img{
 			flex: 1;
+
+			margin-top: 0px;
+			text-align: center;
 			img{
-				width: 100%;
+				width: 70%;
 			}
 			.path{
 				width: 80%;
@@ -95,7 +102,7 @@
 }
 @media screen and (max-width: 1024px){
 	.common-section_why{
-		margin-top: 60px;
+		
 		.container-img{
 			display: none;
 		}
@@ -123,6 +130,7 @@
 }
 @media screen and (max-width: $breakPoint_mobile){
 	.common-section_why{
+		margin-top: 60px;
 		.container-text{
 			padding: 0px;
 			.container-el{

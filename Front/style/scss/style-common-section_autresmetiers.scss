@@ -48,6 +48,9 @@
 					}
 					a{
 						@include styleLink_1;
+						.link-text{
+							flex: 1;
+						}
 					}
 				}
 			}
@@ -73,10 +76,13 @@
 						li{
 							width: calc(100% / 3.8);
 							a {
-								align-items: flex-end;
+
+								display: flex;
+								justify-content: space-between;
+								width: 100%;
+								align-items: center;
 								svg {
 									width: 14px;
-									transform: translateY(-4px);
 								}
 							}
 						}

@@ -582,6 +582,7 @@ main
 	@mixin styleLink_1{
 		text-decoration: none;
 		display: inline-flex;
+		flex-flow: row wrap;
 		align-items: center;
 
 		.link-text{

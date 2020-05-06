@@ -95,6 +95,12 @@
 		}
 	}
 }
+@media screen and (max-width: $breakPoint_tablet){
+	.common-section_makedifferent{
+		margin-top: 60px;
+		padding-bottom: 60px;
+	}
+}
 @media screen and (max-width: $breakPoint_mobile){
 	.common-section_makedifferent{
 		margin-top: 60px;
