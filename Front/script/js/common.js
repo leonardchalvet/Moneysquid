@@ -396,14 +396,10 @@ function common_sectionPartenaires(){
             
             section = '.' + section.className.split(" ")[0];
 
-            let indexData = 1;
+            let indexData = 6;
             let dataImg = document.querySelector(section + ' .data-img').getAttribute('data-img').split(';');
             let sectionData = document.querySelector(section + ' .data-img');
             sectionData.parentNode.removeChild(sectionData);
-
-            for(indexData ; indexData <= 5 ; indexData++) {
-                remplaceImg(document.querySelector(section + ' .el:nth-child(' + indexData + ') img'), dataImg[indexData-1] );
-            }
             
             setInterval(function(){
                 
