@@ -1,4 +1,3 @@
-// @codekit-prepend 'svg4everybody.js'
 // @codekit-prepend 'header.js'
 
 /*===================================
@@ -27,6 +26,27 @@ document.querySelector("#common-btn_top").addEventListener('click', function() {
 /*=======================================
 =            COMMON FUNCTION            =
 =======================================*/
+
+
+function detectIE() {
+    let ua = window.navigator.userAgent;
+
+    let msie = ua.indexOf('MSIE ');
+    if (msie > 0) {
+        // IE 10 or older => return version number
+        return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+    }
+
+    let trident = ua.indexOf('Trident/');
+    if (trident > 0) {
+        // IE 11 => return version number
+        var rv = ua.indexOf('rv:');
+        return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+    }
+
+    // other browser
+    return false;
+}
 
 function animScroll() {
 	let windowHeight = window.innerHeight / 1.2;
@@ -58,9 +78,9 @@ function common_navCarousel1(sectionAll){
 		[].forEach.call(document.querySelectorAll(el), function(el) {
 			num_el++;
 		});
-		num_el -= 3;
 		
 		let nav = section + ' .container-nav .nav';
+        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
 
 		let count = 0;
 
@@ -68,7 +88,7 @@ function common_navCarousel1(sectionAll){
 
 		[].forEach.call(document.querySelectorAll(nav), function(n) {
 			n.addEventListener('click', function() {
-				
+
 				let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
 				if ( indexNav == 1 && count > 0 ) {
 					count = count - 2;
@@ -76,8 +96,9 @@ function common_navCarousel1(sectionAll){
 					count = count + 2;
 				}
 
-				if (count === num_el) {
-					document.querySelector(nav + ':nth-child(2)').classList.add('style-disable');
+				if (count >= num_el) {
+                    count = 0;
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
 				} else if (count === 0) {
 					document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
 				} else {
@@ -107,6 +128,7 @@ function common_navCarousel2(sectionAll){
 		let containerEl = section + ' .container-el';
 		let el =  containerEl + ' .el';
 		let nav = section + ' .container-nav .nav';
+        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
 
 		let num_el = 0;
 		[].forEach.call(document.querySelectorAll(el), function() {
@@ -126,24 +148,25 @@ function common_navCarousel2(sectionAll){
 			n.addEventListener('click', function() {
 
 				let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
-				if ( indexNav == 1 && count > 0 ) {
+				if ( indexNav == 1 && count > 3 ) {
 					count = count - step_el;
-				} else if ( indexNav == 2 && count < num_el ) {
+				} else if ( indexNav == 2 && count <= (num_el+2) ) {
 					count = count + step_el;
 				}
 
-				let first_el = count - step_el + 1;
-				let last_el = count;
-
-				if (count >= num_el) {
-					document.querySelector(nav + ':nth-child(2)').classList.add('style-disable');
-				} else if (count <= (step_el + 1) ) {
+				if (count > (num_el+2) ) {
+                    count = 3;
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+				} else if (count === 3 ) {
 					document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
 				} else {
 					[].forEach.call(document.querySelectorAll(nav), function(remove) {
 						remove.classList.remove('style-disable');
 					});
 				}
+
+                let first_el = count - step_el + 1;
+                let last_el = count;
 
 				[].forEach.call(document.querySelectorAll(el), function(element) {
 					element.classList.remove('displayBlock');
@@ -169,18 +192,19 @@ function common_navCarousel2(sectionAll){
 
 function common_horizontalScroll(sectionAll){
 	
-	[].forEach.call(document.querySelectorAll(sectionAll), function(section) {
-		section = '.' + section.className.split(" ")[0];
+    [].forEach.call(document.querySelectorAll(sectionAll), function(section) {
+        
+        section = '.' + section.className.split(" ")[0];
 		let slider = section + ' .container-slider';
-		let sliderWidth = document.querySelector(slider).clientWidth;
+		let sliderWidth = document.querySelector(slider + ' .container-el').clientWidth;
 		let progressbar = section + ' .container-line .line';
 
 		if(typeof(section) != 'undefined' && section != null){
-			
-		    function initHeight() {
+            
+            function initHeight() {
 				let a = window.innerWidth - 1200;
 				document.querySelector(section).style.height = sliderWidth - a + 'px';
-			};
+            };
 
 			initHeight();
 			
@@ -190,7 +214,33 @@ function common_horizontalScroll(sectionAll){
 				let b = (window.innerWidth / 100) * 25; 
 				let c = document.querySelector(section).clientWidth;
 
-				let scrollTop = window.scrollY - a + b;
+				let scrollTop = window.pageYOffset - a + b;
+
+                let bigHeightEL = 0;
+                [].forEach.call(document.querySelectorAll(section + ' .container-el .el'), function(el) {
+                    if( bigHeightEL < el.clientHeight) {
+                        bigHeightEL = el.clientHeight;
+                    }
+                });
+                
+                if(detectIE()) {
+                    let container = document.querySelector(section + ' .container');
+                    if( scrollTop > 357  &&  scrollTop < (parseInt(document.querySelector(section).style.height)-477) ) {
+                        container.classList.add('fixed');
+                    }
+                    else {
+                        container.classList.remove('fixed');
+                    }
+                    
+                    if( scrollTop > (parseInt(document.querySelector(section).style.height)-477) ) {
+                        container.classList.add('absolute');
+                        container.style.top = (parseInt(document.querySelector(section).style.height)-477-(bigHeightEL/2)) + 'px';
+                    }
+                    else {
+                        container.classList.remove('absolute');
+                        container.removeAttribute('style');
+                    }
+                }
 
 				document.querySelector(slider).style.webkitTransform = 'translateX(-' + scrollTop + 'px' + ')';
 				document.querySelector(slider).style.MozTransform = 'translateX(-' + scrollTop + 'px' + ')';
@@ -244,6 +294,7 @@ function common_sectionAutremetiers(){
 	});
 }
 
+/*
 function common_sectionPartenaires(){
 
         function getRandomInt(max) {
@@ -322,7 +373,54 @@ function common_sectionPartenaires(){
             }, 3000);
 
         });
-    }
+}
+*/
+
+function common_sectionPartenaires(){
+
+        function getRandomInt(max) {
+          return Math.floor(Math.random() * Math.floor(max));
+        }
+
+        function remplaceImg(img, data) {
+            img.classList.add('hide');
+            setTimeout(function(){
+                img.setAttribute('src', data);
+                setTimeout(function(){
+                    img.classList.remove('hide');
+                }, 250);
+            }, 250);
+        }
+
+        [].forEach.call(document.querySelectorAll('.common-section_partenaires'), function(section) {
+            
+            section = '.' + section.className.split(" ")[0];
+
+            let indexData = 1;
+            let dataImg = document.querySelector(section + ' .data-img').getAttribute('data-img').split(';');
+            let sectionData = document.querySelector(section + ' .data-img');
+            sectionData.parentNode.removeChild(sectionData);
+
+            for(indexData ; indexData <= 5 ; indexData++) {
+                remplaceImg(document.querySelector(section + ' .el:nth-child(' + indexData + ') img'), dataImg[indexData-1] );
+            }
+            
+            setInterval(function(){
+                
+                let seconde = 100;
+                for(let i = 1 ; i <= 5 ; i++) {
+                    setTimeout(function(){
+                        if(indexData > dataImg.length) indexData = 1;
+                        remplaceImg(document.querySelector(section + ' .el:nth-child(' + i + ') img'), dataImg[indexData-1] );
+                        indexData++;
+                    }, seconde);
+                    seconde += 100;
+                }
+
+            }, 3000);
+
+        });
+}
 
 /*=====  End of COMMON FUNCTION  ======*/
 
@@ -339,8 +437,6 @@ window.addEventListener('load', function() {
             window.location = this.getAttribute('data-href');
         });
     });
-
-	svg4everybody();
 
 });
 /*=====  End of ONLOAD RUN FUNCTION  ======*/
