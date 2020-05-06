@@ -47,7 +47,7 @@ function getJSON($url) {
 
 $apiKey = '8N8IA85igAsDtjSKVWuN3XGzSGyxe5SX';
 $numberOfReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f2700006400051a7265?apikey=' .$apiKey)->numberOfReviews->fiveStars;
-$allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f2700006400051a7265/reviews?apikey=' .$apiKey);
+$allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f2700006400051a7265/reviews?stars=5&perPage=8&apikey=' .$apiKey);
 
 /*=====================================
 =            END TRUSTPILOT           =
@@ -349,10 +349,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									</a>
 								</h3>
 								<p class="text-1">
-									Comparez les banques et obtenez le meilleur taux
+									Obtenez le meilleur taux
 								</p>
 								<p class="text-2">
-									A partir de 0,90%*
+									A partir de 0,90 %*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -378,10 +378,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									</a>
 								</h3>
 								<p class="text-1">
-									Obtenez le meilleur taux
+									Financez votre projet
 								</p>
 								<p class="text-2">
-									A partir de 0,40%*
+									A partir de 0,50 %*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -407,10 +407,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									</a>
 								</h3>
 								<p class="text-1">
-									Sur vos mensualités
+									Baissez vos mensualités
 								</p>
 								<p class="text-2">
-									Jusqu’à-80%*
+									Jusqu’à -80 %*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -436,10 +436,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									</a>
 								</h3>
 								<p class="text-1">
-									Quelque soit votre profil
+									Selon votre profil
 								</p>
 								<p class="text-2">
-									Économisez jusqu’à 33%*
+									Economisez jusqu’à 15.000 €*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -465,10 +465,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									</a>
 								</h3>
 								<p class="text-1">
-									Économisez
+									Devis immédiat
 								</p>
 								<p class="text-2">
-									Jusqu’à 235€*
+									Economisez jusqu'à 235 €*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -494,10 +494,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									</a>
 								</h3>
 								<p class="text-1">
-									À partir de 4,60€/mois
+									Assuré en 2 min
 								</p>
 								<p class="text-2">
-									Rendement de 2,80%*
+									Economisez jusqu’à 200 €*
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -523,10 +523,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									</a>
 								</h3>
 								<p class="text-1">
-									Obtenez le meilleur taux
+									Financez votre projet
 								</p>
 								<p class="text-2">
-									À partir de 0,40%*
+									Avec nos experts
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -625,52 +625,6 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						<a href="#">Les actualités</a>
 					</h2>
 					<div class="container-el">
-						<div class="el">
-							<div class="content toHref" data-href="#">
-								<div class="cover">
-									<img src="img/common-section_actu/img-1.png" alt="">
-								</div>
-								<div class="container-text">
-									<h4>
-										<a href="#">Les Francais</a>
-									</h4>
-									<p>
-										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
-									</p>
-									<div class="link">
-										<span class="link-text">
-											Lire la suite
-										</span>
-										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-										</svg>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="el">
-							<div class="content toHref" data-href="#">
-								<div class="cover">
-									<img src="img/common-section_actu/img-2.png" alt="">
-								</div>
-								<div class="container-text">
-									<h4>
-										<a href="#">Facebook Pay</a>
-									</h4>
-									<p>
-										Ut reprehenderit consectetur ipsum aliquip ea do voluptate enim do magna. Laborum est id magna exercitation est deserunt sit. 
-									</p>
-									<div class="link">
-										<span class="link-text">
-											Lire la suite
-										</span>
-										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-										</svg>
-									</div>
-								</div>
-							</div>
-						</div>
 						<div class="el">
 							<div class="content toHref" data-href="#">
 								<div class="cover">
@@ -986,19 +940,19 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 					<div class="data-img" data-img="img/common-section_partenaires/logo-CIC.svg;img/common-section_partenaires/logo-LCL.svg;img/common-section_partenaires/logo-CreditAgricole.svg;img/common-section_partenaires/logo-BNP.svg;img/common-section_partenaires/logo-CaisseEpargne.svg;img/common-section_partenaires/logo-CIC.svg;img/common-section_partenaires/logo-LCL.svg;img/common-section_partenaires/logo-CreditAgricole.svg;img/common-section_partenaires/logo-BNP.svg;img/common-section_partenaires/logo-CaisseEpargne.svg"></div>
 					<div class="container-el">
 						<div class="el">
-							<img src="" alt="logo partenaire">
+							<img src="img/common-section_partenaires/logo-CIC.svg" alt="logo partenaire">
 						</div>
 						<div class="el">
-							<img src="" alt="logo partenaire">
+							<img src="img/common-section_partenaires/logo-LCL.svg" alt="logo partenaire">
 						</div>
 						<div class="el">
-							<img src="" alt="logo partenaire">
+							<img src="img/common-section_partenaires/logo-CreditAgricole.svg" alt="logo partenaire">
 						</div>
 						<div class="el">
-							<img src="" alt="logo partenaire">
+							<img src="img/common-section_partenaires/logo-BNP.svg" alt="logo partenaire">
 						</div>
 						<div class="el">
-							<img src="" alt="logo partenaire">
+							<img src="img/common-section_partenaires/logo-CaisseEpargne.svg" alt="logo partenaire">
 						</div>
 					</div>
 					<div class="container-btn">
@@ -1373,7 +1327,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 			</section>
 
 			<section class="common-section_sousmetiers">
-				<h2>Nos sous métiers</h2>
+				<h2>Nos autres services</h2>
 				<div class="container">
 					<div class="wrapper">
 						
@@ -1416,7 +1370,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits consommation
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1439,7 +1393,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les rachat de crédits
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1462,7 +1416,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits professionnel
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1485,7 +1439,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurances animaux
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1508,7 +1462,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance auto
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1531,7 +1485,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance emprunteur
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1554,7 +1508,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance décès
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1577,7 +1531,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance habitation
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1600,7 +1554,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance loyer impayé
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1623,7 +1577,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance moto
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1646,7 +1600,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance obsèque
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1669,7 +1623,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance prévoyance
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1692,7 +1646,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance scolaire
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1715,7 +1669,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance voyage
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1738,7 +1692,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits mutuelle santé
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1761,7 +1715,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits assurance vie
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1784,7 +1738,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits défiscalisation
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1807,7 +1761,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits SCPI
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1830,7 +1784,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits banque en ligne
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1853,7 +1807,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits banque en ligne professionnelle
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1876,7 +1830,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits bourse
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1899,7 +1853,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits Livret d’épargne
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1922,7 +1876,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits PEA
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1945,7 +1899,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits électricité
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1968,7 +1922,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Comparer gratuitement les crédits gaz
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
