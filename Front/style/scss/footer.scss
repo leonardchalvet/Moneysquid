@@ -229,7 +229,12 @@ footer{
 			margin-top: 40px;
 			padding-bottom: 32px;
 			ul{
-				width: 45%;
+				&:nth-child(odd) {
+					width: 55%;
+				}
+				&:nth-child(even) {
+					width: 40%;
+				}
 				margin-bottom: 50px;
 				li{
 					.container-el{
