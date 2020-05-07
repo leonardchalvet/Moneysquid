@@ -57,6 +57,13 @@ function animScroll() {
             }
         }
     });
+
+
+    if (window.scrollY >= document.querySelector('footer').offsetTop - window.innerHeight + 82 ) {
+        document.querySelector('#common-btn_top').classList.add('style-white');
+    } else {
+        document.querySelector('#common-btn_top').classList.remove('style-white');
+    };
 };
 
 function common_navCarousel1(sectionAll){
