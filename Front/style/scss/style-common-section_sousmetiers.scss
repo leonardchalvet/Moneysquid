@@ -11,7 +11,12 @@
 	}
 	.container{
 		position: sticky;
-		
+		&.fixed {
+			position: fixed;
+		}
+		&.absolute {
+			position: absolute;
+		}
 		
 		width: 100%;
 		overflow: hidden;
@@ -46,7 +51,7 @@
 						}
 					}
 					.text{
-						white-space: initial;
+						white-space: normal;
 						width: 390px;
 						h3{
 							@include styleH3;
