@@ -76,6 +76,9 @@
 						display: block;
 						width: 242px;
 						margin-bottom: 50px;
+						@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+							height: 33px;
+						}
 					}
 					.container-el{
 						.el{
