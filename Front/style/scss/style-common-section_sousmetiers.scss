@@ -32,9 +32,21 @@
 		align-items: flex-end;
 
 		.container-el{
-			white-space: nowrap;
+
+			display: inline-flex;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				display: block;
+				white-space: nowrap;
+			}
+
 			.el{
-				display: inline-block;
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					display: inline-block;
+					white-space: normal;
+				}
 				&:not(:last-child){
 					margin-right: 165px;
 				}
@@ -82,6 +94,9 @@
 		.line{
 			height: 100%;
 			background-color: $colorUi_Text_1;
+		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			display: none;
 		}
 	}
 }
