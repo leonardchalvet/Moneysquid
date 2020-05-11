@@ -51,15 +51,15 @@ function detectIE() {
 function animScroll() {
 	let windowHeight = window.innerHeight / 1.2;
     [].forEach.call(document.getElementsByTagName('section'), function(el) {
-        if (window.scrollY >= el.offsetTop - windowHeight + (windowHeight/4)) {
-        	if (!el.classList.contains('style-reach')) {
+        if (window.pageYOffset >= el.offsetTop - windowHeight + (windowHeight/4)) {
+            if (!el.classList.contains('style-reach')) {
                 el.classList.add('style-reach');
             }
         }
     });
 
 
-    if (window.scrollY >= document.querySelector('footer').offsetTop - window.innerHeight + 82 ) {
+    if (window.pageYOffset >= document.querySelector('footer').offsetTop - window.innerHeight + 82 ) {
         document.querySelector('#common-btn_top').classList.add('style-white');
     } else {
         document.querySelector('#common-btn_top').classList.remove('style-white');
@@ -411,11 +411,13 @@ function common_sectionPartenaires(){
             setInterval(function(){
                 
                 let seconde = 100;
+                let index = 1;
                 for(let i = 1 ; i <= 5 ; i++) {
                     setTimeout(function(){
                         if(indexData > dataImg.length) indexData = 1;
-                        remplaceImg(document.querySelector(section + ' .el:nth-child(' + i + ') img'), dataImg[indexData-1] );
+                        remplaceImg(document.querySelector(section + ' .container-el .el:nth-child(' + index + ') img'), dataImg[indexData-1] );
                         indexData++;
+                        index++;
                     }, seconde);
                     seconde += 100;
                 }
@@ -432,7 +434,7 @@ function common_sectionPartenaires(){
 ===========================================*/
 window.addEventListener('load', function() {
 	
-    animScroll();;
+    animScroll();
 	
     /* DETECT BTN TOHREF */
 	[].forEach.call(document.getElementsByClassName('toHref'), function(toHref) {
@@ -452,6 +454,27 @@ window.addEventListener('scroll', function() {
     animScroll();
 });
 /*=====  End of ONSCROL RUN FUNCTION  ======*/
+
+
+/*===========================================
+=                ONLY FOR IE                =
+===========================================*/
+if(detectIE()) {
+    do {
+        [].forEach.call(document.getElementsByTagName('svg'), function(svg) {
+            let parent = svg.parentNode;
+            let getClass = svg.getAttribute('class');
+
+            let div = document.createElement("div");
+            div.setAttribute('class', getClass + ' img');
+
+            parent.removeChild(svg);
+            parent.appendChild(div);
+        });
+    } while( document.getElementsByTagName('svg').length > 1 );
+
+}
+/*=========  End of ONLY FOR IE  ==========*/
 
 
 
