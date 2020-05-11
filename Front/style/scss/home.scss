@@ -119,6 +119,17 @@
 					width: 10px;
 					fill: $colorUi_Text_1;
 				}
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					.icn-arrow.img {
+						background-image: url(../../img/common/icn-arrow-1-black.png);
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center;
+						width: 12px;
+						height: 10px;
+					}
+				}
+				
 			}
 			.btn{
 				@include styleButton_1(big, false, false);
