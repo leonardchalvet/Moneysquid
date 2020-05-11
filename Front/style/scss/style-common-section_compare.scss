@@ -36,6 +36,9 @@
 				padding-right: 40px;
 				img{
 					width: 210px;
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						height: 210px;
+					}
 				}
 			}
 			.text{
