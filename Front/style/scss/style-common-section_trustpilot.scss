@@ -18,9 +18,19 @@
 		align-items: flex-start;
 		flex-wrap: nowrap;
 
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			display: block;
+			white-space: nowrap;
+		}
+
 		transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 
 		.el{
+
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				display: inline-block;
+				white-space: normal;
+			}
 
 			&:first-child{
 				width: 285px;
