@@ -71,6 +71,17 @@
 						width: 7px;
 						fill: $colorUi_Text_1;
 					}
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						.icn-arrow.img {
+							background-image: url(../../img/common/icn-arrow-1-black.png);
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-position: center;
+							width: 10px;
+							height: 20px;
+						}
+					}					
+								
 					&:after{
 						content: '';
 						position: absolute;
@@ -311,6 +322,11 @@
 					.icn-arrow{
 						fill: $colorUi_Text_3;
 					}
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						.icn-arrow.img {
+							background-image: url(../../img/common/icn-arrow-1-white.png);
+						}
+					}
 				}
 			}
 			.container-action{
@@ -334,6 +350,11 @@
 						.btn-arrow{
 							stroke: $colorUi_Text_3;
 						}
+						@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+							.btn-arrow.img {
+								background-image: url(../../img/common/icn-arrow-2-white.png);
+							}
+						}
 
 						&:hover{
 							background-color: #FFF;
@@ -342,6 +363,11 @@
 							}
 							.btn-arrow{
 								stroke: $colorMain_2;
+							}
+							@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+								.btn-arrow.img {
+									background-image: url(../../img/common/icn-arrow-2-black.png);
+								}
 							}
 						}
 						
@@ -613,13 +639,23 @@
 		background-color: $colorUi_Text_1;
 		.icn-arrow{
 			stroke: #FFF;
-		}	
+		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {	
+			.icn-arrow.img {
+				background-image: url(../../img/common/icn-arrow-3-white.png);
+			}
+		}
 	}
 	&.style-white {
 		background-color: $colorUi_Text_3;
 		.icn-arrow{
 			stroke: #000;
-		}	
+		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {	
+			.icn-arrow.img {
+				background-image: url(../../img/common/icn-arrow-3-black.png);
+			}
+		}
 	}
 	.icn-arrow{
 		fill: transparent;
@@ -629,6 +665,14 @@
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+	}
+	@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {	
+		.icn-arrow.img {
+			background-repeat: no-repeat;
+			background-size: contain;
+			background-position: center;
+			height: 15px;
+		}
 	}
 	&:hover{
 		opacity: 1;

@@ -7,7 +7,7 @@
 		"uuidString": "630F0CCA-450C-45BD-9CC2-71A131CB134E"
 		}
 	],
-"creatorBuild": "32001",
+"creatorBuild": "32147",
 "files": {
 	"/2a1-metier-credit.php": {
 		"cB": 0,
@@ -131,34 +131,34 @@
 		},
 	"/img/actualites/banner-1.png": {
 		"ft": 32768,
-		"iS": 752095,
+		"iS": 378785,
 		"oA": 0,
 		"oAP": "/img/actualites/banner-1.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"/img/common-section_actu/img-1.png": {
 		"ft": 32768,
-		"iS": 241848,
+		"iS": 263201,
 		"oA": 0,
 		"oAP": "/img/common-section_actu/img-1.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"/img/common-section_actu/img-2.png": {
 		"ft": 32768,
-		"iS": 71590,
+		"iS": 241848,
 		"oA": 0,
 		"oAP": "/img/common-section_actu/img-2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -175,20 +175,20 @@
 	"/img/common-section_autremetiers/icn-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_autremetiers/icn-2.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_autremetiers/icn-3.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_autremetiers/icn-3.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -205,20 +205,20 @@
 	"/img/common-section_autremetiers/icn-5.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_autremetiers/icn-5.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_autremetiers/icn-6.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_autremetiers/icn-6.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -305,40 +305,40 @@
 	"/img/common-section_compare/illu-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_compare/illu-2.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_compare/illu-3.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_compare/illu-3.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_compare/illu-4.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_compare/illu-4.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_compare/illu-5.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_compare/illu-5.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -348,17 +348,17 @@
 		"oA": 0,
 		"oAP": "/img/common-section_compare/illu-6.svg",
 		"oF": 1,
-		"opt": 0,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_compare/illu-7.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_compare/illu-7.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -405,10 +405,10 @@
 	"/img/common-section_cover:sousmetier/illu-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/img/common-section_cover:sousmetier/illu-1.svg",
-		"oF": 1,
-		"opt": 1,
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -423,33 +423,44 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/common-section_humans/img-path.png": {
+		"ft": 32768,
+		"iS": 34944,
+		"oA": 0,
+		"oAP": "/img/common-section_humans/img-path.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/common-section_humans/img-path.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_humans/img-path.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_makedifferent/icn-check.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_makedifferent/icn-check.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_makedifferent/icn-cross.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_makedifferent/icn-cross.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -526,30 +537,30 @@
 	"/img/common-section_quotes/logo-lefigaro.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_quotes/logo-lefigaro.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_quotes/logo-leparisien.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_quotes/logo-leparisien.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/common-section_quotes/logo-lexpress.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_quotes/logo-lexpress.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -893,6 +904,17 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/img/common-section_why/img-path.png": {
+		"ft": 32768,
+		"iS": 34323,
+		"oA": 0,
+		"oAP": "/img/common-section_why/img-path.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/common-section_why/img-path.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -914,6 +936,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/img/common/icn-arrow-1-black.png": {
+		"ft": 32768,
+		"iS": 306,
+		"oA": 0,
+		"oAP": "/img/common/icn-arrow-1-black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/common/icn-arrow-1-white.png": {
+		"ft": 32768,
+		"iS": 219,
+		"oA": 0,
+		"oAP": "/img/common/icn-arrow-1-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/common/icn-arrow-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -924,6 +968,28 @@
 		"plM": 4010945798143,
 		"prP": 0
 		},
+	"/img/common/icn-arrow-2-black.png": {
+		"ft": 32768,
+		"iS": 374,
+		"oA": 0,
+		"oAP": "/img/common/icn-arrow-2-black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/common/icn-arrow-2-white.png": {
+		"ft": 32768,
+		"iS": 189,
+		"oA": 0,
+		"oAP": "/img/common/icn-arrow-2-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/common/icn-arrow-2.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -933,6 +999,28 @@
 		"opt": 1,
 		"plM": 4010945798143,
 		"prP": 0
+		},
+	"/img/common/icn-arrow-3-black.png": {
+		"ft": 32768,
+		"iS": 260,
+		"oA": 0,
+		"oAP": "/img/common/icn-arrow-3-black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/common/icn-arrow-3-white.png": {
+		"ft": 32768,
+		"iS": 224,
+		"oA": 0,
+		"oAP": "/img/common/icn-arrow-3-white.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/common/icn-arrow-3.svg": {
 		"ft": 2097152,
@@ -974,33 +1062,33 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
-	"/img/footer/icn-Facebook.svg": {
+	"/img/footer/icn-facebook.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
-		"oAP": "/img/footer/icn-Facebook.svg",
-		"oF": 1,
-		"opt": 1,
+		"oA": 2,
+		"oAP": "/img/footer/icn-facebook.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
-	"/img/footer/icn-Instagram.svg": {
+	"/img/footer/icn-instagram.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
-		"oAP": "/img/footer/icn-Instagram.svg",
-		"oF": 1,
-		"opt": 1,
+		"oA": 2,
+		"oAP": "/img/footer/icn-instagram.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
-	"/img/footer/icn-Linkedin.svg": {
+	"/img/footer/icn-linkedin.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
-		"oAP": "/img/footer/icn-Linkedin.svg",
-		"oF": 1,
-		"opt": 1,
+		"oA": 2,
+		"oAP": "/img/footer/icn-linkedin.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -1014,13 +1102,13 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
-	"/img/footer/icn-Twitter.svg": {
+	"/img/footer/icn-twitter.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
-		"oAP": "/img/footer/icn-Twitter.svg",
-		"oF": 1,
-		"opt": 1,
+		"oA": 2,
+		"oAP": "/img/footer/icn-twitter.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -1122,60 +1210,60 @@
 	"/img/sousmetier/section-compare/icn-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/img/sousmetier/section-compare/icn-1.svg",
-		"oF": 1,
-		"opt": 1,
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/sousmetier/section-howitwork/icn-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/img/sousmetier/section-howitwork/icn-1.svg",
-		"oF": 1,
-		"opt": 1,
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/sousmetier/section-knoweverything/icn-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/img/sousmetier/section-knoweverything/icn-1.svg",
-		"oF": 1,
-		"opt": 1,
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/sousmetier/section-seo/illu-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/img/sousmetier/section-seo/illu-1.svg",
-		"oF": 1,
-		"opt": 1,
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/sousmetier/section-simulation/icn-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/img/sousmetier/section-simulation/icn-1.svg",
-		"oF": 1,
-		"opt": 1,
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
 	"/img/sousmetier/section-simulation/path-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/img/sousmetier/section-simulation/path-1.svg",
-		"oF": 1,
-		"opt": 1,
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -1424,248 +1512,248 @@
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/common.css",
 		"oF": 2,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/footer.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/footer.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/header.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/header.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/home.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/style/css/home.css",
 		"oF": 2,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-page_actualites.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/style/css/style-common-page_actualites.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-page_metier.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/style/css/style-common-page_metier.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-page_metiers.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/style/css/style-common-page_metiers.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-page_sousmetier.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/style/css/style-common-page_sousmetier.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_actu.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_actu.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_autresmetiers.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_autresmetiers.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_compare.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_compare.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_humans.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_humans.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_makedifferent.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_makedifferent.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_newsletter.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_newsletter.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_partenaires.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_partenaires.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_quotes.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_quotes.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_sousmetiers.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_sousmetiers.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_trustpilot.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_trustpilot.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		},
 	"/style/scss/style-common-section_why.scss": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
-		"dS": 0,
+		"ec": 1,
 		"ft": 4,
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_why.css",
 		"oF": 0,
 		"oS": 3,
-		"uL": 1
+		"sct": 1
 		}
 	},
 "hooks": [
@@ -3697,13 +3785,13 @@
 		"autoOutputPathReplace1": "sass",
 		"autoOutputPathReplace2": "css",
 		"autoOutputPathStyle": 2,
+		"compilerType": 1,
 		"createSourceMap": 1,
-		"debugStyle": 0,
 		"decimalPrecision": 10,
+		"emitCharset": 1,
 		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
-		"shouldRunBless": 0,
-		"useLibsass": 1
+		"shouldRunBless": 0
 		},
 	"languageDefaultsSLIM": {
 		"autoOutputAction": 0,
