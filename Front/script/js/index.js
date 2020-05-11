@@ -9,6 +9,29 @@ window.addEventListener('load', function() {
 		document.querySelector('.section-cover .container-comp').classList.remove('style-open');
 	})
 
+	document.querySelector('.section-cover .container-comp .container-input .input input').addEventListener('keyup', function() {
+        let value = this.value.toLowerCase();
+        if(value.length > 0) {
+        	[].forEach.call(document.querySelectorAll('.section-cover .container-comp .container-dropdown ul'), function(ul) {
+        		[].forEach.call(ul.querySelectorAll('li:not(:first-child)'), function(li) {
+        			if( !li.textContent.trim().toLowerCase().includes( value ) ) {
+        				li.classList.add('hide');
+        			}
+        			else {
+        				li.classList.remove('hide');
+        			}
+        		});
+        	});
+        }
+        else {
+        	[].forEach.call(document.querySelectorAll('.section-cover .container-comp .container-dropdown ul'), function(ul) {
+        		[].forEach.call(ul.querySelectorAll('li:not(:first-child)'), function(li) {
+        			li.classList.remove('hide');
+        		});
+        	});
+        }
+    });
+
 
 	function sectionCoverInput_scroll(){
 		let el = document.querySelector('.section-cover .container-comp');

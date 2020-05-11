@@ -598,7 +598,6 @@
 	}
 }
 #common-btn_top{
-	background-color: $colorUi_Text_1;
 	height: 70px;
 	width: 70px;
 	border-radius: 35px;
@@ -610,9 +609,20 @@
 	opacity: 0;
 	transition: all 0.5s ease;
 	visibility: hidden;
+	&:not(.style-white) {
+		background-color: $colorUi_Text_1;
+		.icn-arrow{
+			stroke: #FFF;
+		}	
+	}
+	&.style-white {
+		background-color: $colorUi_Text_3;
+		.icn-arrow{
+			stroke: #000;
+		}	
+	}
 	.icn-arrow{
 		fill: transparent;
-		stroke: #FFF;
 		position: absolute;
 		stroke-width: 2px;
 		width: 24px;
