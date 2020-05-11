@@ -65,6 +65,14 @@
 		"oAP": "/3a1-sous-metier-credit-consommation.php",
 		"oF": 0
 		},
+	"/4a-actualites.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/4a-actualites.php",
+		"oF": 0
+		},
 	"/check-connexion.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -120,6 +128,17 @@
 		"oA": 0,
 		"oAP": "/fonts/Muli-Regular.ttf",
 		"oF": 0
+		},
+	"/img/actualites/banner-1.png": {
+		"ft": 32768,
+		"iS": 752095,
+		"oA": 0,
+		"oAP": "/img/actualites/banner-1.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/common-section_actu/img-1.png": {
 		"ft": 32768,
@@ -1140,16 +1159,6 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
-	"/img/sousmetier/section-seo/Section/illu-1.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/sousmetier/section-seo/Section/illu-1.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 4010962575359,
-		"prP": 0
-		},
 	"/img/sousmetier/section-simulation/icn-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1222,6 +1231,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/js/js-common-page_actualites.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/js-common-page_actualites-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/js/js-common-page_metiers.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1277,6 +1297,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/minify/js-common-page_actualites-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/js-common-page_actualites-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/minify/js-common-page_metiers-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1315,6 +1346,24 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/style/css/home.css.map",
+		"oF": 0
+		},
+	"/style/css/style-common-page_actualites.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-common-page_actualites-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/style-common-page_actualites.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-common-page_actualites.css.map",
 		"oF": 0
 		},
 	"/style/css/style-common-page_metier.css": {
@@ -1420,6 +1469,19 @@
 		"oA": 0,
 		"oAP": "/style/css/home.css",
 		"oF": 2,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/style-common-page_actualites.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/style/css/style-common-page_actualites.css",
+		"oF": 0,
 		"oS": 3,
 		"uL": 1
 		},
