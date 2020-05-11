@@ -468,6 +468,16 @@ main
 				stroke: $colorUi_Text_1;
 				transition: all 200ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				.btn-arrow.img {
+					background-image: url(../../img/common/icn-arrow-2-black.png);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					width: 10px;
+					height: 12px;
+				}
+			}
 		} @else if $size == small {
 			padding: 16px 24px 16px 24px;
 			border-radius: 12px;
@@ -483,6 +493,20 @@ main
 				transition: all 200ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 				@media screen and (max-width: $breakPoint_tablet){
 					height: 14px;
+				}
+			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				.btn-arrow.img {
+					background-image: url(../../img/common/icn-arrow-2-black.png);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					width: 10px;
+					height: 8px;
+					@media screen and (max-width: $breakPoint_tablet){
+						width: 16px;
+						width: 14px;
+					}
 				}
 			}
 		}
@@ -537,6 +561,16 @@ main
 			margin-left: 12px;
 			transition: all 200ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			.btn-arrow.img {
+				background-image: url(../../img/common/icn-arrow-2-white.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 10px;
+				height: 10px;
+			}
+		}
 		&:hover{
 			background-color: $colorHover_2;
 			.btn-arrow{
@@ -566,6 +600,16 @@ main
 			stroke: $colorUi_Text_1;
 			transition: stroke 250ms ease, transform 250ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			.btn-arrow.img {
+				background-image: url(../../img/common/icn-arrow-2-black.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 10px;
+				height: 10px;
+			}
+		}
 		&:hover{
 			background-color: $colorUi_Text_1;
 			.btn-text{
@@ -574,6 +618,11 @@ main
 			.btn-arrow{
 				transform: translateX(7px);
 				stroke: #FFF;
+			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				.btn-arrow.img {
+					background-image: url(../../img/common/icn-arrow-2-white.png);
+				}
 			}
 		}
 	}
@@ -610,6 +659,16 @@ main
 			transition: all 200ms ease;
 			@media screen and (max-width: $breakPoint_tablet){
 				height: 14px;
+			}
+		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			.link-arrow.img {
+				background-image: url(../../img/common/icn-arrow-2-black.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 10px;
+				height: 8px;
 			}
 		}
 
@@ -649,6 +708,16 @@ main
 				transform: translate(-50%, -50%) rotate(180deg);
 			}
 		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			.img {
+				background-image: url(../../img/common/icn-arrow-2-black.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 12px;
+				height: 10px;
+			}
+		}
 
 		&.style-disable{
 			opacity: 0.2;
@@ -659,6 +728,11 @@ main
 				background-color: $colorUi_Text_1;
 				.nav-arrow{
 					stroke: #FFF;
+				}
+			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				&:hover .img {
+					background-image: url(../../img/common/icn-arrow-2-white.png);
 				}
 			}
 		}
