@@ -4,6 +4,11 @@ window.addEventListener('load', function() {
 
 	document.querySelector('.section-cover .container-comp .container-input .input input').addEventListener('focusin', function() {
 		document.querySelector('.section-cover .container-comp').classList.add('style-open');
+
+		if (window.matchMedia('(max-width:' + breakPoint_tablet + 'px)').matches) {
+			window.scrollTo(0, this.offsetTop + 150);
+		}
+
 	})
 	document.querySelector('.section-cover .container-comp .container-input .input input').addEventListener('focusout', function() {
 		document.querySelector('.section-cover .container-comp').classList.remove('style-open');
@@ -59,9 +64,10 @@ window.addEventListener('load', function() {
 		common_navCarousel1('.common-section_trustpilot');
 		common_sectionPartenaires();
 		common_navCarousel2('.common-section_quotes');
-		common_horizontalScroll('.common-section_sousmetiers');
+		common_navCarousel3('.common-section_sousmetiers');
 	} else {
 		common_sectionAutremetiers();
+		common_sectionPartenaires();
 	}
 	
 });
