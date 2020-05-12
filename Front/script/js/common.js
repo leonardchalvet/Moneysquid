@@ -197,6 +197,84 @@ function common_navCarousel2(sectionAll){
 	});
 };
 
+function common_navCarousel3(sectionAll){
+
+    [].forEach.call(document.querySelectorAll(sectionAll), function(section) {
+
+        section = '.' + section.className.split(" ")[0];
+
+        let containerEl = section + ' .container-el';
+        let el = section + ' .container-el .el';
+
+        let width_containerEl = document.querySelector(containerEl).clientWidth;
+        let width_el = document.querySelector(el+':nth-child(1)').clientWidth;
+
+        let margin_el = getComputedStyle(document.querySelector(el+':nth-child(1)')).marginRight;
+        margin_el = margin_el ? parseInt(margin_el) : 0;
+
+        let num_el = 0;
+        [].forEach.call(document.querySelectorAll(el), function(el) {
+            num_el++;
+        });
+        
+        let nav = section + ' .container-nav .nav';
+        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+
+        let count = 0;
+
+        let slideData;
+
+        let containerLine = section + ' .container-line';
+        let line = containerLine + ' .line';
+        document.querySelector(containerLine).style.width = (width_containerEl-(width_el/2)) + 'px';
+        document.querySelector(line).style.width = ((width_containerEl/num_el)/2) + 'px';
+
+        [].forEach.call(document.querySelectorAll(nav), function(n) {
+            n.addEventListener('click', function() {
+
+                let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
+                if ( indexNav == 1 && count > 0 ) {
+                    count--;
+                } else if ( indexNav == 2 && count < num_el ) {
+                    count++;
+                }
+
+                if (count >= num_el) {
+                    count = 0;
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+                } else if (count === 0) {
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+                } else {
+                    [].forEach.call(document.querySelectorAll(nav), function(remove) {
+                        remove.classList.remove('style-disable');
+                    });
+                }
+
+                slideData = count * (width_el + margin_el);
+
+                document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(containerEl).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(containerEl).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(containerEl).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+
+                document.querySelector(containerLine).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(containerLine).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(containerLine).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(containerLine).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(containerLine).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+
+                document.querySelector(line).style.webkitTransform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(line).style.MozTransform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(line).style.msTransform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(line).style.OTransform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
+                document.querySelector(line).style.transform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
+            });
+        });
+    });
+};
+
+/*
 function common_horizontalScroll(sectionAll){
 	
     [].forEach.call(document.querySelectorAll(sectionAll), function(section) {
@@ -281,6 +359,7 @@ function common_horizontalScroll(sectionAll){
 		}
 	});
 };
+*/
 
 function common_sectionAutremetiers(){
 	console.log('salut');
@@ -301,7 +380,6 @@ function common_sectionAutremetiers(){
 	});
 }
 
-/*
 function common_sectionPartenaires(){
 
         function getRandomInt(max) {
@@ -323,13 +401,16 @@ function common_sectionPartenaires(){
             section = '.' + section.className.split(" ")[0];
 
             let imgAct = [ 0, 1, 2, 3, 4 ];
+            let subLength = 0;
+            [].forEach.call(document.querySelectorAll('.common-section_partenaires .container-el .el'), function(el) {
+                if(getComputedStyle(el).display !== 'none') {
+                    subLength++;
+                }
+            });
+            subLength = imgAct.length - (imgAct.length - subLength);
             let dataImg = document.querySelector(section + ' .data-img').getAttribute('data-img').split(';');
             let sectionData = document.querySelector(section + ' .data-img');
             sectionData.parentNode.removeChild(sectionData);
-
-            for(let i=1 ; i <= imgAct.length ; i++) {
-                remplaceImg(document.querySelector(section + ' .el:nth-child(' + i + ') img'), dataImg[imgAct[i-1]] );
-            }
 
             
             let choiceEl = 0;
@@ -342,7 +423,7 @@ function common_sectionPartenaires(){
                 choiceData = getRandomInt(dataImg.length);
                 do {
                     bool = true;
-                    for(let i=0 ; i < imgAct.length ; i++) {
+                    for(let i=0 ; i < subLength ; i++) {
                         if(imgAct[i] == choiceData) {
                             bool = false;
                         }
@@ -353,7 +434,7 @@ function common_sectionPartenaires(){
                 } while(!bool);
 
                 bool = true;
-                choiceEl   = getRandomInt(imgAct.length);
+                choiceEl   = getRandomInt(subLength);
                 do {
                     bool = true;
                     for(let i=0 ; i < prevChoice.length ; i++) {
@@ -362,7 +443,7 @@ function common_sectionPartenaires(){
                         }
                     }
                     if(!bool) {
-                        choiceEl = getRandomInt(imgAct.length);
+                        choiceEl = getRandomInt(subLength);
                     }
                 } while(!bool);
 
@@ -377,52 +458,7 @@ function common_sectionPartenaires(){
 
                 remplaceImg( document.querySelector(section + ' .el:nth-child(' + (choiceEl+1) + ') img'), dataImg[choiceData] );
 
-            }, 3000);
-
-        });
-}
-*/
-
-function common_sectionPartenaires(){
-
-        function getRandomInt(max) {
-          return Math.floor(Math.random() * Math.floor(max));
-        }
-
-        function remplaceImg(img, data) {
-            img.classList.add('hide');
-            setTimeout(function(){
-                img.setAttribute('src', data);
-                setTimeout(function(){
-                    img.classList.remove('hide');
-                }, 250);
-            }, 250);
-        }
-
-        [].forEach.call(document.querySelectorAll('.common-section_partenaires'), function(section) {
-            
-            section = '.' + section.className.split(" ")[0];
-
-            let indexData = 6;
-            let dataImg = document.querySelector(section + ' .data-img').getAttribute('data-img').split(';');
-            let sectionData = document.querySelector(section + ' .data-img');
-            sectionData.parentNode.removeChild(sectionData);
-            
-            setInterval(function(){
-                
-                let seconde = 100;
-                let index = 1;
-                for(let i = 1 ; i <= 5 ; i++) {
-                    setTimeout(function(){
-                        if(indexData > dataImg.length) indexData = 1;
-                        remplaceImg(document.querySelector(section + ' .container-el .el:nth-child(' + index + ') img'), dataImg[indexData-1] );
-                        indexData++;
-                        index++;
-                    }, seconde);
-                    seconde += 100;
-                }
-
-            }, 3000);
+            }, 2000);
 
         });
 }
