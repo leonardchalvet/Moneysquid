@@ -51,6 +51,7 @@
 					}
 					a{
 						@include styleLink_1;
+						width: calc(100% - 75px);
 						.link-text{
 							flex: 1;
 						}
@@ -157,6 +158,9 @@
 						height: 0px;
 						li{
 							width: 100%;
+							a {
+								width: 100%;
+							}
 						}
 					}
 				}
