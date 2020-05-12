@@ -102,11 +102,24 @@
 					@include styleH5;
 					font-family: $font_1_Regular;
 					&::placeholder{
-						@include styleH5;
+						font-family: $font_1_Bold;
 						color: $colorUi_Text_1;
+						line-height: 100px;
+						vertical-align: middle;
+						opacity: 1;
+					}
+					&:-ms-input-placeholder {
+						font-family: $font_1_Bold;
+						color: $colorUi_Text_1;
+						line-height: 100px;
+						vertical-align: middle;
+						opacity: 1;
 					}
 					&:focus{
 						&::placeholder{
+							color: $colorUi_Text_2;
+						}
+						&:-ms-input-placeholder {
 							color: $colorUi_Text_2;
 						}
 					}
@@ -258,6 +271,11 @@
 						font-size: 14px;
 						&::placeholder{
 							font-size: 14px;
+							line-height: 60px;
+						}
+						&:-ms-input-placeholder {
+							font-size: 14px;
+							line-height: 60px;
 						}
 					}
 					.icn-arrow{
