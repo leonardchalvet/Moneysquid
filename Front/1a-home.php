@@ -370,6 +370,22 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 					</div>
 			</section>
 
+			<section class="common-section_cta_compare">
+					<div class="wrapper">
+						<a href="" class="btn">
+							<span class="btn-text">
+								Je compare
+							</span>
+							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+							</svg>
+						</a>
+						<p class="tagline">
+							Rapide, gratuit, sans engagement !
+						</p>
+					</div>
+			</section>
+
 			<section class="common-section_compare">
 				<div class="wrapper">
 					<div class="container-el">
@@ -1739,7 +1755,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-17.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-26.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance vie</a></h3>
@@ -1762,7 +1778,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-18.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-17.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Défiscalisation</a></h3>
@@ -1785,7 +1801,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-19.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-18.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">SCPI</a></h3>
@@ -1808,7 +1824,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-20.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-19.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Banque en ligne</a></h3>
@@ -1831,7 +1847,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-21.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-20.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Banque en ligne professionnelle</a></h3>
@@ -1854,7 +1870,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-22.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-21.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Bourse</a></h3>
@@ -1877,7 +1893,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-23.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-22.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Livret d’épargne</a></h3>
@@ -1900,7 +1916,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-24.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-23.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">PEA (plan d’épargne en action)</a></h3>
@@ -1923,7 +1939,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-25.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-24.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Électricité</a></h3>
@@ -1946,7 +1962,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-26.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-25.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Gaz</a></h3>
