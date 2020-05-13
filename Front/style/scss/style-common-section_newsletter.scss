@@ -46,7 +46,7 @@
 			.btn{
 				@include styleButton_2;
 			}
-			&.style-focus{
+			&:focus-within{
 				border-color: $colorMain_3;
 			}
 
