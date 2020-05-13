@@ -1,4 +1,4 @@
-// @codekit-prepend 'header.js'
+// @codekit-prepend 'js-element_header'
 
 /*===================================
 =            BREAK POINT            =

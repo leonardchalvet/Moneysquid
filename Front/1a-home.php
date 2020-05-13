@@ -68,7 +68,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0"/>
 
-		<link rel="stylesheet" type="text/css" href="style/css/home.css">
+		<link rel="stylesheet" type="text/css" href="style/css/style-page_home.css">
 
 	</head>
 	
@@ -2845,6 +2845,6 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 
 		<?php include('common-footer.php') ?>
 
-		<script type="text/javascript" src="script/minify/index-min.js"></script>
+		<script type="text/javascript" src="script/minify/js-page_home-min.js"></script>
 	</body>
 </html>
