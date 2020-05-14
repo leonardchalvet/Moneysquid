@@ -1,6 +1,5 @@
 /*----------  SECTION FAQ  ----------*/
 .common-section_faq {
-	padding-top: 120px;
 	padding-bottom: 120px;
 	position: relative;
 	.wrapper{
@@ -23,13 +22,18 @@
 		text-align: center;
 	}
 	.container-el {
-		margin-top: 40px;
+		margin-top: 60px;
 		.el {
+			cursor: pointer;
 			padding: 20px;
 			border-radius: 16px;
 			border: 1px solid $colorUi_GreyNuance_1;
+			transition: background .25s ease;
+			&:hover {
+				background-color: $colorUi_GreyNuance_2;
+			}
 			&:not(:last-child) {
-				margin-bottom: 4px;
+				margin-bottom: 16px;
 			}
 			&:not(.active) {
 				>p, .link {
@@ -37,13 +41,21 @@
 				}
 			}
 			.row {
-				cursor: pointer;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
-				p {
-					@include styleParagraphMedium($font_1_Bold);
+				.question {
 					width: calc(100% - 40px);
+					display: flex;
+					align-items: baseline;
+					.icn {
+						margin-right: 10px;
+					}
+					span {
+						@include styleParagraphMedium($font_1_Bold);
+						display: block;
+						flex: 1;
+					}
 				}
 				.arrow {
 					fill: none;
@@ -88,18 +100,13 @@
 
 @media screen and (max-width: $breakPoint_mobile){
 	.common-section_faq {
+		padding-top: 100px;
+		padding-bottom: 100px;
 		.path-1{
 			display: none;
 		}
 		.path-2{
 			display: none;
-		}	
-		.container-el {
-			.el {
-				&:not(:last-child) {
-					margin-bottom: 8px;
-				}
-			}
 		}
 	}
 }
