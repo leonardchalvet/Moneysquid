@@ -2121,7 +2121,8 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 										<a href="">
 											<span class="link-text">
 												<span>
-												Comparateur rachat de crédit
+													Comparateur rachat de crédit
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -3049,7 +3050,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 					<div class="container-el">
 						<div class="el">
 							<div class="row">
-								<p>🏠  Je suis titulaire d’un Épargne Logement. Comment puis-je utiliser mes droits à prêt, dans le cadre d’une acquisition immobilière ?</p>
+								<div class="question">
+									<div class="icn">🏠</div>
+									<span>Je suis titulaire d’un Épargne Logement. Comment puis-je utiliser mes droits à prêt, dans le cadre d’une acquisition immobilière ?</span>
+								</div>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
@@ -3070,7 +3074,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="row">
-								<p>💼  Puis-je bénéficier d'un crédit si je suis retraité ? Au chômage ? Etudiant, intérimaire ou en CDD ? Fiché Banque de France ?</p>
+								<div class="question">
+									<div class="icn">💼</div>
+									<span>Puis-je bénéficier d'un crédit si je suis retraité ? Au chômage ? Etudiant, intérimaire ou en CDD ? Fiché Banque de France ?</span>
+								</div>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
@@ -3091,7 +3098,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="row">
-								<p>📄  Comment puis-je utiliser mes droits à prêt, dans le cadre d’une acquisition immobilière ?</p>
+								<div class="question">
+									<div class="icn">📄</div>
+									<span>Comment puis-je utiliser mes droits à prêt, dans le cadre d’une acquisition immobilière ?</span>
+								</div>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
@@ -3112,7 +3122,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="row">
-								<p>🔥  L'assurance emprunteur est-elle obligatoire ?</p>
+								<div class="question">
+									<div class="icn">🔥</div>
+									<span>L'assurance emprunteur est-elle obligatoire ?</span>
+								</div>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
@@ -3133,7 +3146,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="row">
-								<p>🚘  À quoi sert une assurance pour un crédit à la consommation ?</p>
+								<div class="question">
+									<div class="icn">🚘</div>
+									<span>À quoi sert une assurance pour un crédit à la consommation ?</span>
+								</div>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
@@ -3154,7 +3170,10 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 						<div class="el">
 							<div class="row">
-								<p>🏠  Comment s'appréhende la durée d'indemnisation prévue au contrat d'assurance perte d'emploi souscrite avec un crédit immobilier ?</p>
+								<div class="question">
+									<div class="icn">🏠</div>
+									<span>Comment s'appréhende la durée d'indemnisation prévue au contrat d'assurance perte d'emploi souscrite avec un crédit immobilier ?</span>
+								</div>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 								</svg>
