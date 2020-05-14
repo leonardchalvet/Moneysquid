@@ -122,19 +122,25 @@
 	width: 100%;
 	background: $colorBlueNuances_gradient;
 	
+	transform: translateY(100%);
+	transition: all .5s ease;
+
+	&.show {
+		transform: translateY(0);
+	}
+
 	.wrapper {
 		@include styleGrid3;
 	}
 	.btn{
-		@include styleButton_1(big, false, false);
+		@include styleButton_1(small, false, false);
 		width: 100%;
 		justify-content: center;
 	}
 	.tagline {
-		margin-top: 16px;
+		margin-top: 15px;
 		text-align: center;
-		@include styleH5;
-		font-family: $font_1_Bold_Italic;
+		@include styleParagraphSmall($font_1_Bold_Italic);
 		color: #FFF;
 	}
 }
