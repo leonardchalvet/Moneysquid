@@ -27,16 +27,16 @@ document.querySelector("#common-btn_top").addEventListener('click', function() {
 =            COMMON FUNCTION            =
 =======================================*/
 
-[].forEach.call(document.querySelectorAll('.common-section_faq .container-el .el .row'), function(el) {
+[].forEach.call(document.querySelectorAll('.common-section_faq .container-el .el'), function(el) {
     el.addEventListener('click', function(){
-        if( el.parentNode.classList.contains('active') ) {
-            el.parentNode.classList.remove('active');
+        if( el.classList.contains('active') ) {
+            el.classList.remove('active');
         }
         else {
-            [].forEach.call(document.querySelectorAll('.common-section_faq .container-el .el .row'), function(r) {
-                r.parentNode.classList.remove('active');
+            [].forEach.call(document.querySelectorAll('.common-section_faq .container-el .el'), function(r) {
+                r.classList.remove('active');
             });
-            el.parentNode.classList.add('active');
+            el.classList.add('active');
         }
     });
 });
