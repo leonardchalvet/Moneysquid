@@ -22,50 +22,8 @@
 		}
 		.container-input{
 			margin-top: 16px;
-			width: 420px;
-			height: 60px;
-			border-radius: 12px;
-			background-color: #FFF;
-			padding-right: 3px;
-			display: flex;
-			flex-flow: row wrap;
-			align-items: center;
-			border: 1px solid transparent;
-			transition: all 0.25s ease;
-			input{
-				outline: none;
-				padding-left: 20px;
-				flex: 1;
-				border: none;
-				@include styleParagraphMedium($font_1_Regular);
-				&::placeholder{
-					@include styleParagraphMedium($font_1_Regular);
-					color: $colorUi_Text_2;
-				}
-			}
-			.btn{
-				@include styleButton_2;
-			}
-			&:focus-within{
-				border-color: $colorMain_3;
-			}
-
 		}
-		.container-cg{
-			margin-top: 24px;
-			display: flex;
-			flex-flow: row wrap;
-			align-items: flex-start;
-			input{
-				margin-top: 2px;
-				margin-right: 16px;
-			}
-			p{
-				flex: 1;
-				@include styleParagraphTiny($font_1_Regular);
-				color: rgba(255, 255, 255, 0.7);
-			}
-		}
+		@include styleFormNewsletter;
 	}
 }
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
@@ -88,10 +46,6 @@
 			width: 100%;
 			.container-input{
 				margin-top: 24px;
-				width: 100%;
-				input{
-					width: 100px;
-				}
 			}
 		}
 	}

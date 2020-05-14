@@ -1,0 +1,150 @@
+.common-element-lightbox{
+	position: fixed;
+	z-index: -1;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease;
+
+	.background{
+		cursor: pointer;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.1);
+		transition: all 0.25s ease;
+	}
+	.content{
+		z-index: 1;
+		@media screen and (min-width: $breakPoint_mobile){
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			border-radius: 16px;
+			background-color: #FFF;
+		}
+		@media screen and (max-width: $breakPoint_mobile){
+			position: relative;
+		}
+		
+		
+
+		.cross{
+			cursor: pointer;
+			width: 16px;
+			height: 16px;
+			position: absolute;
+			right: 32px;
+			top: 32px;
+			svg{
+				fill: $colorUi_Text_1;
+				width: 100%;
+			}
+		}
+	}
+
+	/* STYLE SHOW */
+	&.style-show{
+		z-index: 30;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	@media screen and (max-width: $breakPoint_mobile){
+		.content{
+			width: 100% !important;
+		}
+		.background{
+			background-color: #FFF;
+		}
+	}
+
+	&.lightbox-newsletter{
+		.content{
+			width: 775px;
+		}
+		.container-lightbox{
+			padding: 50px;
+			text-align: center;
+			.illu{
+				img{
+					width: 225px;	
+				}
+			}
+			.title{
+				margin-top: 45px;
+				@include styleH3;
+				color: $colorUi_Text_1;
+			}
+			.text{
+				margin-top: 8px;
+				@include styleParagraphMedium($font_1_Regular);
+				color: $colorUi_Text_2;
+			}
+			@include styleFormNewsletter;
+			.container-input{
+				margin: auto;
+				margin-top: 18px;
+				border-color: $colorUi_GreyNuance_1;
+			}
+			.container-cg{
+				width: 400px;
+				margin-left: auto;
+				margin-right: auto;
+				p{
+					text-align: left;
+					color: $colorUi_Text_2;
+				}
+			}
+		}
+
+		@media screen and (max-width: $breakPoint_mobile){
+			.container-lightbox{
+				@include styleGrid1;
+				.illu{
+					img{
+						width: 165px;
+					}
+				}
+				.container-cg{
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	&.lightbox-thanks{
+		.content{
+			width: 584px;
+		}
+		.container-lightbox{
+			padding: 50px;
+			text-align: center;
+			.illu{
+				img{
+					width: 115px;	
+				}
+			}
+			.title{
+				margin-top: 45px;
+				@include styleH3;
+				color: $colorUi_Text_1;
+			}
+			.text{
+				margin-top: 8px;
+				@include styleParagraphMedium($font_1_Regular);
+				color: $colorUi_Text_2;
+			}
+		}
+	}
+	
+}
