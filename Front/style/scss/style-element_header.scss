@@ -674,12 +674,12 @@
 			height: 15px;
 		}
 	}
-	&:hover{
-		opacity: 1;
-	}
 	&.style-show{
 		opacity: 0.5;
 		visibility: visible;
+	}
+	&:hover{
+		opacity: 1;
 	}
 }
 
