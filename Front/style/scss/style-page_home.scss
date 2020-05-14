@@ -100,18 +100,17 @@
 					border: none;
 					flex: 1;
 					@include styleH5;
+					line-height: 100px !important;
 					font-family: $font_1_Regular;
 					&::placeholder{
 						font-family: $font_1_Bold;
 						color: $colorUi_Text_1;
-						line-height: 100px;
 						vertical-align: middle;
 						opacity: 1;
 					}
 					&:-ms-input-placeholder {
 						font-family: $font_1_Bold;
 						color: $colorUi_Text_1;
-						line-height: 100px;
 						vertical-align: middle;
 						opacity: 1;
 					}
@@ -197,7 +196,9 @@
 							justify-content: space-between;
 							.link-text{
 								flex: 1;
-								font-family: $font_1_Regular;
+								span {
+									font-family: $font_1_Regular;
+								}
 							}
 						}
 					}
@@ -343,6 +344,7 @@
 @import 'style-common-section_sousmetiers.scss';
 @import 'style-common-section_autresmetiers.scss';
 @import 'style-common-section_newsletter.scss';
+@import 'style-common-section_faq.scss';
 
 
 /*====================================
