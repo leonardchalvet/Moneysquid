@@ -1,0 +1,105 @@
+/*----------  SECTION FAQ  ----------*/
+.common-section_faq {
+	padding-top: 120px;
+	padding-bottom: 120px;
+	position: relative;
+	.wrapper{
+		@include styleGrid5;
+	}
+	.path-1{
+		position: absolute;
+		left: 0px;
+		top: 120px;
+		height: 365px;
+	}
+	.path-2{
+		position: absolute;
+		right: 0px;
+		top: 275px;
+		height: 220px;
+	}
+	h2 {
+		@include styleH2;
+		text-align: center;
+	}
+	.container-el {
+		margin-top: 40px;
+		.el {
+			padding: 20px;
+			border-radius: 16px;
+			border: 1px solid $colorUi_GreyNuance_1;
+			&:not(:last-child) {
+				margin-bottom: 4px;
+			}
+			&:not(.active) {
+				>p, .link {
+					display: none;
+				}
+			}
+			.row {
+				cursor: pointer;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				p {
+					@include styleParagraphMedium($font_1_Bold);
+					width: calc(100% - 40px);
+				}
+				.arrow {
+					fill: none;
+					stroke: $colorUi_Text_1;
+					width: 16px;
+					height: 12px;
+					transform: rotate(90deg);
+					transition: transform .25s ease;
+				}
+			}
+			>p {
+				width: calc(100% - 40px);
+				margin-top: 16px;
+				@include styleParagraphMedium($font_1_Regular);
+				color: $colorUi_Text_2;
+			}
+			.link {
+				margin-top: 16px;
+				@include styleLink_1;
+			}
+			&.active {
+				.row {
+					.arrow {
+						transform: rotate(270deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
+	.common-section_faq {
+		.path-1{
+			display: none;
+		}
+		.path-2{
+			display: none;
+		}	
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile){
+	.common-section_faq {
+		.path-1{
+			display: none;
+		}
+		.path-2{
+			display: none;
+		}	
+		.container-el {
+			.el {
+				&:not(:last-child) {
+					margin-bottom: 8px;
+				}
+			}
+		}
+	}
+}
