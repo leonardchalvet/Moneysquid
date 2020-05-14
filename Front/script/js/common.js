@@ -27,6 +27,20 @@ document.querySelector("#common-btn_top").addEventListener('click', function() {
 =            COMMON FUNCTION            =
 =======================================*/
 
+[].forEach.call(document.querySelectorAll('.common-section_faq .container-el .el .row'), function(el) {
+    el.addEventListener('click', function(){
+        if( el.parentNode.classList.contains('active') ) {
+            el.parentNode.classList.remove('active');
+        }
+        else {
+            [].forEach.call(document.querySelectorAll('.common-section_faq .container-el .el .row'), function(r) {
+                r.parentNode.classList.remove('active');
+            });
+            el.parentNode.classList.add('active');
+        }
+    });
+});
+
 
 function detectIE() {
     let ua = window.navigator.userAgent;
@@ -64,6 +78,12 @@ function animScroll() {
     } else {
         document.querySelector('#common-btn_top').classList.remove('style-white');
     };
+
+    if (window.pageYOffset >= document.querySelector('.section-cover').offsetTop + document.querySelector('.section-cover').clientHeight ) {
+    	document.querySelector('.common-section_cta_compare').classList.add('show');
+    } else {
+        document.querySelector('.common-section_cta_compare').classList.remove('show');
+    };
 };
 
 function common_navCarousel1(sectionAll){
@@ -78,7 +98,7 @@ function common_navCarousel1(sectionAll){
 		let width_containerEl = document.querySelector(containerEl).clientWidth;
 		let width_el = document.querySelector(el+':nth-child(2)').clientWidth;
 
-		let margin_el = document.querySelector(el+':nth-child(2)').style.marginRight;
+		let margin_el = getComputedStyle(document.querySelector(el+':nth-child(1)')).marginRight;
 		margin_el = margin_el ? parseInt(margin_el) : 0;
 
 		let num_el = 0;
@@ -115,6 +135,12 @@ function common_navCarousel1(sectionAll){
 				}
 
 				slideData = count * (width_el + margin_el);
+				slideData = count > 1 ? (slideData - width_el) : slideData;
+
+				if( (slideData+200) > width_containerEl ) {
+					slideData = 0;
+					count = 0;
+				}
 
 				document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
 				document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
@@ -224,11 +250,6 @@ function common_navCarousel3(sectionAll){
 
         let slideData;
 
-        let containerLine = section + ' .container-line';
-        let line = containerLine + ' .line';
-        document.querySelector(containerLine).style.width = (width_containerEl-(width_el/2)) + 'px';
-        document.querySelector(line).style.width = ((width_containerEl/num_el)/2) + 'px';
-
         [].forEach.call(document.querySelectorAll(nav), function(n) {
             n.addEventListener('click', function() {
 
@@ -257,18 +278,6 @@ function common_navCarousel3(sectionAll){
                 document.querySelector(containerEl).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
                 document.querySelector(containerEl).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
                 document.querySelector(containerEl).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-
-                document.querySelector(containerLine).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(containerLine).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(containerLine).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(containerLine).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(containerLine).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-
-                document.querySelector(line).style.webkitTransform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(line).style.MozTransform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(line).style.msTransform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(line).style.OTransform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(line).style.transform = 'translateX(' + slideData + 'px' + ') translateZ(0)';
             });
         });
     });
