@@ -7,7 +7,7 @@
 		@include styleGrid4;
 	}
 	h2{
-		@include styleH3;
+		@include styleH2;
 		text-align: center;
 	}
 	.container{
@@ -64,7 +64,7 @@
 					border: 1px solid $colorUi_GreyNuance_1;
 
 					h3{
-						@include styleH4;
+						@include styleH3;
 						margin-bottom: 50px;
 					}
 				}
