@@ -58,7 +58,7 @@
 			}
 
 			&:not(:last-child){
-				margin-right: 20px;
+				margin-right: 80px;
 			}
 			.content{
 				position: relative;
@@ -79,9 +79,11 @@
 							.link{
 								opacity: 1;
 								.link-text{
-									&:after{
-										opacity: 1;
-										transform: scale(1);
+									span {
+										&:after{
+											opacity: 1;
+											transform: scale(1);
+										}
 									}
 								}
 							}
@@ -106,7 +108,7 @@
 				border-radius: 0px 0px 18px 18px;
 				height: 210px;
 				background-color: #FFF;
-				padding: 40px;
+				padding: 40px 30px;
 				h4{
 					@include styleH4;
 					margin-bottom: 15px;
