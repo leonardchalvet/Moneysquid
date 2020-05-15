@@ -69,19 +69,19 @@
 					<img src="img/footer/logo-strustpilot.svg" alt="">
 					<div class="container-stars">
 						<div class="star">
-							<img src="img/footer/icn-star.svg" alt="">
+							<img src="img/common-section_trustpilot/icn-star.svg" alt="">
 						</div>
 						<div class="star">
-							<img src="img/footer/icn-star.svg" alt="">
+							<img src="img/common-section_trustpilot/icn-star.svg" alt="">
 						</div>
 						<div class="star">
-							<img src="img/footer/icn-star.svg" alt="">
+							<img src="img/common-section_trustpilot/icn-star.svg" alt="">
 						</div>
 						<div class="star">
-							<img src="img/footer/icn-star.svg" alt="">
+							<img src="img/common-section_trustpilot/icn-star.svg" alt="">
 						</div>
 						<div class="star">
-							<img src="img/footer/icn-star.svg" alt="">
+							<img src="img/common-section_trustpilot/icn-star.svg" alt="">
 						</div>
 					</div>
 				</div>
