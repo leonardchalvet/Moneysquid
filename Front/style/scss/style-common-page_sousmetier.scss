@@ -362,13 +362,26 @@
 			bottom: 50px;
 		}
 	}
+
+	&.style-onlybanner{
+		padding-top: 0px;
+		&:before{
+			content: initial;
+		}
+		.banner{
+			margin-top: 60px;
+		}
+
+	}
 }
 
 .section-knoweverything{
 	margin-top: 120px;
+
 	.wrapper{
 		@include styleGrid1;
 		@include styleLineSep;
+		padding-bottom: 70px;
 	}
 	h2{
 		text-align: center;
@@ -462,7 +475,7 @@
 		text-align: center;
 		margin-top: 40px;
 		.btn{
-			@include styleButton_1(small, false, true);
+			@include styleButton_3;
 		}
 	}
 }
@@ -507,6 +520,8 @@
 @import 'style-common-section_trustpilot.scss';
 @import 'style-common-section_humans.scss';
 @import 'style-common-section_partenaires.scss';
+@import 'style-common-section_autresmetiers.scss';
+@import 'style-common-section_faq.scss';
 @import 'style-common-section_newsletter.scss';
 
 /*============================================

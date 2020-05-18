@@ -57,7 +57,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 <html>
 	<head>
 
-		<title>3a1 - Métier Crédit</title>
+		<title>3b1 - Sous Métier - Assurance Animaux</title>
 
 		<meta name="description" content="" />
 
@@ -452,35 +452,8 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 				</div>
 			</section>
 
-			<section class="section-simulation">
+			<section class="section-simulation style-onlybanner">
 				<div class="wrapper">
-					<h2>Nos outils de simulations</h2>
-					<div class="container-el">
-						<div class="el">
-							<div class="icn">
-								<img src="img/sousmetier/section-simulation/icn-1.svg" alt="">
-							</div>
-							<p>
-								Calcul<br>mensualité
-							</p>
-						</div>
-						<div class="el">
-							<div class="icn">
-								<img src="img/sousmetier/section-simulation/icn-1.svg" alt="">
-							</div>
-							<p>
-								Calcul<br>mensualité
-							</p>
-						</div>
-						<div class="el">
-							<div class="icn">
-								<img src="img/sousmetier/section-simulation/icn-1.svg" alt="">
-							</div>
-							<p>
-								Calcul<br>mensualité
-							</p>
-						</div>
-					</div>
 					<div class="banner">
 						<h3>Jusqu’à <em>-0,5% d’économie</em> sur<br>le taux de votre crédit !</h3>
 						<div class="container-btn">

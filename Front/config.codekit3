@@ -73,6 +73,14 @@
 		"oAP": "/3a1-sous-metier-credit-consommation.php",
 		"oF": 0
 		},
+	"/3b1-sous-metier-assurance-animaux.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/3b1-sous-metier-assurance-animaux.php",
+		"oF": 0
+		},
 	"/4a-actualites.php": {
 		"cB": 0,
 		"ft": 8192,
