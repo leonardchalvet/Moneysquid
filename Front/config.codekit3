@@ -121,6 +121,14 @@
 		"oAP": "/common-footer.php",
 		"oF": 0
 		},
+	"/common-head.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/common-head.php",
+		"oF": 0
+		},
 	"/common-header.php": {
 		"cB": 0,
 		"ft": 8192,
