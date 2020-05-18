@@ -140,6 +140,7 @@ function common_navCarousel1(sectionAll){
 				if( (slideData+200) > width_containerEl ) {
 					slideData = 0;
 					count = 0;
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
 				}
 
 				document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';

@@ -624,7 +624,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 									Financez votre projet
 								</p>
 								<p class="text-2">
-									Avec nos experts
+									Avec nos experts<br/>&nbsp
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -938,7 +938,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 
 						<div class="btn toHref" data-href="">
-							<span class="btn-text">Voir tous les avis clients</span>
+							<span class="btn-text">Voir toutes nos actualités</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
@@ -1453,7 +1453,7 @@ $allReviews = getJSON('https://api.trustpilot.com/v1/business-units/50449f270000
 						</div>
 
 						<div data-href="#" class="btn toHref">
-							<span class="btn-text">Voir tous les avis clients</span>
+							<span class="btn-text">Voir toutes nos retombées presse</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
