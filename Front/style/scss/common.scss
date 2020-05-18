@@ -629,6 +629,7 @@ main
 
 	/*----------  LINKS  ----------*/
 	@mixin styleLink_1{
+		cursor: pointer;
 		text-decoration: none;
 		display: inline-flex;
 		flex-flow: row nowrap;

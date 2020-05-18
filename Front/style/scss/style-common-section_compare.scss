@@ -74,6 +74,10 @@
 					margin-top: 24px;
 					@include styleButton_1(small, false, false);
 				}
+				.link{
+					margin-top: 45px;
+					@include styleLink_1;
+				}
 			}
 
 			&:hover{

@@ -89,6 +89,14 @@
 		"oAP": "/4c-actualites-details.php",
 		"oF": 0
 		},
+	"/5a-guide-metier.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/5a-guide-metier.php",
+		"oF": 0
+		},
 	"/check-connexion.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -144,16 +152,6 @@
 		"oA": 0,
 		"oAP": "/fonts/Muli-Regular.ttf",
 		"oF": 0
-		},
-	"/img/4c-actualites_details/Component/Social/Icon/icn-bookmark-fill.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "/img/4c-actualites_details/Component/Social/Icon/icn-bookmark-fill.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 4010962575359,
-		"prP": 0
 		},
 	"/img/4c-actualites_details/icn-bookmark-fill.svg": {
 		"ft": 2097152,
@@ -246,6 +244,27 @@
 		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
+		},
+	"/img/5a-guide_metier/path-1.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/5a-guide_metier/path-1.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/5a-guide_metier/white-book-download.png": {
+		"ft": 32768,
+		"iS": 626490,
+		"oA": 0,
+		"oAP": "/img/5a-guide_metier/white-book-download.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"/img/actualites/banner-1.png": {
 		"ft": 32768,
@@ -1395,6 +1414,17 @@
 		"plM": 4010962575359,
 		"prP": 0
 		},
+	"/js-page_guide_metier.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/js-page_guide_metier-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/js/common.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1612,6 +1642,24 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/style/css/style-page_actualites_details.css.map",
+		"oF": 0
+		},
+	"/style/css/style-page_guide_metier.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-page_guide_metier-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/style-page_guide_metier.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-page_guide_metier.css.map",
 		"oF": 0
 		},
 	"/style/css/style-page_home.css": {
@@ -1893,6 +1941,19 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "/style/css/style-page_actualites_details.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"/style/scss/style-page_guide_metier.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "/style/css/style-page_guide_metier.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
