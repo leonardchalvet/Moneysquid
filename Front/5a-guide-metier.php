@@ -1,3 +1,4 @@
+<?php include('common-head.php') ?>
 <html>
 	<head>
 
