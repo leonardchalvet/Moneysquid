@@ -419,7 +419,7 @@
 				</div>
 			</section>
 
-			<section class="section-knoweverything">
+			<section class="common-section_knoweverything">
 				<div class="wrapper">
 					<h2>Tout savoir sur le Crédit consommation</h2>
 					<div class="container">

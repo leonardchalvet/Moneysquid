@@ -105,6 +105,14 @@
 		"oAP": "/5a-guide-metier.php",
 		"oF": 0
 		},
+	"/build/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
 	"/check-connexion.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -195,8 +203,8 @@
 		"oA": 0,
 		"oAP": "/img/4c-actualites_details/icn-clap-fill.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -206,8 +214,8 @@
 		"oA": 0,
 		"oAP": "/img/4c-actualites_details/icn-clap.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -277,8 +285,8 @@
 		"oA": 0,
 		"oAP": "/img/5a-guide_metier/white-book-download.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -288,8 +296,8 @@
 		"oA": 0,
 		"oAP": "/img/actualites/banner-1.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -310,8 +318,8 @@
 		"oA": 0,
 		"oAP": "/img/common-section_actu/img-2.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -571,8 +579,8 @@
 		"oA": 0,
 		"oAP": "/img/common-section_humans/img-1.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -582,8 +590,8 @@
 		"oA": 0,
 		"oAP": "/img/common-section_humans/img-path.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1063,8 +1071,8 @@
 		"oA": 0,
 		"oAP": "/img/common-section_why/img-path.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1095,8 +1103,8 @@
 		"oA": 0,
 		"oAP": "/img/common/icn-arrow-1-black.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1106,8 +1114,8 @@
 		"oA": 0,
 		"oAP": "/img/common/icn-arrow-1-white.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1127,8 +1135,8 @@
 		"oA": 0,
 		"oAP": "/img/common/icn-arrow-2-black.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1138,8 +1146,8 @@
 		"oA": 0,
 		"oAP": "/img/common/icn-arrow-2-white.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1159,8 +1167,8 @@
 		"oA": 0,
 		"oAP": "/img/common/icn-arrow-3-black.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1170,8 +1178,8 @@
 		"oA": 0,
 		"oAP": "/img/common/icn-arrow-3-white.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -1551,6 +1559,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/minify/jQuery.3.3.1-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/jQuery.3.3.1-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/minify/js-common-page_actualites-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1633,6 +1652,24 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/style/css/style-common-page_sousmetier.css.map",
+		"oF": 0
+		},
+	"/style/css/style-common-section_knoweverything.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-common-section_knoweverything-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/style-common-section_knoweverything.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-common-section_knoweverything.css.map",
 		"oF": 0
 		},
 	"/style/css/style-page_actualites.css": {
@@ -1812,6 +1849,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "/style/css/style-common-section_humans.css",
+		"oF": 0,
+		"oS": 3,
+		"sct": 1
+		},
+	"/style/scss/style-common-section_knoweverything.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"ec": 1,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/style/css/style-common-section_knoweverything.css",
 		"oF": 0,
 		"oS": 3,
 		"sct": 1
@@ -2021,7 +2071,8 @@
 	"displayValue": "Moneysquid",
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-ariel",
-	"iconImageWasSetByUser": 0
+	"iconImageWasSetByUser": 0,
+	"lastBuiltDate": 611583571.71795702
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
