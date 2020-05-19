@@ -1261,7 +1261,663 @@
 					</div>
 				</div>
 			</section>
-
+			<section class="common-section_knoweverything">
+				<div class="wrapper">
+					<h2>Tout savoir sur l'assurance</h2>
+					<div class="container">
+						<div class="container-tab">
+							<div class="tab style-active">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Définir votre projet immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Définir votre projet immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Définir votre projet immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Pourquoi souscrire un crédit</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Pourquoi souscrire un crédit</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Pourquoi souscrire un crédit</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Visiter un bien immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Visiter un bien immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Visiter un bien immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Acheter meublé</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Acheter meublé</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Acheter meublé</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab">
+								<div class="icn">
+									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+								</div>
+								<h3>FAQ<br>sur l'assurance</h3>
+							</div>
+							<div class="tab">
+								<div class="icn">
+									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+								</div>
+								<h3>Lettre type<br>sur l'assurance</h3>
+							</div>
+							<div class="tab">
+								<div class="icn">
+									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+								</div>
+								<h3>Lexique<br>sur l'assurance</h3>
+							</div>
+						</div>
+						<div class="content-tab">
+							<div class="tab style-active">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Pourquoi souscrire un crédit
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Pourquoi souscrire un crédit
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Pourquoi souscrire un crédit
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Visiter un bien immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Visiter un bien immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Visiter un bien immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Acheter meublé
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Acheter meublé
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Acheter meublé
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="container-btn">
+						<a href="" class="btn">
+							<span class="btn-text">Voir tous les guides de prêt</span>
+							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
 			<section class="common-section_sousmetiers">
 				<h2>Nos autres services</h2>
 				<div class="container">
@@ -1361,6 +2017,18 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div class="container-nav">
+							<div class="nav">
+								<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<div class="nav">
+								<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 							</div>
 						</div>
 						<div class="container-line">
@@ -2191,6 +2859,160 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</section>
+
+			<section class="common-section_faq">
+				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
+				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
+				<div class="wrapper">
+					<h2>Les réponses à toutes vos questions sur l'assurance</h2>
+					<div class="container-el">
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">🏠</div>
+									<span>Je suis titulaire d’un Épargne Logement. Comment puis-je utiliser mes droits à prêt, dans le cadre d’une acquisition immobilière ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">💼</div>
+									<span>Puis-je bénéficier d'un crédit si je suis retraité ? Au chômage ? Etudiant, intérimaire ou en CDD ? Fiché Banque de France ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">📄</div>
+									<span>Comment puis-je utiliser mes droits à prêt, dans le cadre d’une acquisition immobilière ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">🔥</div>
+									<span>L'assurance emprunteur est-elle obligatoire ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">🚘</div>
+									<span>À quoi sert une assurance pour un crédit à la consommation ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">🏠</div>
+									<span>Comment s'appréhende la durée d'indemnisation prévue au contrat d'assurance perte d'emploi souscrite avec un crédit immobilier ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+					</div>	
 				</div>
 			</section>
 

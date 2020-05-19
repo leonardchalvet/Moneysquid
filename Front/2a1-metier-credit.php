@@ -1267,32 +1267,32 @@
 
 			<section class="common-section_knoweverything">
 				<div class="wrapper">
-					<h2>Tout savoir sur le Crédit consommation</h2>
+					<h2>Tout savoir sur le crédit</h2>
 					<div class="container">
 						<div class="container-tab">
 							<div class="tab style-active">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt consommation</h3>
+								<h3>Guide<br>sur le crédit</h3>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt consommation</h3>
+								<h3>FAQ<br>sur le crédit</h3>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt consommation</h3>
+								<h3>Lettre type<br>sur le crédit</h3>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt consommation</h3>
+								<h3>Lexique<br>sur le crédit</h3>
 							</div>
 						</div>
 						<div class="content-tab">
@@ -1301,7 +1301,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Définir votre projet immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1311,7 +1311,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Définir votre projet immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1321,7 +1321,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Définir votre projet immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1331,7 +1331,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Pourquoi souscrire un crédit</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1341,7 +1341,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Pourquoi souscrire un crédit</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1351,7 +1351,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Pourquoi souscrire un crédit</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1361,7 +1361,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Visiter un bien immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1371,7 +1371,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Visiter un bien immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1381,7 +1381,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Visiter un bien immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1391,7 +1391,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Acheter meublé</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1401,7 +1401,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Acheter meublé</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1411,7 +1411,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Définir votre projet immobilier
+												<span>Acheter meublé</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2883,7 +2883,7 @@
 				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
 				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				<div class="wrapper">
-					<h2>Les réponses à toutes vos questions</h2>
+					<h2>Les réponses à toutes vos questions sur le crédit</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="row">

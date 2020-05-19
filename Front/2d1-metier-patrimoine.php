@@ -331,6 +331,35 @@
 						</div>
 						<div class="el">
 							<div class="icn">
+								<img src="img/common-section_compare/illu-17.svg" alt="">
+							</div>
+							<div class="text">
+								<h3>
+									<a class="title" href="#">
+										Défiscalisation
+									</a>
+								</h3>
+								<p class="text-1">
+									Économie d’impôt
+								</p>
+								<p class="text-2">
+									Jusqu’à 63 000€*
+								</p>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+								<div class="btn toHref" data-href="#">
+									<span class="btn-text">
+										Je compare
+									</span>
+									<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="el">
+							<div class="icn">
 								<img src="img/common-section_compare/illu-12.svg" alt="">
 							</div>
 							<div class="text">
@@ -1203,9 +1232,665 @@
 					</div>
 				</div>
 			</section>
-
+			<section class="common-section_knoweverything">
+				<div class="wrapper">
+					<h2>Tout savoir sur le patrimoine</h2>
+					<div class="container">
+						<div class="container-tab">
+							<div class="tab style-active">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Définir votre projet immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Définir votre projet immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Définir votre projet immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Pourquoi souscrire un crédit</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Pourquoi souscrire un crédit</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Pourquoi souscrire un crédit</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Visiter un bien immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Visiter un bien immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Visiter un bien immobilier</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Acheter meublé</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Acheter meublé</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												<span>Acheter meublé</span>
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab">
+								<div class="icn">
+									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+								</div>
+								<h3>FAQ<br>sur le patrimoine</h3>
+							</div>
+							<div class="tab">
+								<div class="icn">
+									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+								</div>
+								<h3>Lettre type<br>sur le patrimoine</h3>
+							</div>
+							<div class="tab">
+								<div class="icn">
+									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+								</div>
+								<h3>Lexique<br>sur le patrimoine</h3>
+							</div>
+						</div>
+						<div class="content-tab">
+							<div class="tab style-active">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Pourquoi souscrire un crédit
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Pourquoi souscrire un crédit
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Pourquoi souscrire un crédit
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Visiter un bien immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Visiter un bien immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Visiter un bien immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Acheter meublé
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Acheter meublé
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Acheter meublé
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="tab">
+								<ul>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="">
+											<span class="link-text">
+												Définir votre projet immobilier
+											</span>
+											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+											</svg>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="container-btn">
+						<a href="" class="btn">
+							<span class="btn-text">Voir tous les guides de prêt</span>
+							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</section>
 			<section class="common-section_sousmetiers">
-				<h2>Nos sous métiers</h2>
+				<h2>Nos autres services</h2>
 				<div class="container">
 					<div class="wrapper">
 						
@@ -1214,7 +1899,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-26.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-17.svg" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance vie</a></h3>
@@ -1225,7 +1910,7 @@
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les assurances vie
+													Je compare
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1240,7 +1925,7 @@
 											<img src="img/common-section_sousmetier/illu-18.svg" alt="">
 										</div>
 										<div class="text">
-											<h3><a href="#">SCPI</a></h3>
+											<h3><a href="#">Défiscalisation</a></h3>
 											<p>
 												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
 												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
@@ -1248,7 +1933,7 @@
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les SCPI
+													Je compare
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1260,10 +1945,10 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-17.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-19.svg" alt="">
 										</div>
 										<div class="text">
-											<h3><a href="#">Défiscalisation</a></h3>
+											<h3><a href="#">SCPI</a></h3>
 											<p>
 												Courtier en crédit immobilier, Bourse des Crédits peut vous accompagner pour l’obtention de votre financement immobilier.  En véritable expert, nous pouvons comparer les banques en prêt immobilier qui opèrent en France, afin de vous obtenir le meilleur taux et les conditions de crédits les plus avantageuses.<br><br>
 												Reconnue parmi les entreprises les plus innovantes de son secteur, Bourse des Crédits vous accompagne également dans la négociation de votre emprunt immobilier.<br><br>
@@ -1271,7 +1956,7 @@
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les défiscalisations
+													Je compare
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1280,6 +1965,18 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div class="container-nav">
+							<div class="nav">
+								<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<div class="nav">
+								<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 							</div>
 						</div>
 						<div class="container-line">
@@ -1309,7 +2006,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Rachat de credit fonctionnaire
+												<span>
+													Rachat de credit fonctionnaire
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1319,7 +2018,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Comparateur rachat de crédit
+												<span>
+													Comparateur rachat de crédit
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1329,7 +2030,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Rachat de crédit en ligne
+												<span>
+													Rachat de crédit en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1339,7 +2042,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Courtier crédit immobilier
+												<span>
+													Courtier crédit immobilier
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1349,7 +2054,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Crédit conso en ligne
+												<span>
+													Crédit conso en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1359,7 +2066,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Meilleur taux rachat de crédit conso
+												<span>
+													Meilleur taux rachat de crédit conso
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1369,7 +2078,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Crédit immobilier en ligne
+												<span>
+													Crédit immobilier en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1379,7 +2090,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Crédit immobilier fonctionnaire
+												<span>
+													Crédit immobilier fonctionnaire
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1389,7 +2102,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Calculette rachat de crédit
+												<span>
+													Calculette rachat de crédit
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1399,7 +2114,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Crédit conso rapide
+												<span>
+													Crédit conso rapide
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1409,7 +2126,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Crédit immobilier taux
+												<span>
+													Crédit immobilier taux
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1419,7 +2138,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Rachat de crédit surendettement
+												<span>
+													Rachat de crédit surendettement
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1445,7 +2166,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance auto en ligne
+												<span>
+													Assurance auto en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1455,7 +2178,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Résiliation assurance auto
+												<span>
+													Résiliation assurance auto
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1465,7 +2190,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance habitation locataire
+												<span>
+													Assurance habitation locataire
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1475,7 +2202,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance auto jeune conducteur
+												<span>
+													Assurance auto jeune conducteur
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1485,7 +2214,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance auto en ligne immédiate
+												<span>
+													Assurance auto en ligne immédiate
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1495,7 +2226,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance habitation colocation
+												<span>
+													Assurance habitation colocation
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1505,7 +2238,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Meilleure assurance auto
+												<span>
+													Meilleure assurance auto
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1515,7 +2250,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance multirisque habitation
+												<span>
+													Assurance multirisque habitation
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1525,7 +2262,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance moto en ligne
+												<span>
+													Assurance moto en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1535,7 +2274,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance habitation étudiant
+												<span>
+													Assurance habitation étudiant
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1545,7 +2286,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Meilleure assurance habitation
+												<span>
+													Meilleure assurance habitation
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1555,7 +2298,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Meilleure assurance moto
+												<span>
+													Meilleure assurance moto
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1581,7 +2326,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Quelle banque en ligne choisir
+												<span>
+													Quelle banque en ligne choisir
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1591,7 +2338,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Ouvrir un compte en banque en ligne
+												<span>
+													Ouvrir un compte en banque en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1601,7 +2350,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Banque en ligne pro EURL
+												<span>
+													Banque en ligne pro EURL
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1611,7 +2362,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Offre banque en ligne
+												<span>
+													Offre banque en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1621,7 +2374,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Banque en ligne compte pro gratuit
+												<span>
+													Banque en ligne compte pro gratuit
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1631,7 +2386,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Banque pro en ligne SARL
+												<span>
+													Banque pro en ligne SARL
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1641,7 +2398,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Banque en ligne sans dépôt
+												<span>
+													Banque en ligne sans dépôt
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1651,7 +2410,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Meilleur banque en ligne pro
+												<span>
+													Meilleur banque en ligne pro
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1661,7 +2422,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Classement banque en ligne
+												<span>
+													Classement banque en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1671,7 +2434,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Banque en ligne avec chéquier
+												<span>
+													Banque en ligne avec chéquier
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1681,7 +2446,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Ouverture compte pro banque en ligne
+												<span>
+													Ouverture compte pro banque en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1691,7 +2458,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Banque en ligne sans justificatif
+												<span>
+													Banque en ligne sans justificatif
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1717,7 +2486,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Assurance vie en ligne
+												<span>
+													Assurance vie en ligne
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1727,7 +2498,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Comparatif assurance vie
+												<span>
+													Comparatif assurance vie
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1737,7 +2510,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Fiscalité SCPI
+												<span>
+													Fiscalité SCPI
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1747,7 +2522,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Prélèvements sociaux assurance vie
+												<span>
+													Prélèvements sociaux assurance vie
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1757,7 +2534,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												SCPI assurance vie
+												<span>
+													SCPI assurance vie
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1767,7 +2546,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Investir 10000 euros SCPI
+												<span>
+													Investir 10000 euros SCPI
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1777,7 +2558,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Contrat assurance vie
+												<span>
+													Contrat assurance vie
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1787,7 +2570,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Simulation SCPI
+												<span>
+													Simulation SCPI
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1797,7 +2582,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Défiscalisation assurance vie
+												<span>
+													Défiscalisation assurance vie
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1807,7 +2594,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Abattement assurance vie
+												<span>
+													Abattement assurance vie
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1817,7 +2606,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												SCPI investissement
+												<span>
+													SCPI investissement
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1827,7 +2618,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Défiscaliser dans l’ancien
+												<span>
+													Défiscaliser dans l’ancien
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1853,7 +2646,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Montant maximum livret A
+												<span>
+													Montant maximum livret A
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1863,7 +2658,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Transfert livret A
+												<span>
+													Transfert livret A
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1873,7 +2670,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Courtier en bourse
+												<span>
+													Courtier en bourse
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1883,7 +2682,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Taux livret jeune
+												<span>
+													Taux livret jeune
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1893,7 +2694,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Super livret
+												<span>
+													Super livret
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1903,7 +2706,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												PEA jeune
+												<span>
+													PEA jeune
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1913,7 +2718,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Compte sur livret
+												<span>
+													Compte sur livret
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1923,7 +2730,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Action bourse
+												<span>
+													Action bourse
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1933,7 +2742,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Meilleur PEA
+												<span>
+													Meilleur PEA
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1943,7 +2754,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Livret jeune taux
+												<span>
+													Livret jeune taux
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1953,7 +2766,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Bourse bitcoin
+												<span>
+													Bourse bitcoin
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1963,7 +2778,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Meilleur site bourse
+												<span>
+													Meilleur site bourse
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1989,7 +2806,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Changer de fournisseur d’électricité
+												<span>
+													Changer de fournisseur d’électricité
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1999,7 +2818,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Fournisseur électricité le moins cher
+												<span>
+													Fournisseur électricité le moins cher
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2009,7 +2830,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Prix de l’électricité
+												<span>
+													Prix de l’électricité
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2019,7 +2842,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Gaz moins cher
+												<span>
+													Gaz moins cher
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2029,7 +2854,9 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Meilleur fournisseur gaz
+												<span>
+													Meilleur fournisseur gaz
+												</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2039,7 +2866,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Électricité et gaz
+												<span>Électricité et gaz</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2049,7 +2876,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Fournisseur gaz de ville
+												<span>Fournisseur gaz de ville</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2059,7 +2886,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Compteur gaz
+												<span>Compteur gaz</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2069,7 +2896,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Déménagement électricité
+												<span>Déménagement électricité</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2079,7 +2906,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Comparateur gaz
+												<span>Comparateur gaz</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2089,7 +2916,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Tarif gaz
+												<span>Tarif gaz</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2099,7 +2926,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												Changement compteur électrique
+												<span>Changement compteur électrique</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -2112,7 +2939,160 @@
 					</div>
 				</div>
 			</section>
-
+			
+			<section class="common-section_faq">
+				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
+				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
+				<div class="wrapper">
+					<h2>Les réponses à toutes vos questions sur le patrimoine</h2>
+					<div class="container-el">
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">🏠</div>
+									<span>Je suis titulaire d’un Épargne Logement. Comment puis-je utiliser mes droits à prêt, dans le cadre d’une acquisition immobilière ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">💼</div>
+									<span>Puis-je bénéficier d'un crédit si je suis retraité ? Au chômage ? Etudiant, intérimaire ou en CDD ? Fiché Banque de France ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">📄</div>
+									<span>Comment puis-je utiliser mes droits à prêt, dans le cadre d’une acquisition immobilière ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">🔥</div>
+									<span>L'assurance emprunteur est-elle obligatoire ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">🚘</div>
+									<span>À quoi sert une assurance pour un crédit à la consommation ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="el">
+							<div class="row">
+								<div class="question">
+									<div class="icn">🏠</div>
+									<span>Comment s'appréhende la durée d'indemnisation prévue au contrat d'assurance perte d'emploi souscrite avec un crédit immobilier ?</span>
+								</div>
+								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.
+							</p>
+							<a class="link" href="#">
+								<span class="link-text">
+									<span>
+										Lire la suite
+									</span>
+								</span>
+								<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+					</div>	
+				</div>
+			</section>
 			<section class="common-section_newsletter">
 				<div class="wrapper">
 					<h2>
