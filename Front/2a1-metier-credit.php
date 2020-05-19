@@ -1266,7 +1266,7 @@
 			</section>
 
 			<section class="common-section_sousmetiers">
-				<h2>Nos sous métiers</h2>
+				<h2>Nos autres services</h2>
 				<div class="container">
 					<div class="wrapper">
 						
@@ -1286,7 +1286,7 @@
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Je compare
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1309,7 +1309,7 @@
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Je compare
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1332,7 +1332,7 @@
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Je compare
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1355,7 +1355,7 @@
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits immobilier
+													Je compare
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -1364,6 +1364,18 @@
 										</div>
 									</div>
 								</div>
+							</div>
+						</div>
+						<div class="container-nav">
+							<div class="nav">
+								<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</div>
+							<div class="nav">
+								<svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
 							</div>
 						</div>
 						<div class="container-line">
@@ -2480,7 +2492,35 @@
 					</div>	
 				</div>
 			</section>
-
+			<section class="common-section_newsletter">
+				<div class="wrapper">
+					<h2>
+						Inscrivez vous à la Newsletter hebdomadaire
+					</h2>
+					<div class="container">
+						<p>
+							Inscrivez-vous gratuitement à notre Newsletter et recevez une fois par semaine nos conseils, astuces et offres flash. 
+						</p>
+						<div class="container-input">
+							<input type="text" placeholder="Votre email">
+							<a href="" class="btn">
+								<span class="btn-text">
+									Je m'inscris
+								</span>
+								<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="container-cg">
+							<input type="checkbox">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. 
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<?php include('common-footer.php') ?>

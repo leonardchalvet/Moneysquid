@@ -37,7 +37,7 @@ window.addEventListener('load', function() {
 		common_navCarousel1('.common-section_actu');
 		common_navCarousel1('.common-section_trustpilot');
 		common_navCarousel2('.common-section_quotes');
-		common_horizontalScroll('.common-section_sousmetiers');
+		common_navCarousel3('.common-section_sousmetiers');
 	} else {
 		common_sectionAutremetiers();
 	}

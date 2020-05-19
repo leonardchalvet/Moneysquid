@@ -1283,7 +1283,7 @@
 											</p>
 											<div class="btn toHref" data-href="#">
 												<span class="btn-text">
-													Comparer gratuitement les crédits assurance automobile
+													Je compare
 												</span>
 												<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 													<use xlink:href="img/common/icn-arrow-2.svg#content"></use>

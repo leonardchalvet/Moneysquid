@@ -840,10 +840,10 @@
 	"/img/common-section_sousmetier/illu-20.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
+		"oA": 0,
 		"oAP": "/img/common-section_sousmetier/illu-20.svg",
-		"oF": 0,
-		"opt": 0,
+		"oF": 1,
+		"opt": 1,
 		"plM": 4010962575359,
 		"prP": 0
 		},
@@ -880,10 +880,10 @@
 	"/img/common-section_sousmetier/illu-24.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 0,
+		"oA": 2,
 		"oAP": "/img/common-section_sousmetier/illu-24.svg",
-		"oF": 1,
-		"opt": 1,
+		"oF": 0,
+		"opt": 0,
 		"plM": 4010962575359,
 		"prP": 0
 		},
