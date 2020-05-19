@@ -64,7 +64,7 @@
 					border: 1px solid $colorUi_GreyNuance_1;
 
 					h3{
-						@include styleH4;
+						@include styleH3;
 						margin-bottom: 50px;
 					}
 				}
@@ -76,6 +76,9 @@
 						display: block;
 						width: 242px;
 						margin-bottom: 50px;
+						@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+							height: 33px;
+						}
 					}
 					.container-el{
 						.el{
@@ -93,6 +96,12 @@
 				}
 			}
 		}
+	}
+}
+@media screen and (max-width: $breakPoint_tablet){
+	.common-section_makedifferent{
+		margin-top: 60px;
+		padding-bottom: 60px;
 	}
 }
 @media screen and (max-width: $breakPoint_mobile){

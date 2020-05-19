@@ -446,7 +446,7 @@ main
 		cursor: pointer;
 		text-decoration: none;
 		display: inline-flex;
-		align-items: center;
+		align-items: baseline;
 		position: relative;
 		background-color: $colorMain_1;
 		transition: all 0.25s ease;
@@ -466,7 +466,17 @@ main
 				margin-left: 13px;
 				fill: transparent;
 				stroke: $colorUi_Text_1;
-				transition: all 250ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+				transition: all 200ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				.btn-arrow.img {
+					background-image: url(../../img/common/icn-arrow-2-black.png);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					width: 10px;
+					height: 12px;
+				}
 			}
 		} @else if $size == small {
 			padding: 16px 24px 16px 24px;
@@ -480,9 +490,23 @@ main
 				margin-left: 12px;
 				fill: transparent;
 				stroke: $colorUi_Text_1;
-				transition: all 250ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+				transition: all 200ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
 				@media screen and (max-width: $breakPoint_tablet){
-					height: 14px;
+					height: 10px;
+				}
+			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				.btn-arrow.img {
+					background-image: url(../../img/common/icn-arrow-2-black.png);
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: center;
+					width: 10px;
+					height: 8px;
+					@media screen and (max-width: $breakPoint_tablet){
+						width: 16px;
+						width: 14px;
+					}
 				}
 			}
 		}
@@ -518,7 +542,7 @@ main
 		cursor: pointer;
 		text-decoration: none;
 		display: inline-flex;
-		align-items: center;
+		align-items: baseline;
 		position: relative;
 		
 		border-radius: 12px;
@@ -535,7 +559,17 @@ main
 			stroke: #FFF;
 			height: 8px;
 			margin-left: 12px;
-			transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+			transition: all 200ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			.btn-arrow.img {
+				background-image: url(../../img/common/icn-arrow-2-white.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 10px;
+				height: 10px;
+			}
 		}
 		&:hover{
 			background-color: $colorHover_2;
@@ -549,7 +583,7 @@ main
 		cursor: pointer;
 		text-decoration: none;
 		display: inline-flex;
-		align-items: center;
+		align-items: baseline;
 		position: relative;
 		padding: 16px 24px 16px 24px;
 		border-radius: 12px;
@@ -564,7 +598,17 @@ main
 			margin-left: 12px;
 			fill: transparent;
 			stroke: $colorUi_Text_1;
-			transition: stroke 0.25s ease, transform 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+			transition: stroke 250ms ease, transform 250ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			.btn-arrow.img {
+				background-image: url(../../img/common/icn-arrow-2-black.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 10px;
+				height: 10px;
+			}
 		}
 		&:hover{
 			background-color: $colorUi_Text_1;
@@ -575,30 +619,40 @@ main
 				transform: translateX(7px);
 				stroke: #FFF;
 			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				.btn-arrow.img {
+					background-image: url(../../img/common/icn-arrow-2-white.png);
+				}
+			}
 		}
 	}
 
 	/*----------  LINKS  ----------*/
 	@mixin styleLink_1{
+		cursor: pointer;
 		text-decoration: none;
 		display: inline-flex;
+		flex-flow: row nowrap;
 		align-items: center;
 
 		.link-text{
-			position: relative;
-			@include styleParagraphMedium($font_1_Bold);
-			&:after{
-				content:'';
-				position: absolute;
-				left: 0px;
-				bottom: 0px;
-				width: 100%;
-				height: 1px;
-				background-color: $colorBlueNuances_1;
+			span {
+				display: inline-block;
+				position: relative;
+				@include styleParagraphMedium($font_1_Bold);
+				&:after{
+					content:'';
+					position: absolute;
+					left: 0px;
+					bottom: 0px;
+					width: 100%;
+					height: 1px;
+					background-color: $colorBlueNuances_1;
 
-				opacity: 0;
-				transform: scaleX(0.7);
-				transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+					opacity: 0;
+					transform: scaleX(0.7);
+					transition: all 400ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+				}
 			}
 		}
 		.link-arrow{
@@ -606,17 +660,29 @@ main
 			height: 8px;
 			fill: transparent;
 			stroke: $colorUi_Text_1;
-			transition: all 0.25s ease;
+			transition: all 200ms ease;
 			@media screen and (max-width: $breakPoint_tablet){
-				height: 14px;
+				height: 10px;
+			}
+		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			.link-arrow.img {
+				background-image: url(../../img/common/icn-arrow-2-black.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 10px;
+				height: 8px;
 			}
 		}
 
 		&:hover{
 			.link-text{
-				&:after{
-					opacity: 1;
-					transform: scale(1);
+				span {
+					&:after{
+						opacity: 1;
+						transform: scale(1);
+					}
 				}
 			}
 			.link-arrow{
@@ -648,6 +714,16 @@ main
 				transform: translate(-50%, -50%) rotate(180deg);
 			}
 		}
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			.img {
+				background-image: url(../../img/common/icn-arrow-2-black.png);
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+				width: 12px;
+				height: 10px;
+			}
+		}
 
 		&.style-disable{
 			opacity: 0.2;
@@ -658,6 +734,11 @@ main
 				background-color: $colorUi_Text_1;
 				.nav-arrow{
 					stroke: #FFF;
+				}
+			}
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				&:hover .img {
+					background-image: url(../../img/common/icn-arrow-2-white.png);
 				}
 			}
 		}
@@ -687,6 +768,65 @@ main
 		}
 	}
 
+	/*----------  FORM NEWSLETTER  ----------*/ 
+	@mixin styleFormNewsletter{
+		.container-input{
+			width: 420px;
+			height: 60px;
+			border-radius: 12px;
+			background-color: #FFF;
+			padding-right: 3px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			border: 1px solid transparent;
+			transition: all 0.25s ease;
+			input{
+				outline: none;
+				padding-left: 20px;
+				flex: 1;
+				border: none;
+				@include styleParagraphMedium($font_1_Regular);
+				&::placeholder{
+					@include styleParagraphMedium($font_1_Regular);
+					color: $colorUi_Text_2;
+				}
+			}
+			.btn{
+				@include styleButton_2;
+			}
+			&:focus-within{
+				border-color: $colorMain_3;
+			}
+
+		}
+		.container-cg{
+			margin-top: 24px;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: flex-start;
+			input{
+				margin-top: 2px;
+				margin-right: 16px;
+			}
+			p{
+				flex: 1;
+				@include styleParagraphTiny($font_1_Regular);
+				color: rgba(255, 255, 255, 0.7);
+			}
+		}
+
+		@media screen and (max-width: $breakPoint_mobile){
+			.container-input{
+				width: 100%;
+				input{
+					width: 100px;
+				}
+			}
+		}
+	}
+	
+
 /* ----------------------------------------------------- */
 /* ********************* END MIXIN ********************* */
 /* ----------------------------------------------------- */
@@ -696,8 +836,8 @@ main
 /* ********************* COMMON IMPORT ********************* */
 /* --------------------------------------------------------- */
 
-@import 'header.scss';
-@import 'footer.scss';
+@import 'style-element_header.scss';
+@import 'style-element_footer.scss';
 
 /* ------------------------------------------------------------- */
 /* ********************* END COMMON IMPORT ********************* */

@@ -108,9 +108,11 @@
 						.link{
 							opacity: 1;
 							.link-text{
-								&:after{
-									opacity: 1;
-									transform: scale(1);
+								span {
+									&:after{
+										opacity: 1;
+										transform: scale(1);
+									}
 								}
 							}
 						}
@@ -251,7 +253,6 @@
 			-webkit-overflow-scrolling: touch;
 			@include styleGrid1;
 			margin-top: 48px;
-			align-items: flex-start;
 			display: inline-flex;
 			flex-wrap: nowrap;
 			.el{
@@ -259,21 +260,33 @@
 				display: block;
 				opacity: 1;
 				width: 200px;
+				border-bottom: 1px solid $colorUi_GreyNuance_1;
 				.content{
-					height: 200px;
+					padding-bottom: 60px;
+					height: initial;
+					border-bottom: none;
 					&:before{
 						content: initial;
 					}
 					.logo{
 						margin-bottom: 27px;
 						img{
-							height: 13px;
+							height: 24px;
 						}
 					}
 					.text{
 						h3{
 							margin-bottom: 15px;
 						}
+						q{
+							border: none;
+						}
+					}
+					.link{
+						left: 0px;
+						bottom: 15px;
+						right: initial;
+						opacity: 1;
 					}
 				}
 				

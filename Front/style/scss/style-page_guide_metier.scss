@@ -1,0 +1,150 @@
+@import 'common.scss';
+
+/*========================================
+=            PAGE GUIDE METIER           =
+========================================*/
+
+.section-cover{
+	padding: 185px 0px 124px 0px;
+	background: $colorBlueNuances_gradient;
+	position: relative;
+	.container-path{
+		position: absolute;
+		left: 260px;
+		top: 100px;
+		z-index: 1;
+		ul{
+			list-style: none;
+			display: flex;
+			flex-flow: row wrap;
+			align-items: center;
+			li{
+				display: flex;
+				flex-flow: row wrap;
+				align-items: center;
+				a{
+					cursor: pointer;
+					text-decoration: none;
+					@include styleParagraphSmall($font_1_Regular);
+					color: rgba(255, 255, 255, 0.7);
+					transition: all 0.25s ease;
+					margin-right: 20px;
+				}
+				.icn-arrow{
+					width: 4px;
+					fill: rgba(255, 255, 255, 0.7);
+					transition: all 0.25s ease;
+					transform: rotate(-90deg);
+				}
+				&:hover{
+					a{
+						color: rgba(255, 255, 255, 1);
+					}
+					.icn-arrow{
+						fill: rgba(255, 255, 255, 0.7);
+					}
+				}
+				&:not(:last-child){
+					margin-right: 20px;
+				}
+				&:last-child{
+					.icn-arrow{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.path-1{
+		position: absolute;
+		left: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 365px;
+	}
+	.path-2{
+		position: absolute;
+		right: 0px;
+		top: 50%;
+		transform: translateY(-50%);
+		height: 220px;
+	}
+	.wrapper{
+		position: relative;
+		z-index: 1;
+		@include styleGrid3;
+	}
+	h2{
+		@include styleH1;
+		color: #FFF;
+		text-align: center;
+		em{
+			font-family: $font_1_Bold_Italic;
+		}
+	}
+}
+
+@import 'style-common-section_compare.scss';
+
+.section-download{
+	position: relative;
+
+	.wrapper{
+		position: relative;
+		padding-top: 72px;
+		padding-bottom: 72px;
+		@include styleGrid1;
+		border-radius: 16px;
+		background-color: $colorMain_2;
+	}
+	.path-1{
+		position: absolute;
+		left: 0px;
+		top: 10px;
+		height: 450px;
+	}
+	.illu{
+		width: 340px;
+		display: block;
+		margin: auto;
+	}
+	.container-text{
+		max-width: 800px;
+		margin: auto;
+		text-align: center;
+		h2{
+			@include styleH2;
+			color: #FFF;
+			em{
+				font-style: normal;
+				font-family: $font_1_Bold_Italic
+			}
+		}
+		>p{
+			margin-top: 25px;
+			@include styleParagraphBig($font_1_Regular);
+			color: $colorUi_GreyNuance_2;
+		}
+		.container-form{
+			width: 490px;
+			margin: auto;
+			margin-top: 45px;
+			@include styleFormNewsletter;
+			.container-input{
+				margin: auto;
+			}
+			.container-cg{
+				text-align: left;
+			}
+		}
+		
+	}
+	
+}
+
+@import 'style-common-section_autremetiers.scss';
+@import 'style-common-section_newsletter.scss';
+
+/*============================================
+=            END PAGE GUIDE METIER           =
+============================================*/

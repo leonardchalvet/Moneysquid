@@ -197,6 +197,7 @@ footer{
 
 @media screen and (min-width: $breakPoint_mobile) and (max-width: $breakPoint_tablet){
 	footer{
+		padding-bottom: 200px;
 		.container-link{
 			.container-trustpilot{
 				margin-top: 72px;
@@ -215,6 +216,7 @@ footer{
 
 	footer{
 		padding-top: 60px;
+		padding-bottom: 200px;
 		.head{
 			padding-bottom: 40px;
 			.logo{
@@ -229,7 +231,12 @@ footer{
 			margin-top: 40px;
 			padding-bottom: 32px;
 			ul{
-				width: 45%;
+				&:nth-child(odd) {
+					width: 55%;
+				}
+				&:nth-child(even) {
+					width: 40%;
+				}
 				margin-bottom: 50px;
 				li{
 					.container-el{

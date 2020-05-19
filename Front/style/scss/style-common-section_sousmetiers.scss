@@ -10,26 +10,47 @@
 		text-align: center;
 	}
 	.container{
-		position: sticky;
-		
-		
 		width: 100%;
 		overflow: hidden;
+
+		opacity: 0;
+		transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+	}
+	&.style-reach {
+		.container {
+			opacity: 1;
+		}
 	}
 	.wrapper{
 		@include styleGrid1;
+		@include styleLineSep;
+		padding-bottom: 75px;
 	}
 
 	.container-slider{
-		margin-top: 60px;
+		margin-top: 100px;
 		display: inline-flex;
 		flex-wrap: nowrap;
 		align-items: flex-end;
 
 		.container-el{
-			white-space: nowrap;
+
+			display: inline-flex;
+			align-items: flex-start;
+			flex-wrap: nowrap;
+
+			transition: all 500ms cubic-bezier(0.345, 0.000, 0.145, 0.995);
+
+			@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+				display: block;
+				white-space: nowrap;
+			}
+
 			.el{
-				display: inline-block;
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					display: inline-block;
+					white-space: normal;
+				}
 				&:not(:last-child){
 					margin-right: 165px;
 				}
@@ -46,7 +67,7 @@
 						}
 					}
 					.text{
-						white-space: initial;
+						white-space: normal;
 						width: 390px;
 						h3{
 							@include styleH3;
@@ -68,51 +89,24 @@
 			}
 		}
 	}
-	.container-line{
-		margin-top: 60px;
-		overflow: hidden;
-		width: 100%;
-		height: 2px;
-		background-color: $colorUi_GreyNuance_1;
-		.line{
-			height: 100%;
-			background-color: $colorUi_Text_1;
+	.container-nav{
+		margin-top: 35px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		position: relative;
+		.nav{
+			&:nth-child(1){
+				@include styleNav_1(left);
+				margin-right: 8px;
+			}
+			&:nth-child(2){
+				@include styleNav_1(right);
+			}
 		}
 	}
 }
-@media screen and (min-width: $breakPoint_bigDesktop){
-	.common-section_sousmetiers {
-		h2 {
-			position: sticky;
-			top: 150px;
-		}
-		.container {
-			top: 225px;
-		}
-	}
-}
-@media screen and (min-width: 1700px) and (max-width: $breakPoint_bigDesktop){
-	.common-section_sousmetiers{
-		.container{
-			top: 150px;
-		}
-		.container-line{
-			margin-top: 30px;
-		}
-	}
-	
-}
-@media screen and (min-width: $breakPoint_tablet) and (max-width: 1700px){
-	.common-section_sousmetiers{
-		.container{
-			top: 100px;
-		}
-		.container-line{
-			margin-top: 10px;
-		}
-	}
-	
-}
+
 @media screen and (max-width: $breakPoint_tablet){
 	.common-section_sousmetiers{
 		margin-top: 60px;
@@ -151,6 +145,9 @@
 				}
 			}
 		}
+		.container-nav{
+			display: none;
+		}
 		.container-line{
 			display: none;
 		}
@@ -166,6 +163,11 @@
 					}
 					.content {
 						width: 300px;
+						.text {
+							.btn .btn-arrow{
+								height: 8px;
+							}
+						}
 					}
 				}
 			}
@@ -187,7 +189,7 @@
 								@include styleParagraphSmall($font_1_Regular);
 							}
 							.btn .btn-arrow{
-								height: 20px;
+								height: 8px;
 							}
 						}
 					}

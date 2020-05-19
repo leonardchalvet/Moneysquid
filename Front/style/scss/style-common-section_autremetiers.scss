@@ -1,4 +1,4 @@
-/*----------  SECTION AUTRESMETIERS  ----------*/
+/*----------  SECTION AUTRE METIERS  ----------*/
 .common-section_autremetiers{
 	margin-top: 120px;
 	padding-bottom: 120px;
@@ -21,6 +21,9 @@
 				margin-right: 20px;
 				img{
 					width: 80px;
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						height: 60px;
+					}
 				}
 			}
 			.text{
@@ -48,6 +51,18 @@
 					}
 					a{
 						@include styleLink_1;
+						width: calc(100% - 75px);
+						.link-text{
+							flex: 1;
+						}
+
+						@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+							display: block;
+							white-space: nowrap;
+							.link-text, .img {
+								display: inline-block;
+							}
+						}
 					}
 				}
 			}
@@ -73,10 +88,13 @@
 						li{
 							width: calc(100% / 3.8);
 							a {
-								align-items: flex-end;
+
+								display: flex;
+								justify-content: space-between;
+								width: 100%;
+								align-items: center;
 								svg {
 									width: 14px;
-									transform: translateY(-4px);
 								}
 							}
 						}
@@ -105,7 +123,7 @@
 					}
 				}
 				.text{
-					padding-top: 14px;
+					padding-top: 8.5px;
 					.title{
 						margin-bottom: 0px;
 						.container-status{
@@ -138,8 +156,13 @@
 					ul{
 						overflow: hidden;
 						height: 0px;
+						transform: translateX(-70px);
+						width: calc(100% + 70px);
 						li{
 							width: 100%;
+							a {
+								width: 100%;
+							}
 						}
 					}
 				}
@@ -157,7 +180,7 @@
 							}
 						}
 						ul{
-							margin-top: 20px;
+							margin-top: 30px;
 							overflow: initial;
 							height: initial;
 						}
