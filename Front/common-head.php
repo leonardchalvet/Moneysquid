@@ -1,6 +1,6 @@
 <?php 
 session_start(); 
-require_once 'check-connexion.php';
+//require_once 'check-connexion.php';
 
 /*=================================
 =            TRUSTPILOT           =
