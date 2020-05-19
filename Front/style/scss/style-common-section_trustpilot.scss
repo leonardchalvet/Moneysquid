@@ -231,15 +231,9 @@
 				&:not(:first-child){
 					width: 255px;
 					height: 300px;
-					.cover{
-						height: 200px;
-					}
-					.container-text{
-						background-color: transparent;
-						padding: 28px;
-						border: 1px solid $colorUi_GreyNuance_2;
+					.text{
 						p{
-							line-clamp: 4;
+							-webkit-line-clamp: 4;
 						}
 					}
 				}

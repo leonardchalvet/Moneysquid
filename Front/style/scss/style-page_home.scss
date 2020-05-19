@@ -244,7 +244,26 @@
 
 @media screen and (max-width: $breakPoint_tablet){
 	.section-cover{
-		padding-bottom: 39px;
+		padding-bottom: 80px;
+		.container-comp{
+			width: calc(100% - 100px);
+			&.style-open{
+				.container-input{
+					.input{
+						border-radius: 8px 8px 0px 0px;
+					}
+				}
+				.container-dropdown{
+					height: auto;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $breakPoint_mobile){
+	.section-cover{
+		padding-bottom: 40px;
 		.container-comp{
 			margin-top: 20px;
 			position: relative;
@@ -253,6 +272,7 @@
 			bottom: initial;
 			z-index: 1;
 			width: 100%;
+			
 			.container-input{
 				height: initial;
 				border-radius: initial;
@@ -297,16 +317,6 @@
 				position: relative;
 				height: 0;
 				max-height: 300px;
-			}
-			&.style-open{
-				.container-input{
-					.input{
-						border-radius: 8px 8px 0px 0px;
-					}
-				}
-				.container-dropdown{
-					height: auto;
-				}
 			}
 		}
 	}

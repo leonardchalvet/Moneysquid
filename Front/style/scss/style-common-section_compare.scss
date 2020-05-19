@@ -117,7 +117,7 @@
 }
 
 .common-section_cta_compare {
-	padding: 20px 16px;
+	padding: 10px 16px;
 	display: none;
 	position: fixed;
 	z-index: 10;
@@ -142,7 +142,7 @@
 		justify-content: center;
 	}
 	.tagline {
-		margin-top: 15px;
+		margin-top: 3px;
 		text-align: center;
 		@include styleParagraphSmall($font_1_Bold_Italic);
 		color: #FFF;
