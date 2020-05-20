@@ -69,6 +69,19 @@ function detectIE() {
     return false;
 }
 
+function detectEdge() {
+    let ua = window.navigator.userAgent;
+
+    let edge = ua.indexOf('Edge/');
+    if (edge > 0) {
+       // Edge (IE 12+) => return version number
+       return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+    }
+
+    // other browser
+    return false;
+}
+
 function animScroll() {
 	let windowHeight = window.innerHeight / 1.2;
     [].forEach.call(document.getElementsByTagName('section'), function(el) {
@@ -237,57 +250,63 @@ function common_navCarousel3(sectionAll){
 
         section = '.' + section.className.split(" ")[0];
 
-        let containerEl = section + ' .container-el';
-        let el = section + ' .container-el .el';
+        if(detectEdge()) {
+            document.querySelector(section).classList.add('edge');
+        }
+        else {
 
-        let width_containerEl = document.querySelector(containerEl).clientWidth;
-        let width_el = document.querySelector(el+':nth-child(1)').clientWidth;
+            let containerEl = section + ' .container-el';
+            let el = section + ' .container-el .el';
 
-        let margin_el = getComputedStyle(document.querySelector(el+':nth-child(1)')).marginRight;
-        margin_el = margin_el ? parseInt(margin_el) : 0;
+            let width_containerEl = document.querySelector(containerEl).clientWidth;
+            let width_el = document.querySelector(el+':nth-child(1)').clientWidth;
 
-        let num_el = 0;
-        [].forEach.call(document.querySelectorAll(el), function(el) {
-            num_el++;
-        });
-        
-        let nav = section + ' .container-nav .nav';
-        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+            let margin_el = getComputedStyle(document.querySelector(el+':nth-child(1)')).marginRight;
+            margin_el = margin_el ? parseInt(margin_el) : 0;
 
-        let count = 0;
-
-        let slideData;
-
-        [].forEach.call(document.querySelectorAll(nav), function(n) {
-            n.addEventListener('click', function() {
-
-                let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
-                if ( indexNav == 1 && count > 0 ) {
-                    count--;
-                } else if ( indexNav == 2 && count < num_el ) {
-                    count++;
-                }
-
-                if (count >= num_el) {
-                    count = 0;
-                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
-                } else if (count === 0) {
-                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
-                } else {
-                    [].forEach.call(document.querySelectorAll(nav), function(remove) {
-                        remove.classList.remove('style-disable');
-                    });
-                }
-
-                slideData = count * (width_el + margin_el);
-
-                document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(containerEl).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(containerEl).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
-                document.querySelector(containerEl).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
+            let num_el = 0;
+            [].forEach.call(document.querySelectorAll(el), function(el) {
+                num_el++;
             });
-        });
+            
+            let nav = section + ' .container-nav .nav';
+            document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+
+            let count = 0;
+
+            let slideData;
+
+            [].forEach.call(document.querySelectorAll(nav), function(n) {
+                n.addEventListener('click', function() {
+
+                    let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
+                    if ( indexNav == 1 && count > 0 ) {
+                        count--;
+                    } else if ( indexNav == 2 && count < num_el ) {
+                        count++;
+                    }
+
+                    if (count >= num_el) {
+                        count = 0;
+                        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+                    } else if (count === 0) {
+                        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+                    } else {
+                        [].forEach.call(document.querySelectorAll(nav), function(remove) {
+                            remove.classList.remove('style-disable');
+                        });
+                    }
+
+                    slideData = count * (width_el + margin_el);
+
+                    document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                    document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                    document.querySelector(containerEl).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                    document.querySelector(containerEl).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                    document.querySelector(containerEl).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                });
+            });
+        }
     });
 };
 
