@@ -113,6 +113,14 @@
 		"oAP": "/5b1-guide-sous-metier.php",
 		"oF": 0
 		},
+	"/build/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/build/.gitignore",
+		"oF": 0
+		},
 	"/check-connexion.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -468,6 +476,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/img/common-section_compare/illu-16.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_compare/illu-17.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common-section_compare/illu-17.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 4010962575359,
+		"prP": 0
+		},
+	"/img/common-section_compare/illu-18.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/img/common-section_compare/illu-18.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 4010962575359,
@@ -1569,6 +1597,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/script/minify/jQuery.3.3.1-min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/script/minify/jQuery.3.3.1-min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/script/minify/js-common-page_actualites-min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -1651,6 +1690,24 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/style/css/style-common-page_sousmetier.css.map",
+		"oF": 0
+		},
+	"/style/css/style-common-section_knoweverything.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-common-section_knoweverything-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/style/css/style-common-section_knoweverything.css.map": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/style/css/style-common-section_knoweverything.css.map",
 		"oF": 0
 		},
 	"/style/css/style-page_actualites.css": {
