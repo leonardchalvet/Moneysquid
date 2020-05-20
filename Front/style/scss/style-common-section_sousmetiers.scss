@@ -52,10 +52,10 @@
 					white-space: normal;
 				}
 				&:not(:last-child){
-					margin-right: 165px;
+					margin-right: 115px;
 				}
 				.content {
-					width: 900px;
+					width: 950px;
 					display: flex;
 					flex-flow: row wrap;
 					align-items: flex-start;
@@ -68,7 +68,7 @@
 					}
 					.text{
 						white-space: normal;
-						width: 390px;
+						width: 440px;
 						h3{
 							@include styleH3;
 							a {
