@@ -447,6 +447,9 @@ main
 		text-decoration: none;
 		display: inline-flex;
 		align-items: baseline;
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			align-items: center;
+		}
 		position: relative;
 		background-color: $colorMain_1;
 		transition: all 0.25s ease;
@@ -543,6 +546,9 @@ main
 		text-decoration: none;
 		display: inline-flex;
 		align-items: baseline;
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			align-items: center;
+		}
 		position: relative;
 		
 		border-radius: 12px;
@@ -584,6 +590,9 @@ main
 		text-decoration: none;
 		display: inline-flex;
 		align-items: baseline;
+		@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+			align-items: center;
+		}
 		position: relative;
 		padding: 16px 24px 16px 24px;
 		border-radius: 12px;
