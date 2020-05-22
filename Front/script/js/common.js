@@ -19,15 +19,47 @@ window.addEventListener('scroll', function() {
     };
 });
 
-document.querySelector("#common-btn_top").addEventListener('click', function() {
-    const scrollToTop = () => {
-      const c = document.documentElement.scrollTop || document.body.scrollTop;
-      if (c > 0) {
-        window.requestAnimationFrame(scrollToTop);
-        window.scrollTo(0, c - c / 8);
+function scrollIt(destination, callback) {
+  
+  duration = 200;
+
+  const start = window.pageYOffset;
+  const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+
+  const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+  const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+  const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
+  const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
+
+  if ('requestAnimationFrame' in window === false) {
+    window.scroll(0, destinationOffsetToScroll);
+    if (callback) {
+      callback();
+    }
+    return;
+  }
+
+  function scroll() {
+    const now = 'now' in window.performance ? performance.now() : new Date().getTime();
+    const time = Math.min(1, ((now - startTime) / duration));
+    const timeFunction = time;
+    window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
+
+    if (window.pageYOffset === destinationOffsetToScroll) {
+      if (callback) {
+        callback();
       }
-    };
-    scrollToTop();
+      return;
+    }
+
+    requestAnimationFrame(scroll);
+  }
+
+  scroll();
+}
+
+document.querySelector('#common-btn_top').addEventListener('click', function(){
+    scrollIt(0);
 });
 
 /*=======================================
@@ -99,11 +131,6 @@ function animScroll() {
         document.querySelector('#common-btn_top').classList.remove('style-white');
     };
 
-    if (window.pageYOffset >= document.querySelector('.section-cover').offsetTop + document.querySelector('.section-cover').clientHeight ) {
-    	document.querySelector('.common-section_cta_compare').classList.add('show');
-    } else {
-        document.querySelector('.common-section_cta_compare').classList.remove('show');
-    };
 };
 
 function common_navCarousel1(sectionAll){
@@ -157,11 +184,13 @@ function common_navCarousel1(sectionAll){
 				slideData = count * (width_el + margin_el);
 				slideData = count > 1 ? (slideData - width_el) : slideData;
 
-				if( (slideData+200) > width_containerEl ) {
-					slideData = 0;
-					count = 0;
-                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
-				}
+                if(!detectIE()) {
+    				if( (slideData+200) > width_containerEl ) {
+    					slideData = 0;
+    					count = 0;
+                        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+    				}
+                }
 
 				document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
 				document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(0)';
@@ -418,85 +447,111 @@ function common_sectionAutremetiers(){
 
 function common_sectionPartenaires(){
 
-        function getRandomInt(max) {
-          return Math.floor(Math.random() * Math.floor(max));
-        }
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
 
-        function remplaceImg(img, data) {
-            img.classList.add('hide');
+    function remplaceImg(img, data) {
+        img.classList.add('hide');
+        setTimeout(function(){
+            img.setAttribute('src', data);
             setTimeout(function(){
-                img.setAttribute('src', data);
-                setTimeout(function(){
-                    img.classList.remove('hide');
-                }, 250);
+                img.classList.remove('hide');
             }, 250);
-        }
+        }, 250);
+    }
 
-        [].forEach.call(document.querySelectorAll('.common-section_partenaires'), function(section) {
-            
-            section = '.' + section.className.split(" ")[0];
+    [].forEach.call(document.querySelectorAll('.common-section_partenaires'), function(section) {
+        
+        section = '.' + section.className.split(" ")[0];
 
-            let imgAct = [ 0, 1, 2, 3, 4 ];
-            let subLength = 0;
-            [].forEach.call(document.querySelectorAll('.common-section_partenaires .container-el .el'), function(el) {
-                if(getComputedStyle(el).display !== 'none') {
-                    subLength++;
-                }
-            });
-            subLength = imgAct.length - (imgAct.length - subLength);
-            let dataImg = document.querySelector(section + ' .data-img').getAttribute('data-img').split(';');
-            let sectionData = document.querySelector(section + ' .data-img');
-            sectionData.parentNode.removeChild(sectionData);
-
-            
-            let choiceEl = 0;
-            let choiceData = 0;
-            let indexPrev = 0;
-            let prevChoice = [ -1, -1 ];
-            setInterval(function(){
-                
-                let bool;
-                choiceData = getRandomInt(dataImg.length);
-                do {
-                    bool = true;
-                    for(let i=0 ; i < subLength ; i++) {
-                        if(imgAct[i] == choiceData) {
-                            bool = false;
-                        }
-                    }
-                    if(!bool) {
-                        choiceData = getRandomInt(dataImg.length);
-                    }
-                } while(!bool);
-
-                bool = true;
-                choiceEl   = getRandomInt(subLength);
-                do {
-                    bool = true;
-                    for(let i=0 ; i < prevChoice.length ; i++) {
-                        if(prevChoice[i] == choiceEl) {
-                            bool = false;
-                        }
-                    }
-                    if(!bool) {
-                        choiceEl = getRandomInt(subLength);
-                    }
-                } while(!bool);
-
-
-                imgAct[choiceEl] = choiceData;
-                prevChoice[indexPrev] = choiceEl;
-
-                indexPrev++;
-                if(indexPrev >= prevChoice.length) {
-                    indexPrev = 0;
-                }
-
-                remplaceImg( document.querySelector(section + ' .el:nth-child(' + (choiceEl+1) + ') img'), dataImg[choiceData] );
-
-            }, 2000);
-
+        let imgAct = [ 0, 1, 2, 3, 4 ];
+        let subLength = 0;
+        [].forEach.call(document.querySelectorAll('.common-section_partenaires .container-el .el'), function(el) {
+            if(getComputedStyle(el).display !== 'none') {
+                subLength++;
+            }
         });
+        subLength = imgAct.length - (imgAct.length - subLength);
+        let dataImg = document.querySelector(section + ' .data-img').getAttribute('data-img').split(';');
+        let sectionData = document.querySelector(section + ' .data-img');
+        sectionData.parentNode.removeChild(sectionData);
+
+        
+        let choiceEl = 0;
+        let choiceData = 0;
+        let indexPrev = 0;
+        let prevChoice = [ -1, -1 ];
+        setInterval(function(){
+            
+            let bool;
+            choiceData = getRandomInt(dataImg.length);
+            do {
+                bool = true;
+                for(let i=0 ; i < subLength ; i++) {
+                    if(imgAct[i] == choiceData) {
+                        bool = false;
+                    }
+                }
+                if(!bool) {
+                    choiceData = getRandomInt(dataImg.length);
+                }
+            } while(!bool);
+
+            bool = true;
+            choiceEl   = getRandomInt(subLength);
+            do {
+                bool = true;
+                for(let i=0 ; i < prevChoice.length ; i++) {
+                    if(prevChoice[i] == choiceEl) {
+                        bool = false;
+                    }
+                }
+                if(!bool) {
+                    choiceEl = getRandomInt(subLength);
+                }
+            } while(!bool);
+
+
+            imgAct[choiceEl] = choiceData;
+            prevChoice[indexPrev] = choiceEl;
+
+            indexPrev++;
+            if(indexPrev >= prevChoice.length) {
+                indexPrev = 0;
+            }
+
+            remplaceImg( document.querySelector(section + ' .el:nth-child(' + (choiceEl+1) + ') img'), dataImg[choiceData] );
+
+        }, 2000);
+
+    });
+}
+
+function common_sectionKnoweverything(){
+    [].forEach.call(document.querySelectorAll('.common-section_knoweverything'), function(section) {
+        section = '.' + section.className.split(" ")[0];
+
+        [].forEach.call(document.querySelectorAll(section + ' .container .container-tab .tab'), function(tab) {
+            tab.addEventListener('click', function() {
+                
+                let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
+                if( !document.querySelector('.common-section_knoweverything .container .container-tab .tab:nth-child('+indexNav+')').classList.contains('style-active') ) {
+                    
+                    [].forEach.call(document.querySelectorAll('.common-section_knoweverything .container .container-tab .tab'), function(r) {
+                        r.classList.remove('style-active');
+                    });
+                    document.querySelector('.common-section_knoweverything .container .container-tab .tab:nth-child('+indexNav+')').classList.add('style-active');
+
+                    [].forEach.call(document.querySelectorAll('.common-section_knoweverything .container .content-tab .tab'), function(r) {
+                        r.classList.remove('style-active');
+                    });
+                    document.querySelector('.common-section_knoweverything .container .content-tab .tab:nth-child('+indexNav+')').classList.add('style-active');
+                }
+
+            });
+        });
+    });
 }
 
 /*=====  End of COMMON FUNCTION  ======*/
