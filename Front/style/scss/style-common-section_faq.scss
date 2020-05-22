@@ -64,6 +64,16 @@
 					height: 12px;
 					transform: rotate(90deg);
 					transition: transform .25s ease;
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						&.img {
+							background-image: url(../../img/common/icn-arrow-2-black.png);
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-position: center;
+							width: 12px;
+							height: 12px;
+						}
+					}
 				}
 			}
 			>p {
