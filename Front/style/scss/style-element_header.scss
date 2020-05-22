@@ -703,7 +703,13 @@
 	}
 }
 
+@media screen and (max-width: $breakPoint_mobile){
+	#common-btn_top{
+		display: none;
+	}
+}
+
 .common-header_desktop,
 .common-header_mobile{
-	
+	display: none !important;
 }

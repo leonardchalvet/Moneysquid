@@ -569,7 +569,7 @@
 									Financez votre projet
 								</p>
 								<p class="text-2">
-									Avec nos experts<br/>&nbsp
+									Avec nos experts<br/>&nbsp;
 								</p>
 								<svg class="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>

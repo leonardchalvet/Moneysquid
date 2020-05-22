@@ -11,7 +11,44 @@
 	background: $colorBlueNuances_gradient;
 	.wrapper{
 		position: relative;
-		@include styleGrid1
+		@include styleGrid1;
+	}
+	.path {
+		position: absolute;
+		top: -100px;
+		left: 0;
+		display: flex;
+		align-items: center;
+		opacity: 0.7;
+		span {
+			display: block;
+			margin-right: 10px;
+			&:nth-child(even) {
+				width: 5px;
+				height: 3px;
+				svg {
+					width: 100%;
+					height: 100%;
+					fill: #FFFFFF;
+					transform: rotate(-90deg);
+				}
+				@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+					.img {
+						background-image: url(../../img/common/icn-arrow-1-white.png);
+						background-repeat: no-repeat;
+						background-size: contain;
+						background-position: center;
+						width: 5px;
+						height: 5px;
+						transform: rotate(-90deg);
+					}
+				}
+			}
+			&:nth-child(odd) {
+				@include styleParagraphSmall($font_1_Regular);
+				color: #FFFFFF;
+			}
+		}
 	}
 	h1{
 		@include styleH1;
@@ -31,6 +68,9 @@
 		width: 950px;
 		height: 100px;
 		border-radius: 16px;
+		&.active {
+			border-radius: 16px 16px 16px 0;
+		}
 		background-color: #FFF;
 		box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 		display: flex;
@@ -52,6 +92,7 @@
 					top: 20px;
 					@include styleParagraphSmall($font_1_Regular);
 					color: $colorUi_Text_2;
+					transform: translateY(50%);
 				}
 				input{
 					border: none;
@@ -60,19 +101,38 @@
 					width: 100%;
 					height: 100%;
 					padding-left: 35px;
-					@include styleParagraphBig($font_1_Regular);
-					&::placeholder{
-						@include styleParagraphBig($font_1_Bold);
+					@include styleParagraphBig($font_1_Bold);
+					&::-moz-placeholder{
+						line-height: 120px !important;
+						color: $colorUi_Text_1;
+						opacity: 1;
+					}
+					&::-webkit-input-placeholder {
+						transform: translateY(10px);
+						color: $colorUi_Text_1;
+						opacity: 1;
+					}
+					&:-ms-input-placeholder {
+						transform: translateY(10px);
 						color: $colorUi_Text_1;
 					}
 				}
 				.icn-arrow{
 					position: absolute;
 					right: 30px;
-					top: 50%;
+					top: calc(50% + 7px);
 					width: 12px;
-					transform: translateY(-50%);
 					fill: $colorUi_Text_1;
+					@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+						&.img {
+							background-image: url(../../img/common/icn-arrow-1-black.png);
+							background-repeat: no-repeat;
+							background-size: contain;
+							background-position: center;
+							width: 12px;
+							height: 10px;
+						}
+					}
 				}
 			}
 			.dropdown{
@@ -195,6 +255,7 @@
 			justify-content: space-between;
 			a{
 				@include styleLink_1;
+				align-items: baseline;
 				.link-text{
 					color: #FFF;
 					@include styleParagraphSmall($font_1_Bold);
@@ -204,6 +265,11 @@
 				}
 				.link-arrow{
 					stroke: #FFF;
+					@media screen and (-ms-high-contrast:active), all and (-ms-high-contrast:none) {
+						&.img {
+    						background-image: url(../../img/common/icn-arrow-2-white.png);
+						}
+					}
 				}
 			}
 		}
@@ -398,6 +464,9 @@
 		}
 	}
 	.container-illu{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		width: 470px;
 		img{
 			width: 100%;

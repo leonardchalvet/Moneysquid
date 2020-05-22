@@ -22,6 +22,21 @@
 
 			<section class="section-cover">
 				<div class="wrapper">
+					<div class="path">
+						<span>Accueil</span>
+						<span>
+							<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
+								<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
+							</svg>
+						</span>
+						<span>Crédit</span>
+						<span>
+							<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
+								<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
+							</svg>
+						</span>
+						<span>Crédit immobilier</span>
+					</div>
 					<h1>Prêt <em>immobilier</em></h1>
 					<p class="desc">Comparez et obtenez le meilleur taux immobilier</p>
 					<div class="container-comp">
