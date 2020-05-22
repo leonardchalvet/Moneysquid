@@ -1,6 +1,16 @@
 // @codekit-prepend 'common.js'
 
+function animScrollHome() {
+    if (window.pageYOffset >= document.querySelector('.section-cover').offsetTop + document.querySelector('.section-cover').clientHeight ) {
+    	document.querySelector('.common-section_cta_compare').classList.add('show');
+    } else {
+        document.querySelector('.common-section_cta_compare').classList.remove('show');
+    };
+};
+
 window.addEventListener('load', function() {
+
+	animScrollHome();
 
 	document.querySelector('.section-cover .container-comp .container-input .input input').addEventListener('focusin', function() {
 		document.querySelector('.section-cover .container-comp').classList.add('style-open');
@@ -71,5 +81,14 @@ window.addEventListener('load', function() {
 	}
 	
 });
+
+
+/*============================================
+=            ONSCROL RUN FUNCTION            =
+============================================*/
+window.addEventListener('scroll', function() {
+    animScrollHome();
+});
+/*=====  End of ONSCROL RUN FUNCTION  ======*/
 
 
