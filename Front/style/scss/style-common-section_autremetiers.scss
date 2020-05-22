@@ -57,11 +57,7 @@
 						}
 
 						@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-							display: block;
-							white-space: nowrap;
-							.link-text, .img {
-								display: inline-block;
-							}
+							margin-bottom: 2px;
 						}
 					}
 				}
