@@ -37,7 +37,7 @@
 								<div class="container-el">
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -45,7 +45,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -53,7 +53,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -61,7 +61,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -69,7 +69,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -77,7 +77,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -85,7 +85,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -93,7 +93,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -101,7 +101,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -109,7 +109,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -130,7 +130,7 @@
 								<div class="container-el">
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -138,7 +138,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -146,7 +146,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -154,7 +154,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -162,7 +162,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -170,7 +170,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -178,7 +178,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -186,7 +186,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -194,7 +194,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -202,7 +202,7 @@
 									</div>
 									<div class="el">
 										<span class="link-text">
-											Rachat de credit fonctionnaire
+											<span>Rachat de credit fonctionnaire</span>
 										</span>
 										<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 											<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
