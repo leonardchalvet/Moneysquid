@@ -1,11 +1,7 @@
 // @codekit-prepend 'common.js'
 
 function animScrollHome() {
-    if (window.pageYOffset >= document.querySelector('.section-cover').offsetTop + document.querySelector('.section-cover').clientHeight ) {
-    	document.querySelector('.common-section_cta_compare').classList.add('show');
-    } else {
-        document.querySelector('.common-section_cta_compare').classList.remove('show');
-    };
+    
 };
 
 window.addEventListener('load', function() {
