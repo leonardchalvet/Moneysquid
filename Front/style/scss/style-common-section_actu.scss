@@ -209,8 +209,14 @@
 			-webkit-overflow-scrolling: touch;
 			.el{
 				flex: 0 0 auto;
-				width: 255px;
 				height: initial;
+				&:not(:last-child) {
+					width: 255px;
+				}
+				&:last-child {
+					width: 295px;
+					padding-right: 40px;
+				}
 				.cover{
 					height: 200px;
 				}
