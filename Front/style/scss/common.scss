@@ -672,6 +672,7 @@ main
 			fill: transparent;
 			stroke: $colorUi_Text_1;
 			transition: all 200ms ease;
+			transform: translateY(-1px);
 			@media screen and (max-width: $breakPoint_tablet){
 				height: 10px;
 			}
