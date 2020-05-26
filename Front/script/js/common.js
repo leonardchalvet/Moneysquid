@@ -554,12 +554,14 @@ function common_sectionKnoweverything(){
                     document.querySelector('.common-section_knoweverything .container .content-tab .tab:nth-child('+indexNav+')').classList.add('style-active');
 
                     if (!window.matchMedia('(min-width:' + breakPoint_mobile + 'px)').matches) {
-                        tab.innerHTML += document.querySelector('.common-section_knoweverything .container .content-tab .tab:nth-child('+indexNav+')').innerHTML;
+                        setTimeout(function(){
+                            tab.innerHTML += document.querySelector('.common-section_knoweverything .container .content-tab .tab:nth-child('+indexNav+')').innerHTML;
+                        }, 250);
                     }
                 }
                 else {
                     if (!window.matchMedia('(min-width:' + breakPoint_mobile + 'px)').matches) {
-                        document.querySelector('.common-section_knoweverything .container .container-tab .tab:nth-child('+indexNav+')').classList.remove('style-active')
+                        document.querySelector('.common-section_knoweverything .container .container-tab .tab:nth-child('+indexNav+')').classList.remove('style-active');
                     }
                 }
 
