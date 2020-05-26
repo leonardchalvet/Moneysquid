@@ -367,6 +367,22 @@
 				</div>
 			</section>
 
+			<section class="common-section_cta_compare">
+					<div class="wrapper">
+						<a href="" class="btn">
+							<span class="btn-text">
+								Je compare
+							</span>
+							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
+								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
+							</svg>
+						</a>
+						<p class="tagline">
+							Rapide, gratuit, sans engagement !
+						</p>
+					</div>
+			</section>
+
 			<section class="section-compare">
 				<div class="wrapper">
 					<h2>Pourquoi comparer les taux de crédit consommation ? </h2>
@@ -466,33 +482,37 @@
 					<h2>Tout savoir sur le Crédit consommation</h2>
 					<div class="container">
 						<div class="container-tab">
-							<div class="tab style-active">
+							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
 								<h3>Guide<br>prêt consommation</h3>
+								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
 								<h3>Guide<br>prêt consommation</h3>
+								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
 								<h3>Guide<br>prêt consommation</h3>
+								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
 								<h3>Guide<br>prêt consommation</h3>
+								<div class="cross"></div>
 							</div>
 						</div>
 						<div class="content-tab">
-							<div class="tab style-active">
+							<div class="tab">
 								<ul>
 									<li>
 										<a href="">
@@ -1354,7 +1374,7 @@
 				<div class="wrapper">
 					<div class="container-text">
 						<h2>
-							Texte Sous<br>métier SEO
+							Texte Sous métier SEO
 						</h2>
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. In imperdiet velit dapibus a erat morbi elementum, integer orci. Tincidunt mauris sed quam consectetur nisl porta sit. In dictum vestibulum, duis mattis ultrices sed elementum pharetra. Laoreet risus nam mauris lorem purus. Adipiscing faucibus blandit urna massa et. Turpis morbi porta sit eu, ultricies. Ut amet metus, id nisl cursus urna.<br>
@@ -1374,36 +1394,6 @@
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
 						</a>
-					</div>
-				</div>
-			</section>
-
-			<section class="common-section_newsletter">
-				<div class="wrapper">
-					<h2>
-						Inscrivez vous à la Newsletter hebdomadaire
-					</h2>
-					<div class="container">
-						<p>
-							Inscrivez-vous gratuitement à notre Newsletter et recevez une fois par semaine nos conseils, astuces et offres flash. 
-						</p>
-						<div class="container-input">
-							<input type="text" placeholder="Votre email">
-							<a href="" class="btn">
-								<span class="btn-text">
-									Je m'inscris
-								</span>
-								<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-									<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-								</svg>
-							</a>
-						</div>
-						<div class="container-cg">
-							<input type="checkbox">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Risus habitasse quis eget ipsum sed nunc massa. Erat blandit mauris pharetra pulvinar ridiculus posuere. 
-							</p>
-						</div>
 					</div>
 				</div>
 			</section>
