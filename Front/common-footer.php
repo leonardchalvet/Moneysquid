@@ -113,7 +113,7 @@
 
 		<div class="container-alert">
 			<p>
-				<em>ALERTE PHISING</em> : Attention, vous pouvez être sollicités par de faux conseillers Moneysquid pour vous proposer des crédits, et vous demandant de transmettre des documents, des fonds, des coordonnées bancaires, etc. <em>SOYEZ VIGILANTS</em> : MoneySquid ne demande jamais à ses clients de virer sur ses comptes des sommes prêtées par les banques, à l’exception des honoraires des agences. Les conseillers MoneySquid vous écrivent toujours d’une adresse mail xxxx@moneysquid.com
+				<em>ALERTE PHISING</em> : attention, vous pouvez être sollicité par de faux conseillers Moneysquid pour vous proposer des crédits, et vous demandant de transmettre des documents, des fonds, des coordonnées bancaires, etc. <em>SOYEZ VIGILANTS</em> : Moneysquid ne demande jamais à ses clients de virer sur ses comptes des sommes prêtées par les banques, à l’exception des honoraires de courtage en crédit immobilier. Les conseillers Moneysquid vous écrivent toujours d’une adresse mail xxxx@moneysquid.com
 			</p>
 		</div>
 	</div>
