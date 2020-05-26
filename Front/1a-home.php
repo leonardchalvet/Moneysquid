@@ -982,7 +982,7 @@
 							100 % humain
 						</h2>
 						<p>
-							Avec MoneySquid, ce sont des humains qui vous accompagnent tout au long de la réalisation de votre projet. Grâce à nous, plus besoin de passer des heures à la recherche du meilleur taux. Nos équipes d’experts s’engagent à vous dénicher l’offre la plus adaptée à vos besoins, tout en restant à votre écoute. C’est sans stress, facile et gratuit. Avec nous, la recherche d’un crédit n’aura jamais été aussi simple.
+							Avec Moneysquid, ce sont des humains qui vous accompagnent tout au long de la réalisation de votre projet. Grâce à nous, plus besoin de passer des heures à la recherche du meilleur taux. Nos équipes d’experts s’engagent à vous dénicher l’offre la plus adaptée à vos besoins, tout en restant à votre écoute. C’est sans stress, facile et gratuit. Avec nous, la recherche d’un crédit n’aura jamais été aussi simple.
 						</p>
 					</div>
 				</div>
@@ -1417,7 +1417,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-1.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-1.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Prêt immobilier</a></h3>
@@ -1440,7 +1440,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-2.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-2.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Crédit consommation</a></h3>
@@ -1463,7 +1463,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-3.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-3.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Rachat de crédits</a></h3>
@@ -1486,7 +1486,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-4.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-4.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Crédit professionnel</a></h3>
@@ -1509,7 +1509,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-5.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-5.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance animaux</a></h3>
@@ -1532,7 +1532,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-6.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-6.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance auto</a></h3>
@@ -1555,7 +1555,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-7.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-7.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance emprunteur</a></h3>
@@ -1578,7 +1578,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-8.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-8.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance décès</a></h3>
@@ -1601,7 +1601,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-9.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-9.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance habitation</a></h3>
@@ -1624,7 +1624,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-10.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-10.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance loyer impayé</a></h3>
@@ -1647,7 +1647,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-11.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-11.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance moto</a></h3>
@@ -1670,7 +1670,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-12.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-12.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance obsèque</a></h3>
@@ -1693,7 +1693,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-13.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-13.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance prévoyance</a></h3>
@@ -1716,7 +1716,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-14.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-14.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance scolaire</a></h3>
@@ -1739,7 +1739,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-15.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-15.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance voyage</a></h3>
@@ -1762,7 +1762,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-16.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-16.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Mutuelle santé</a></h3>
@@ -1785,7 +1785,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-17.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-17.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Assurance vie</a></h3>
@@ -1808,7 +1808,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-18.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-18.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Défiscalisation</a></h3>
@@ -1831,7 +1831,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-19.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-19.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">SCPI</a></h3>
@@ -1854,7 +1854,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-20.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-20.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Banque en ligne</a></h3>
@@ -1877,7 +1877,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-21.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-21.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Banque en ligne professionnelle</a></h3>
@@ -1900,7 +1900,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-22.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-22.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Bourse</a></h3>
@@ -1923,7 +1923,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-23.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-23.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Livret d’épargne</a></h3>
@@ -1946,7 +1946,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-24.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-24.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">PEA (plan d’épargne en action)</a></h3>
@@ -1969,7 +1969,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-25.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-25.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Électricité</a></h3>
@@ -1992,7 +1992,7 @@
 								<div class="el">
 							        <div class="content">
 								        <div class="illu">
-											<img src="img/common-section_sousmetier/illu-26.svg" alt="">
+											<img src="img/common-section_sousmetier/illu-26.png" alt="">
 										</div>
 										<div class="text">
 											<h3><a href="#">Gaz</a></h3>
