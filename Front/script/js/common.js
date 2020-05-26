@@ -285,67 +285,177 @@ function common_navCarousel3(sectionAll){
 
         section = '.' + section.className.split(" ")[0];
 
-        if(detectEdge()) {
-            document.querySelector(section).classList.add('edge');
-        }
-        else {
+        let containerEl = section + ' .container-el';
+        let el = section + ' .container-el .el';
 
-            let containerEl = section + ' .container-el';
-            let el = section + ' .container-el .el';
+        let width_containerEl = document.querySelector(containerEl).clientWidth;
+        let width_el = document.querySelector(el+':nth-child(1)').clientWidth;
 
-            let width_containerEl = document.querySelector(containerEl).clientWidth;
-            let width_el = document.querySelector(el+':nth-child(1)').clientWidth;
+        let margin_el = getComputedStyle(document.querySelector(el+':nth-child(1)')).marginRight;
+        margin_el = margin_el ? parseInt(margin_el) : 0;
 
-            let margin_el = getComputedStyle(document.querySelector(el+':nth-child(1)')).marginRight;
-            margin_el = margin_el ? parseInt(margin_el) : 0;
+        let num_el = 0;
+        [].forEach.call(document.querySelectorAll(el), function(el) {
+            num_el++;
+        });
+        
+        let nav = section + ' .container-nav .nav';
+        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
 
-            let num_el = 0;
-            [].forEach.call(document.querySelectorAll(el), function(el) {
-                num_el++;
+        let count = 0;
+
+        let slideData;
+
+        [].forEach.call(document.querySelectorAll(nav), function(n) {
+            n.addEventListener('click', function() {
+
+                let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
+                if ( indexNav == 1 && count > 0 ) {
+                    count--;
+                } else if ( indexNav == 2 && count < num_el ) {
+                    count++;
+                }
+
+                if (count >= num_el) {
+                    count = 0;
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+                } else if (count === 0) {
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+                } else {
+                    [].forEach.call(document.querySelectorAll(nav), function(remove) {
+                        remove.classList.remove('style-disable');
+                    });
+                }
+
+                slideData = count * (width_el + margin_el);
+
+                document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                document.querySelector(containerEl).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                document.querySelector(containerEl).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                document.querySelector(containerEl).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
             });
-            
-            let nav = section + ' .container-nav .nav';
-            document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+        });
 
-            let count = 0;
-
-            let slideData;
-
-            [].forEach.call(document.querySelectorAll(nav), function(n) {
-                n.addEventListener('click', function() {
-
-                    let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
-                    if ( indexNav == 1 && count > 0 ) {
-                        count--;
-                    } else if ( indexNav == 2 && count < num_el ) {
-                        count++;
-                    }
-
-                    if (count >= num_el) {
-                        count = 0;
-                        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
-                    } else if (count === 0) {
-                        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
-                    } else {
-                        [].forEach.call(document.querySelectorAll(nav), function(remove) {
-                            remove.classList.remove('style-disable');
-                        });
-                    }
-
-                    slideData = count * (width_el + margin_el);
-
-                    document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
-                    document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
-                    document.querySelector(containerEl).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
-                    document.querySelector(containerEl).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
-                    document.querySelector(containerEl).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
-                });
-            });
-        }
     });
 };
 
-/*
+/* REMOVE AT THE END
+function common_navCarousel3_forEgde(sectionAll){
+    [].forEach.call(document.querySelectorAll(sectionAll), function(section) {
+
+        section = '.' + section.className.split(" ")[0];
+        document.querySelector(section).classList.add('edge');
+
+        let containerEl = section + ' .container-el';
+        let el = section + ' .container-el .el';
+
+        let width_el = document.querySelector(el+':nth-child(1)').clientWidth;
+
+        let margin_el = getComputedStyle(document.querySelector(el+':nth-child(1)')).marginRight;
+        margin_el = margin_el ? parseInt(margin_el) : 0;
+
+        let heightEl_max = 0;
+        [].forEach.call(document.querySelectorAll(el), function(element) {
+            if(heightEl_max < element.clientHeight) {
+                heightEl_max = element.clientHeight;
+            }
+            element.classList.add('displayNone');
+            element.classList.add('hide');
+        });
+        document.querySelector(containerEl).style.height = heightEl_max + 'px';
+
+        let num_el = 0;
+        [].forEach.call(document.querySelectorAll(el), function(el) {
+            num_el++;
+        });
+        
+        let nav = section + ' .container-nav .nav';
+        document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+
+        let count = 1;
+
+        let slideData;
+
+        document.querySelector(el + ':nth-child(1)').classList.remove('displayNone');
+        document.querySelector(el + ':nth-child(2)').classList.remove('displayNone');
+        document.querySelector(el + ':nth-child(3)').classList.remove('displayNone');
+        document.querySelector(el + ':nth-child(1)').classList.remove('hide');
+        document.querySelector(el + ':nth-child(2)').classList.remove('hide');
+        document.querySelector(el + ':nth-child(3)').classList.remove('hide');
+        document.querySelector(el + ':nth-child(1)').classList.add('center');
+        document.querySelector(el + ':nth-child(2)').classList.add('right');
+
+        [].forEach.call(document.querySelectorAll(nav), function(n) {
+            n.addEventListener('click', function() {
+
+                let indexNav = Array.prototype.slice.call(this.parentElement.children).indexOf(this) + 1;
+                if ( indexNav == 1 && count > 0 ) {
+                    count--;
+                } else if ( indexNav == 2 && count < num_el ) {
+                    count++;
+
+                    if( (count-3) >= 1 ) {
+                        document.querySelector(el + ':nth-child('+(count-3)+')').classList.remove('leftHide');
+                        document.querySelector(el + ':nth-child('+(count-3)+')').classList.add('displayNone');
+                    }
+
+                    if( (count-2) >= 1 ) {
+                        document.querySelector(el + ':nth-child('+(count-2)+')').classList.remove('left');
+                        document.querySelector(el + ':nth-child('+(count-2)+')').classList.add('leftHide');
+                        document.querySelector(el + ':nth-child('+(count-2)+')').classList.add('hide');
+                    }
+
+                    if( (count-1) >= 1 ) {
+                        document.querySelector(el + ':nth-child('+(count-1)+')').classList.remove('center');
+                        document.querySelector(el + ':nth-child('+(count-1)+')').classList.add('left');
+                    }
+
+                    document.querySelector(el + ':nth-child('+(count)+')').classList.remove('right');
+                    document.querySelector(el + ':nth-child('+(count)+')').classList.add('center');
+
+                    if( (count+1) <= num_el ) {
+                        document.querySelector(el + ':nth-child('+(count+1)+')').classList.add('right');
+                    }
+
+                    if( (count+2) <= num_el ) {
+                        document.querySelector(el + ':nth-child('+(count+2)+')').classList.remove('displayNone');
+                        setTimeout(function(){
+                            document.querySelector(el + ':nth-child('+(count+2)+')').classList.remove('hide');
+                        },100);
+                    }
+                }
+
+                if (count === 1) {
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+                }
+                else {
+                    document.querySelector(nav + ':nth-child(1)').classList.remove('style-disable');
+                }
+
+                /*
+                if (count >= num_el) {
+                    count = 0;
+                    document.querySelector(nav + ':nth-child(1)').classList.add('style-disable');
+                } else  else {
+                    [].forEach.call(document.querySelectorAll(nav), function(remove) {
+                        remove.classList.remove('style-disable');
+                    });
+                }
+
+                slideData = count * (width_el + margin_el);
+
+                document.querySelector(containerEl).style.webkitTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                document.querySelector(containerEl).style.MozTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                document.querySelector(containerEl).style.msTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                document.querySelector(containerEl).style.OTransform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                document.querySelector(containerEl).style.transform = 'translateX(-' + slideData + 'px' + ') translateZ(1px)';
+                
+            });
+        });
+        
+    });  
+};
 function common_horizontalScroll(sectionAll){
 	
     [].forEach.call(document.querySelectorAll(sectionAll), function(section) {
