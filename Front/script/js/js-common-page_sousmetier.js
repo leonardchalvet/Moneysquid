@@ -25,7 +25,9 @@ window.addEventListener('load', function() {
 		common_sectionKnoweverything();
 		common_sectionPartenaires();
 	} else {
+		common_sectionAutremetiers();
 		common_sectionPartenaires();
+		common_sectionKnoweverything();
 	}
 
 });
