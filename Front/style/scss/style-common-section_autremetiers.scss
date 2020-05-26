@@ -44,13 +44,15 @@
 					list-style: none;
 					display: flex;
 					flex-flow: row wrap;
-					align-items: center;
 					li{
 						width: calc(100% / 3);
+						height: 50px;
 						margin-bottom: 35px;
+						line-height: 50px;
 					}
 					a{
 						@include styleLink_1;
+						line-height: initial;
 						width: calc(100% - 75px);
 						.link-text{
 							flex: 1;
