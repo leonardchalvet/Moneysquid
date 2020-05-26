@@ -17,6 +17,12 @@ window.addEventListener('scroll', function() {
     } else {
     	document.querySelector('#common-btn_top').classList.remove('style-show');
     };
+
+    if (window.pageYOffset >= document.querySelector('.section-cover').offsetTop + document.querySelector('.section-cover').clientHeight ) {
+        document.querySelector('.common-section_cta_compare').classList.add('show');
+    } else {
+        document.querySelector('.common-section_cta_compare').classList.remove('show');
+    };
 });
 
 function scrollIt(destination, callback) {
@@ -427,7 +433,6 @@ function common_horizontalScroll(sectionAll){
 */
 
 function common_sectionAutremetiers(){
-	console.log('salut');
 	[].forEach.call(document.querySelectorAll('.common-section_autremetiers .container-section .section'), function(section) {
 		section.addEventListener('click', function() {
 			if (this.classList.contains('style-open')) {
@@ -547,11 +552,24 @@ function common_sectionKnoweverything(){
                         r.classList.remove('style-active');
                     });
                     document.querySelector('.common-section_knoweverything .container .content-tab .tab:nth-child('+indexNav+')').classList.add('style-active');
+
+                    if (!window.matchMedia('(min-width:' + breakPoint_mobile + 'px)').matches) {
+                        tab.innerHTML += document.querySelector('.common-section_knoweverything .container .content-tab .tab:nth-child('+indexNav+')').innerHTML;
+                    }
+                }
+                else {
+                    if (!window.matchMedia('(min-width:' + breakPoint_mobile + 'px)').matches) {
+                        document.querySelector('.common-section_knoweverything .container .container-tab .tab:nth-child('+indexNav+')').classList.remove('style-active')
+                    }
                 }
 
             });
         });
     });
+
+    if (window.matchMedia('(min-width:' + breakPoint_mobile + 'px)').matches) {
+        document.querySelector('.common-section_knoweverything .container .container-tab .tab:nth-child(1)').click();
+    }
 }
 
 /*=====  End of COMMON FUNCTION  ======*/
