@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>3b1 - Sous Métier - Assurance Animaux</title>
+		<title>3b2 - Sous Métier - Assurance Auto</title>
 
 		<meta name="description" content="" />
 
@@ -35,9 +35,9 @@
 								<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
 							</svg>
 						</span>
-						<span>Assurance animaux</span>
+						<span>Assurance auto</span>
 					</div>
-					<h1>Assurance <em>animaux</em></h1>
+					<h1>Assurance <em>auto</em></h1>
 					<p class="desc">À partir de 3,90€/mois</p>
 					<div class="container-comp">
 						<div class="container-input">
@@ -264,7 +264,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Devis Assurance Animaux
+										Comparateur Assurance Auto
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -274,7 +274,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Comparateur Assurance chiens
+										Devis Assurance Auto 
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -284,7 +284,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Assurance Santé Chiens/Chats
+										Assurance Jeune Conducteur
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -294,7 +294,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Assurance Chien Pas Cher
+										Assurance Malus
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -304,7 +304,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Comparateur Assurance Animaux
+										Assurance Auto Pas Cher
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -313,7 +313,7 @@
 							</li>
 						</ul>
 					</nav>
-					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-5.svg" alt="">
+					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-6.svg" alt="">
 				</div>
 			</section>
 
@@ -379,7 +379,7 @@
 							<div class="icn">
 								<img src="img/sousmetier/section-compare/icn-2.svg" alt="">
 							</div>
-							<p>Faire des économies sur le crédit et l’assurance</p>
+							<p>Faire des économies sur vos assurances</p>
 						</div>
 						<div class="el">
 							<div class="icn">
@@ -413,7 +413,7 @@
 			<section class="section-simulation style-onlybanner">
 				<div class="wrapper">
 					<div class="banner">
-						<h3>À partir de<br><em>3,90%/mois*</em></h3>
+						<h3>Économisez<br><em>jusqu’à 235€*</em></h3>
 						<div class="container-btn">
 							<a href="" class="btn">
 								<span class="btn-text">
@@ -434,35 +434,35 @@
 
 			<section class="common-section_knoweverything">
 				<div class="wrapper">
-					<h2>Tout savoir sur l'assurance animaux</h2>
+					<h2>Tout savoir sur l’assurance auto</h2>
 					<div class="container">
 						<div class="container-tab">
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
-								<h3>Guide sur<br>l'assurance animaux</h3>
+								<h3>Guide sur<br>l'assurance auto</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-2.svg" alt="">
 								</div>
-								<h3>FAQ sur<br>l'assurance animaux</h3>
+								<h3>FAQ sur<br>l'assurance auto</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-3.svg" alt="">
 								</div>
-								<h3>Lettre type sur<br>l'assurance animaux</h3>
+								<h3>Lettre type sur<br>l'assurance auto</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-4.svg" alt="">
 								</div>
-								<h3>Lexique sur<br>l'assurance animaux</h3>
+								<h3>Lexique sur<br>l'assurance auto</h3>
 								<div class="cross"></div>
 							</div>
 						</div>
@@ -979,7 +979,7 @@
 			<section class="common-section_actu">
 				<div class="wrapper">
 					<h2>
-						<a href="#">Les actualités de l’assurance animaux</a>
+						<a href="#">Les actualités de l’assurance auto</a>
 					</h2>
 					<div class="container-el">
 						<div class="el">
@@ -1355,15 +1355,15 @@
 
 			<section class="common-section_autremetiers">
 				<div class="wrapper">
-					<h2>L’essentiel de l’assurance animaux</h2>
+					<h2>L’essentiel de l’assurance auto</h2>
 					<div class="container-section">
 						<div class="section">
 							<div class="icn">
-								<img src="img/common-section_autremetiers/icn-8.svg" alt="">
+								<img src="img/common-section_autremetiers/icn-9.svg" alt="">
 							</div>
 							<div class="text">
 								<div class="title">
-									<h3>Assurance animaux</h3>
+									<h3>Assurance auto</h3>
 									<div class="container-status">
 										<div class="line"></div>
 										<div class="line"></div>
@@ -1525,7 +1525,7 @@
 				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
 				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				<div class="wrapper">
-					<h2>Les réponses à vos questions sur l’assurance animaux</h2>
+					<h2>Les réponses à vos questions sur l’assurance auto</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="row">
