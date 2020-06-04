@@ -448,7 +448,7 @@
 						</div>
 					</div>
 					<div class="banner">
-						<h3>Jusqu’à <em>-0,5% d’économie</em> sur<br>le taux de votre crédit !</h3>
+						<h3>Diminuez vos mensualités<br>jusqu'à<em>-80%*</em></h3>
 						<div class="container-btn">
 							<a href="" class="btn">
 								<span class="btn-text">
