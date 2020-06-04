@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>3b2 - Sous Métier - Assurance Auto</title>
+		<title>3b3 - Sous Métier - Assurance Décès</title>
 
 		<meta name="description" content="" />
 
@@ -35,10 +35,10 @@
 								<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
 							</svg>
 						</span>
-						<span>Assurance auto</span>
+						<span>Assurance décès</span>
 					</div>
-					<h1>Assurance <em>auto</em></h1>
-					<p class="desc">À partir de 3,90€/mois</p>
+					<h1>Assurance <em>décès</em></h1>
+					<p class="desc">À partir de 4,60€/mois</p>
 					<div class="container-comp">
 						<div class="container-input">
 							<div class="input">
@@ -264,7 +264,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Comparateur Assurance Auto
+										Assurance Décès
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -274,7 +274,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Devis Assurance Auto 
+										Comparatif Assurance Obsèques
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -284,7 +284,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Assurance Jeune Conducteur
+										Assurance Décès Invalidité
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -294,7 +294,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Assurance Malus
+										Simulation Assurance Décès
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -304,7 +304,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Assurance Auto Pas Cher
+										Comparateur Assurance Obsèques
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -313,7 +313,7 @@
 							</li>
 						</ul>
 					</nav>
-					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-6.svg" alt="">
+					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-7.svg" alt="">
 				</div>
 			</section>
 
@@ -367,7 +367,7 @@
 
 			<section class="section-compare">
 				<div class="wrapper">
-					<h2>Pourquoi comparer les assurances auto ?</h2>
+					<h2>Pourquoi comparer les assurances décès ?</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="icn">
@@ -413,7 +413,7 @@
 			<section class="section-simulation style-onlybanner">
 				<div class="wrapper">
 					<div class="banner">
-						<h3>Économisez<br><em>jusqu’à 235€*</em></h3>
+						<h3>À partir de<br><em>4,60€/mois*</em></h3>
 						<div class="container-btn">
 							<a href="" class="btn">
 								<span class="btn-text">
@@ -434,35 +434,35 @@
 
 			<section class="common-section_knoweverything">
 				<div class="wrapper">
-					<h2>Tout savoir sur l’assurance auto</h2>
+					<h2>Tout savoir sur l’assurance décès</h2>
 					<div class="container">
 						<div class="container-tab">
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
-								<h3>Guide sur<br>l'assurance auto</h3>
+								<h3>Guide sur<br>l'assurance décès</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-2.svg" alt="">
 								</div>
-								<h3>FAQ sur<br>l'assurance auto</h3>
+								<h3>FAQ sur<br>l'assurance décès</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-3.svg" alt="">
 								</div>
-								<h3>Lettre type sur<br>l'assurance auto</h3>
+								<h3>Lettre type sur<br>l'assurance décès</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-4.svg" alt="">
 								</div>
-								<h3>Lexique sur<br>l'assurance auto</h3>
+								<h3>Lexique sur<br>l'assurance décès</h3>
 								<div class="cross"></div>
 							</div>
 						</div>
@@ -979,7 +979,7 @@
 			<section class="common-section_actu">
 				<div class="wrapper">
 					<h2>
-						<a href="#">Les actualités de l’assurance auto</a>
+						<a href="#">Les actualités de l’assurance décès</a>
 					</h2>
 					<div class="container-el">
 						<div class="el">
@@ -1355,15 +1355,15 @@
 
 			<section class="common-section_autremetiers">
 				<div class="wrapper">
-					<h2>L’essentiel de l’assurance auto</h2>
+					<h2>L’essentiel de l’assurance décès</h2>
 					<div class="container-section">
 						<div class="section">
 							<div class="icn">
-								<img src="img/common-section_autremetiers/icn-9.svg" alt="">
+								<img src="img/common-section_autremetiers/icn-10.svg" alt="">
 							</div>
 							<div class="text">
 								<div class="title">
-									<h3>Assurance auto</h3>
+									<h3>Assurance décès</h3>
 									<div class="container-status">
 										<div class="line"></div>
 										<div class="line"></div>
@@ -1525,7 +1525,7 @@
 				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
 				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				<div class="wrapper">
-					<h2>Les réponses à vos questions sur l’assurance auto</h2>
+					<h2>Les réponses à vos questions sur l’assurance décès</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="row">

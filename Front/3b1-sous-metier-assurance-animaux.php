@@ -367,7 +367,7 @@
 
 			<section class="section-compare">
 				<div class="wrapper">
-					<h2>Pourquoi comparer les assurance animaux ?</h2>
+					<h2>Pourquoi comparer les assurances animaux ?</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="icn">
