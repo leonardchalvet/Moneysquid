@@ -22,8 +22,23 @@
 
 			<section class="section-cover">
 				<div class="wrapper">
-					<h1>Prêt <em>immobilier</em></h1>
-					<p class="desc">Comparez et obtenez le meilleur taux immobilier</p>
+					<div class="path">
+						<span>Accueil</span>
+						<span>
+							<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
+								<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
+							</svg>
+						</span>
+						<span>Assurance</span>
+						<span>
+							<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
+								<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
+							</svg>
+						</span>
+						<span>Assurance animaux</span>
+					</div>
+					<h1>Assurance <em>animaux</em></h1>
+					<p class="desc">À partir de 3,90€/mois</p>
 					<div class="container-comp">
 						<div class="container-input">
 							<div class="input">
@@ -120,7 +135,7 @@
 						</div>
 						<div class="container-input">
 							<div class="input">
-								<div class="placeholder">Votre projet</div>
+								<div class="placeholder">Votre but</div>
 								<input type="text" readonly placeholder="2nd réponse formulaire">
 								<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
 									<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
@@ -249,7 +264,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Simulation de Prêt Immobilier
+										Devis Assurance Animaux
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -259,7 +274,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Comparateur Crédit Immobilier
+										Comparateur Assurance chiens
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -269,7 +284,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Calculette Prêt Immobilier
+										Assurance Santé Chiens/Chats
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -279,7 +294,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Prêt à taux Zéro
+										Assurance Chien Pas Cher
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -289,17 +304,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Taux Immobilier 2019
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="link-text">
-										Courtier Immobilier
+										Comparateur Assurance Animaux
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -308,7 +313,7 @@
 							</li>
 						</ul>
 					</nav>
-					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-1.svg" alt="">
+					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-5.svg" alt="">
 				</div>
 			</section>
 
@@ -318,34 +323,26 @@
 					<div class="container-el">
 						<div class="el">
 							<div class="icn">
-								<img src="img/sousmetier/section-howitwork/icn-1.svg" alt="">
+								<img src="img/sousmetier/section-howitwork/icn-5.svg" alt="">
 							</div>
 							<p>
-								Vous déposez votre demande
+								Ça vous prend 2 minutes
 							</p>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/sousmetier/section-howitwork/icn-1.svg" alt="">
+								<img src="img/sousmetier/section-howitwork/icn-6.svg" alt="">
 							</div>
 							<p>
-								Vous déposez votre demande
+								On recherche pour vous la meilleure offre
 							</p>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/sousmetier/section-howitwork/icn-1.svg" alt="">
+								<img src="img/sousmetier/section-howitwork/icn-4.svg" alt="">
 							</div>
 							<p>
-								Vous déposez votre demande
-							</p>
-						</div>
-						<div class="el">
-							<div class="icn">
-								<img src="img/sousmetier/section-howitwork/icn-1.svg" alt="">
-							</div>
-							<p>
-								Vous déposez votre demande
+								Vous avez trouvé la meilleure assurance pour votre animal
 							</p>
 						</div>
 					</div>
@@ -370,7 +367,7 @@
 
 			<section class="section-compare">
 				<div class="wrapper">
-					<h2>Pourquoi comparer les taux de crédit consommation ? </h2>
+					<h2>Pourquoi comparer les assurance animaux ?</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="icn">
@@ -380,21 +377,21 @@
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/sousmetier/section-compare/icn-1.svg" alt="">
+								<img src="img/sousmetier/section-compare/icn-2.svg" alt="">
 							</div>
-							<p>Gratuit sans engagement</p>
+							<p>Faire des économies sur le crédit et l’assurance</p>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/sousmetier/section-compare/icn-1.svg" alt="">
+								<img src="img/sousmetier/section-compare/icn-3.svg" alt="">
 							</div>
-							<p>Gratuit sans engagement</p>
+							<p>Rapide 2mn chrono</p>
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/sousmetier/section-compare/icn-1.svg" alt="">
+								<img src="img/sousmetier/section-compare/icn-4.svg" alt="">
 							</div>
-							<p>Gratuit sans engagement</p>
+							<p>100% sécurisé</p>
 						</div>
 					</div>
 					<div class="container-btn">
@@ -416,7 +413,7 @@
 			<section class="section-simulation style-onlybanner">
 				<div class="wrapper">
 					<div class="banner">
-						<h3>Jusqu’à <em>-0,5% d’économie</em> sur<br>le taux de votre crédit !</h3>
+						<h3>À partir de<br><em>3,90%/mois*</em></h3>
 						<div class="container-btn">
 							<a href="" class="btn">
 								<span class="btn-text">
@@ -437,35 +434,35 @@
 
 			<section class="common-section_knoweverything">
 				<div class="wrapper">
-					<h2>Tout savoir sur le Crédit consommation</h2>
+					<h2>Tout savoir sur les assurance animaux</h2>
 					<div class="container">
 						<div class="container-tab">
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt consommation</h3>
+								<h3>Guide sur<br>les assurance animaux</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
-									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+									<img src="img/sousmetier/section-knoweverything/icn-2.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt consommation</h3>
+								<h3>FAQ sur<br>les assurance animaux</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
-									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+									<img src="img/sousmetier/section-knoweverything/icn-3.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt consommation</h3>
+								<h3>Lettre type sur<br>les assurance animauxt</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
-									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
+									<img src="img/sousmetier/section-knoweverything/icn-4.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt consommation</h3>
+								<h3>Lexique sur<br>les assurance animauxt</h3>
 								<div class="cross"></div>
 							</div>
 						</div>
@@ -505,7 +502,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Pourquoi souscrire un crédit </span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -515,7 +512,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Pourquoi souscrire un crédit </span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -525,7 +522,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Pourquoi souscrire un crédit </span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -535,7 +532,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Visiter un bien immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -545,7 +542,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Visiter un bien immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -555,7 +552,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Visiter un bien immobilier</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -565,7 +562,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Acheter meublé</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -575,7 +572,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Acheter meublé</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -585,7 +582,7 @@
 									<li>
 										<a href="">
 											<span class="link-text">
-												<span>Définir votre projet immobilier</span>
+												<span>Acheter meublé</span>
 											</span>
 											<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 												<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -982,7 +979,7 @@
 			<section class="common-section_actu">
 				<div class="wrapper">
 					<h2>
-						<a href="#">Les actualités</a>
+						<a href="#">Les actualités de l’assurance animaux</a>
 					</h2>
 					<div class="container-el">
 						<div class="el">
@@ -1184,7 +1181,7 @@
 						</div>
 
 						<div class="btn toHref" data-href="">
-							<span class="btn-text">Voir tous les avis clients</span>
+							<span class="btn-text">Voir toutes nos actualités</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
@@ -1347,7 +1344,7 @@
 					<div class="container-illu">
 						<img src="img/sousmetier/section-seo/illu-1.svg" alt="">
 						<a href="" class="btn">
-							<span class="btn-text">Comparer gratuitement les crédits immobilier</span>
+							<span class="btn-text">Je compare</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
@@ -1358,15 +1355,15 @@
 
 			<section class="common-section_autremetiers">
 				<div class="wrapper">
-					<h2>L’essentiel du crédit consommation</h2>
+					<h2>L’essentiel de l’assurance animaux</h2>
 					<div class="container-section">
 						<div class="section">
 							<div class="icn">
-								<img src="img/common-section_autremetiers/icn-1.svg" alt="">
+								<img src="img/common-section_autremetiers/icn-8.svg" alt="">
 							</div>
 							<div class="text">
 								<div class="title">
-									<h3>Crédit</h3>
+									<h3>Assurance animaux</h3>
 									<div class="container-status">
 										<div class="line"></div>
 										<div class="line"></div>
@@ -1528,7 +1525,7 @@
 				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
 				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				<div class="wrapper">
-					<h2>Les réponses à toutes vos questions</h2>
+					<h2>Les réponses vos questions sur l’assurance animaux</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="row">

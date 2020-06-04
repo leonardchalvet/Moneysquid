@@ -313,7 +313,7 @@
 							</li>
 						</ul>
 					</nav>
-					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-3.svg" alt="">
+					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-4.svg" alt="">
 				</div>
 			</section>
 
