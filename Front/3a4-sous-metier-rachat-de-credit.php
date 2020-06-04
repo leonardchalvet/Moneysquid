@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>3a2 - Prêt immobilier</title>
+		<title>3a4 - Rachat de crédit</title>
 
 		<meta name="description" content="" />
 
@@ -35,10 +35,10 @@
 								<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
 							</svg>
 						</span>
-						<span>Crédit immobilier</span>
+						<span>Rachat de crédit</span>
 					</div>
-					<h1>Prêt <em>immobilier</em></h1>
-					<p class="desc">Comparez et obtenez le meilleur taux immobilier</p>
+					<h1>Rachat de crédit</h1>
+					<p class="desc">Diminuez vos mensualités jusqu’à -80%*</p>
 					<div class="container-comp">
 						<div class="container-input">
 							<div class="input">
@@ -135,7 +135,7 @@
 						</div>
 						<div class="container-input">
 							<div class="input">
-								<div class="placeholder">Votre projet</div>
+								<div class="placeholder">Votre but</div>
 								<input type="text" readonly placeholder="2nd réponse formulaire">
 								<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
 									<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
@@ -264,7 +264,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Simulation de Prêt Immobilier
+										Regroupement de Crédit
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -274,7 +274,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Comparateur Crédit Immobilier
+										Rachat de Crédit Consommation
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -284,7 +284,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Calculette Prêt Immobilier
+										Simulation Rachat de Crédit
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -294,7 +294,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Prêt à taux Zéro
+										Prêt Hypotécaire
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -304,17 +304,7 @@
 							<li>
 								<a href="">
 									<span class="link-text">
-										Taux Immobilier 2019
-									</span>
-									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
-										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
-									</svg>
-								</a>
-							</li>
-							<li>
-								<a href="">
-									<span class="link-text">
-										Courtier Immobilier
+										Rachat de Crédit Immobilier
 									</span>
 									<svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 										<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
@@ -323,7 +313,7 @@
 							</li>
 						</ul>
 					</nav>
-					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-1.svg" alt="">
+					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-3.svg" alt="">
 				</div>
 			</section>
 
@@ -442,33 +432,6 @@
 						</div>
 						<div class="el">
 							<div class="icn">
-								<img src="img/sousmetier/section-simulation/icn-2.svg" alt="">
-							</div>
-							<p>
-								Calcul capacité<br>d’emprunt
-							</p>
-						</div>
-						<div class="el">
-							<div class="icn">
-								<img src="img/sousmetier/section-simulation/icn-3.svg" alt="">
-							</div>
-							<p>
-								Calcul frais<br>de notaire
-								
-							</p>
-						</div>
-					</div>
-					<div class="container-el">
-						<div class="el">
-							<div class="icn">
-								<img src="img/sousmetier/section-simulation/icn-4.svg" alt="">
-							</div>
-							<p>
-								Simulation<br>PTZ
-							</p>
-						</div>
-						<div class="el">
-							<div class="icn">
 								<img src="img/sousmetier/section-simulation/icn-5.svg" alt="">
 							</div>
 							<p>
@@ -506,35 +469,35 @@
 
 			<section class="common-section_knoweverything">
 				<div class="wrapper">
-					<h2>Tout savoir sur le prêt immobilier</h2>
+					<h2>Tout savoir sur le rachat de crédit</h2>
 					<div class="container">
 						<div class="container-tab">
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-1.svg" alt="">
 								</div>
-								<h3>Guide<br>prêt immobilier</h3>
+								<h3>Guide<br>rachat de crédit</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-2.svg" alt="">
 								</div>
-								<h3>FAQ du<br>prêt immobilier</h3>
+								<h3>FAQ du<br>rachat de crédit</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-3.svg" alt="">
 								</div>
-								<h3>Lettre type du<br>prêt immobilier</h3>
+								<h3>Lettre type du<br>rachat de crédit</h3>
 								<div class="cross"></div>
 							</div>
 							<div class="tab">
 								<div class="icn">
 									<img src="img/sousmetier/section-knoweverything/icn-4.svg" alt="">
 								</div>
-								<h3>Lexique du<br>prêt immobilier</h3>
+								<h3>Lexique du<br>rachat de crédit</h3>
 								<div class="cross"></div>
 							</div>
 						</div>
@@ -1051,7 +1014,7 @@
 			<section class="common-section_actu">
 				<div class="wrapper">
 					<h2>
-						<a href="#">Les actualités</a>
+						<a href="#">Les actualités du rachat de crédit</a>
 					</h2>
 					<div class="container-el">
 						<div class="el">
@@ -1416,7 +1379,7 @@
 					<div class="container-illu">
 						<img src="img/sousmetier/section-seo/illu-1.svg" alt="">
 						<a href="" class="btn">
-							<span class="btn-text">Comparer gratuitement les crédits immobilier</span>
+							<span class="btn-text">Je compare</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
@@ -1427,15 +1390,15 @@
 
 			<section class="common-section_autremetiers">
 				<div class="wrapper">
-					<h2>L’essentiel du prêt immobilier</h2>
+					<h2>L’essentiel du rachat de crédit</h2>
 					<div class="container-section">
 						<div class="section">
 							<div class="icn">
-								<img src="img/common-section_autremetiers/icn-4.svg" alt="">
+								<img src="img/common-section_autremetiers/icn-7.svg" alt="">
 							</div>
 							<div class="text">
 								<div class="title">
-									<h3>Crédit immobilier</h3>
+									<h3>Rachat de crédit</h3>
 									<div class="container-status">
 										<div class="line"></div>
 										<div class="line"></div>
@@ -1597,7 +1560,7 @@
 				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
 				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				<div class="wrapper">
-					<h2>Les réponses à toutes vos questions sur le prêt immobilier</h2>
+					<h2>Les réponses à vos questions<br>sur le rachat de crédit</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="row">
