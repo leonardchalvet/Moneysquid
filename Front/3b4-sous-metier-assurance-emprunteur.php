@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>3b3 - Sous Métier - Assurance Emprunteur</title>
+		<title>3b4 - Sous Métier - Assurance Emprunteur</title>
 
 		<meta name="description" content="" />
 
@@ -38,7 +38,7 @@
 						<span>Assurance emprunteur</span>
 					</div>
 					<h1>Assurance <em>emprunteur</em></h1>
-					<p class="desc">À partir de 4,60€/mois</p>
+					<p class="desc">À partir de 4,60€/mois*</p>
 					<div class="container-comp">
 						<div class="container-input">
 							<div class="input">
