@@ -2,7 +2,7 @@
 <html>
 	<head>
 
-		<title>3a2 - Prêt professionnel</title>
+		<title>3a3 - Prêt professionnel</title>
 
 		<meta name="description" content="" />
 
@@ -135,7 +135,7 @@
 						</div>
 						<div class="container-input">
 							<div class="input">
-								<div class="placeholder">Votre projet</div>
+								<div class="placeholder">Votre but</div>
 								<input type="text" readonly placeholder="2nd réponse formulaire">
 								<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
 									<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
@@ -313,7 +313,7 @@
 							</li>
 						</ul>
 					</nav>
-					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-1.svg" alt="">
+					<img class="illu-1" src="img/common-section_cover:sousmetier/illu-3.svg" alt="">
 				</div>
 			</section>
 
@@ -1379,7 +1379,7 @@
 					<div class="container-illu">
 						<img src="img/sousmetier/section-seo/illu-1.svg" alt="">
 						<a href="" class="btn">
-							<span class="btn-text">Comparer gratuitement les crédits immobilier</span>
+							<span class="btn-text">Je compare</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
@@ -1390,15 +1390,15 @@
 
 			<section class="common-section_autremetiers">
 				<div class="wrapper">
-					<h2>L’essentiel du prêt immobilier</h2>
+					<h2>L’essentiel du crédit professionnel</h2>
 					<div class="container-section">
 						<div class="section">
 							<div class="icn">
-								<img src="img/common-section_autremetiers/icn-4.svg" alt="">
+								<img src="img/common-section_autremetiers/icn-7.svg" alt="">
 							</div>
 							<div class="text">
 								<div class="title">
-									<h3>Crédit immobilier</h3>
+									<h3>Crédit professionnel</h3>
 									<div class="container-status">
 										<div class="line"></div>
 										<div class="line"></div>
@@ -1560,7 +1560,7 @@
 				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
 				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				<div class="wrapper">
-					<h2>Les réponses à toutes vos questions sur le prêt immobilier</h2>
+					<h2>Les réponses à vos questions<br>sur le crédit professionnel</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="row">

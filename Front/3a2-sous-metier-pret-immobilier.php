@@ -135,7 +135,7 @@
 						</div>
 						<div class="container-input">
 							<div class="input">
-								<div class="placeholder">Votre projet</div>
+								<div class="placeholder">Votre but</div>
 								<input type="text" readonly placeholder="2nd réponse formulaire">
 								<svg class="icn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 6">
 									<use xlink:href="img/common/icn-arrow-1.svg#content"></use>
@@ -1416,7 +1416,7 @@
 					<div class="container-illu">
 						<img src="img/sousmetier/section-seo/illu-1.svg" alt="">
 						<a href="" class="btn">
-							<span class="btn-text">Comparer gratuitement les crédits immobilier</span>
+							<span class="btn-text">Je compare</span>
 							<svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7 10">
 								<use xlink:href="img/common/icn-arrow-2.svg#content"></use>
 							</svg>
@@ -1597,7 +1597,7 @@
 				<img class="path-1" src="img/common-section_cover:metiers/path-1.svg" alt="">
 				<img class="path-2" src="img/common-section_cover:metiers/path-2.svg" alt="">
 				<div class="wrapper">
-					<h2>Les réponses à toutes vos questions sur le prêt immobilier</h2>
+					<h2>Les réponses à vos questions<br>sur le prêt immobilier</h2>
 					<div class="container-el">
 						<div class="el">
 							<div class="row">
